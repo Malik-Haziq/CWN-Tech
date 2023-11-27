@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.padding{
+  padding: 0 128px;
+}
+
+@media (max-width: 1440px) {
+  .padding{
+    padding: 0 64px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .padding  {
+    padding: 0 36px;
+  }
+}
