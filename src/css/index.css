@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: 1320px) {
+  .padding{
+    padding: 0 36px;
+  }
+}
+
 @media (max-width: 1080px) {
   .padding  {
     padding: 0 36px;
