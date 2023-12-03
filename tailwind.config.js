@@ -22,7 +22,8 @@ export default {
       'sub-heading': "#333333",
       'para': "#3B3C3D",
       'sub': "#B1B6B9",
-      'white': "#FFFFFF"
+      'white': "#FFFFFF",
+      'black': "#000000"
     },
     fontFamily: {
       sumana: ['"Sumana"', 'serif'],

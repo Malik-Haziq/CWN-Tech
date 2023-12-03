@@ -11,7 +11,8 @@ export default defineConfig({
       '@components': '/src/components',
       '@styles': '/src/css',
       '@images': '/src/assets/images',
-      '@icons': '/src/assets/icons'
+      '@icons': '/src/assets/icons',
+      '@pages': '/src/pages'
     },
   },
 });
