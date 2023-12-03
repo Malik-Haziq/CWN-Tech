@@ -8,7 +8,8 @@ import menu from "@icons/menu.svg";
 import cross from "@icons/cross.svg";
 import Button from "@components/button/button";
 import { useState } from "react";
-export default function Navigation() {
+
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleNav = () => {
