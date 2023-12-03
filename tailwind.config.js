@@ -6,7 +6,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'xlg': '1140px',
+      },
+    },
     colors: {
       'main': "#3EB7BB",
       'main-tint': "#66c9cc",
