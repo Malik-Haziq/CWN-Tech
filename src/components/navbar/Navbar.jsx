@@ -29,11 +29,11 @@ export default function Navbar() {
   // TODO: add dropdown to nav links
   // TODO: update info of top nav
   return (
-    <nav className="border-b-[1px] border-sub">
+    <nav>
       <ContactInfo containerStyles={"hidden sm:flex"} />
       <div className="section flex justify-between items-center relative">
         <Link to="/">
-          <img src={logo} alt="cwn logo" />
+          <img src={logo} alt="cwn logo" className={'w-32 sm:w-[160px]'}/>
         </Link>
         <div>
           <ul
@@ -46,11 +46,12 @@ export default function Navbar() {
             {navLinks.map((link, i) => {
               return <NavLink link={link} key={i} onToggleNav={toggleNav} />;
             })}
+            <Button text={"Get in Touch"} href={""} styles="sm:hidden w-fit"/>
             <ContactInfo containerStyles={"sm:hidden bg-white"} />
           </ul>
         </div>
         <div className="flex gap-4">
-          <Button text={"Get in Touch"} href={""} />
+          <Button text={"Get in Touch"} href={""} styles="hidden sm:block"/>
           <img
             src={isMenuOpen ? cross : menu}
             alt="menu"
@@ -68,7 +69,7 @@ function NavLink({ link, onToggleNav }) {
     <li className="w-full">
       <Link
         to={link.path}
-        className="hover:text-main-shade duration-300 block"
+        className="hover:text-main-shade duration-300 block text-para"
         onClick={() => onToggleNav()}
       >
         {link.text}
