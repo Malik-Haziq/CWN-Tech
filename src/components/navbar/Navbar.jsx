@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className="border-b-[1px] border-sub">
       <ContactInfo containerStyles={"hidden sm:flex"} />
-      <div className="padding flex justify-between items-center relative">
+      <div className="section flex justify-between items-center relative">
         <Link to="/">
           <img src={logo} alt="cwn logo" />
         </Link>
@@ -81,7 +81,7 @@ function ContactInfo({ containerStyles }) {
   return (
     <div
       className={
-        "bg-secondary text-para padding flex items-center justify-center flex-col gap-4 sm:flex-row sm:gap-8 sm:justify-end " +
+        "bg-secondary text-para section flex items-center justify-center flex-col gap-4 sm:flex-row sm:gap-8 sm:justify-end " +
         containerStyles
       }
     >
