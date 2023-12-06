@@ -21,6 +21,7 @@ export default {
       'heading': '#222222',
       'sub-heading': "#333333",
       'para': "#3B3C3D",
+      'sub-para': "#616161",
       'sub': "#B1B6B9",
       'white': "#FFFFFF",
       'black': "#000000"
