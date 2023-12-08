@@ -10,14 +10,18 @@ export default {
       screens: {
         'xlg': '1140px',
       },
+      boxShadow:{
+        '3xl': '0 2px 37px 0 rgba(0,0,0,.1)'
+      }
     },
     colors: {
       'main': "#3EB7BB",
       'main-tint': "#66c9cc",
-      'main-shade': "#21a7a9",
+      'main-shade': "#1E9799",
       'main-dark': "#125F60",
       'secondary': "#FAFAFA",
       'tertiary': "#ED8B00",
+      
       'heading': '#222222',
       'sub-heading': "#333333",
       'para': "#3B3C3D",

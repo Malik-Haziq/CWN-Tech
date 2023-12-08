@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .orange-line::after{
+    content: '';
+    @apply block w-14 h-1 absolute -bottom-4 bg-tertiary rounded-lg;
+  }
+
+  .h2{
+    @apply text-3xl lg:text-4xl font-semibold relative mb-16 orange-line;
+  }
+
+  .h3{
+    @apply text-2xl lg:text-3xl font-medium relative orange-line;
+  }
+}
+
 .section{
   padding: 0 128px;
 }
