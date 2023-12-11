@@ -10,7 +10,6 @@ import speechagain from "@images/featured/speechagain.webp";
 import { useState } from "react";
 
 export function Home() {
-
   return (
     <main>
       <header
@@ -42,7 +41,7 @@ export function Home() {
       {/* /////////////////////////////////////////  Featured section */}
       <section className="section mb-32">
         <h2 className="h2">Featured Brands</h2>
-        <div className="flex justify-between flex-wrap gap-2 ">
+        <div className="flex justify-between flex-wrap gap-2">
           <img
             src={cae}
             alt="cae"
@@ -85,70 +84,35 @@ export function Home() {
 
       <section className="section mb-16">
         <h2 className="h2">Explore Our Offering</h2>
-        {/* <div className="flex gap-16 pr-24 shadow-3xl relative translate-x-[2%] w-[98%] rounded-md">
-          <aside className="bg-main-shade min-w-fit py-6 px-2 shadow-2xl text-white font-medium text-xl flex flex-col justify-between items-center rounded-md -translate-y-4 -translate-x-7">
-            <div className="bg-main px-4 py-5 pr-32 translate-x-10 shadow-3xl cursor-pointer">
-              <a>software development</a>
-            </div>
-            <div className="px-4 py-5 pr-28 cursor-pointer">
-              <a>software development</a>
-            </div>
-            <div className="px-4 py-5 pr-28 cursor-pointer">
-              <a>software development</a>
-            </div>
-            <div className="px-4 py-5 pr-28 cursor-pointer">
-              <a>software development</a>
-            </div>
-            <div className="px-4 py-5 pr-28 cursor-pointer">
-              <a>software development</a>
-            </div>
-            <div className="px-4 py-5 pr-28 cursor-pointer">
-              <a>software development</a>
-            </div>
-          </aside>
-          <div className="my-10">
-            <h3 className="h3 mb-12 text-sub-heading">software development</h3>
-            <p className="text-sub-para text-xl leading-8 mb-20">
-              Our app development services epitomize excellence. Crafting
-              reliable, scalable, and secure applications compatible with any
-              OS, browser, or device is at the core of our expertise. We
-              seamlessly blend industry knowledge with cutting-edge IT
-              advancements to provide tailored solutions and products that align
-              precisely with user needs and behaviors.
-            </p>
-            <ul className="grid grid-cols-2 text-xl gap-8 list-disc list-inside text-sub-heading">
-              <li>Custom App Development</li>
-              <li>Custom App Development</li>
-              <li>Custom App Development</li>
-              <li>Custom App Development</li>
-              <li>Custom App Development</li>
-              <li>Custom App Development</li>
-              <li>Custom App Development</li>
-            </ul>
-          </div>
-        </div> */}
-        <ServicesSection/>
+        <ServicesSection />
       </section>
     </main>
   );
 }
 
 function ServicesSection() {
-  const [service, setService] = useState('Web Development')
+  const [service, setService] = useState("Web Development");
 
-
-  const headingList = ['Web Development','Software Development','UI & UX Design','SEO','Marketing Services','App Development',]
+  const headingList = [
+    "Web Development",
+    "Software Development",
+    "UI & UX Design",
+    "SEO",
+    "Marketing Services",
+    "App Development",
+  ];
   const services = [
     {
       heading: "Web Development",
       desc: "Our web development services embody innovation and reliability. We engineer dynamic and responsive websites that captivate audiences across devices. Our expertise encompasses the entire web development spectrum, from front-end design to back-end functionality.",
       list: [
         "Web Development Consulting",
-        "Frontend and Backend Development",
+        "Frontend Development",
+        "Backend Development",
         "E-commerce Development",
         "Responsive Design",
         "Website Maintenance",
-        "Web Performance Optimization",
+        "Performance Optimization",
       ],
     },
     {
@@ -156,12 +120,11 @@ function ServicesSection() {
       desc: "A software development company with 34 years of business excellence, we can develop reliable, scalable and secure software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.",
       list: [
         "Software consulting",
-        "Custom software development",
-        "Software development outsourcing",
-        "Software product development",
-        "Cloud application development",
+        "Software development",
+        "Software outsourcing",
+        "Product development",
         "Team augmentation",
-        "Legacy software modernization",
+        "software modernization",
       ],
     },
     {
@@ -208,41 +171,63 @@ function ServicesSection() {
       desc: "Our app development services epitomize excellence. Crafting reliable, scalable, and secure applications compatible with any OS, browser, or device is at the core of our expertise. We seamlessly blend industry knowledge with cutting-edge IT advancements to provide tailored solutions and products that align precisely with user needs and behaviors.",
       list: [
         "App Development Consulting",
-        "Custom App Development",
-        "App Development Outsourcing",
+        "App Development",
+        "Development Outsourcing",
         "Product Development",
         "Team Augmentation",
-        "Cloud Application Development",
-        "Legacy App Modernization",
+        "App Modernization",
       ],
     },
   ];
 
-  const [current] = services.filter(el=>{
-    if(el.heading !== service) return
-    return el
-  })
+  const [current] = services.filter((el) => {
+    if (el.heading !== service) return;
+    return el;
+  });
 
   return (
-      <div className="flex gap-16 pr-24 shadow-3xl relative translate-x-[2%] w-[98%] rounded-md">
-        <aside className="bg-main-shade min-w-fit py-6 px-2 shadow-2xl text-white font-medium text-xl flex flex-col justify-between items-center gap-4 rounded-md -translate-y-4 -translate-x-7">
-          {headingList.map((el, i)=>{
-            return <div onClick={()=> setService(el)} className={service === el ? "bg-main px-4 py-5 pr-30 translate-x-10 shadow-3xl cursor-pointer w-[350px] duration-200" : " px-4 py-5 pr-30 w-[350px] translate-x-10 hover:underline cursor-pointer duration-200"} key={i}>
-            <a className="">{el}</a>
-          </div>
+    <>
+      <div className="hidden lg:flex gap-6 xl:gap-10 pr-8 shadow-3xl relative translate-x-[2%] w-[98%] h-[570px] rounded-md">
+        <aside className="bg-main-shade min-w-fit py-6 px-4 shadow-2xl text-white font-medium text-xl flex flex-col justify-start items-start gap-4 -translate-y-4 -translate-x-7">
+          {headingList.map((el, i) => {
+            return (
+              <div
+                onClick={() => setService(el)}
+                className={
+                  service === el
+                    ? "bg-main px-4 py-5 pr-30 translate-x-7 xl:translate-x-10 shadow-3xl cursor-pointer w-[250px] xlg:w-[300px] xl:w-[350px] duration-200 "
+                    : " px-4 py-5 pr-30 w-[250px] xlg:w-[300px] xl:w-[350px] translate-x-5 xl:translate-x-10 hover:underline cursor-pointer duration-200"
+                }
+                key={i}
+              >
+                <a>{el}</a>
+              </div>
+            );
           })}
         </aside>
-        {service === current.heading && 
-        <div className="my-10 ">
-          <h3 className="h3 mb-12 text-sub-heading">{current.heading}</h3>
-          <p className="text-sub-para text-xl leading-8 mb-16">{current.desc}</p>
-          <ul className="grid grid-cols-2 text-xl gap-8 list-disc list-inside text-sub-heading">
-            {current.list.map((li, i) => {
-              return <li key={i}>{li}</li>;
-            })}
-          </ul>
-        </div>
-        }
+        {service === current.heading && (
+          <EachService heading={current.heading} desc={current.desc} list={current.list}/>
+        )}
       </div>
+      <div className="block lg:hidden">
+        {services.map((el,i)=>{
+          return <EachService heading={el.heading} desc={el.desc} list={el.list} containerStyles={"shadow-3xl px-4 py-8"} key={i}/>
+        })}
+      </div>
+    </>
+  );
+}
+
+function EachService({heading, desc, list, containerStyles}) {
+  return (
+    <div className={"my-10 "+ containerStyles} >
+      <h3 className="h3 mb-10 text-sub-heading">{heading}</h3>
+      <p className="text-sub-para text-lg md:text-xl leading-8 mb-12">{desc}</p>
+      <ul className="grid grid-cols-2 text-lg md:text-xl gap-y-2 sm:gap-y-4 md:gap-y-8 gap-2  list-disc list-inside text-sub-para">
+        {list.map((li, i) => {
+          return <li key={i}>{li}</li>;
+        })}
+      </ul>
+    </div>
   );
 }
