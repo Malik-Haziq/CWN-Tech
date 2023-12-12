@@ -222,8 +222,8 @@ function EachService({heading, desc, list, containerStyles}) {
   return (
     <div className={"my-10 "+ containerStyles} >
       <h3 className="h3 mb-10 text-sub-heading">{heading}</h3>
-      <p className="text-sub-para text-lg md:text-xl leading-8 mb-12">{desc}</p>
-      <ul className="grid grid-cols-2 text-lg md:text-xl gap-y-2 sm:gap-y-4 md:gap-y-8 gap-2  list-disc list-inside text-sub-para">
+      <p className="text-sub-para text-lg md:text-xl leading-8 mb-5 sm:mb-12">{desc}</p>
+      <ul className="grid sm:grid-cols-2 text-lg md:text-xl gap-y-2 sm:gap-y-4 md:gap-y-8 gap-2  list-disc list-inside sm:text-sub-para">
         {list.map((li, i) => {
           return <li key={i}>{li}</li>;
         })}
