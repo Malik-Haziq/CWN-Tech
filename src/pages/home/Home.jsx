@@ -1,3 +1,4 @@
+import eco from '@images/ecosystem.svg';
 import homeBg from "@images/bg.webp";
 import Button from "@components/button/button";
 import cae from "@images/featured/cae.webp";
@@ -82,9 +83,26 @@ export function Home() {
 
       {/* ///////////////////////  Explore Our Offering */}
 
-      <section className="section mb-16">
+      <section className="section mb-32">
         <h2 className="h2">Explore Our Offering</h2>
         <ServicesSection />
+      </section>
+
+      {/* ////////////////////////  Ecosystem */}
+      <section className="section mb-16 flex gap-10">
+        <div className='basis-1/2'>
+          <h2 className="h2">Every Part of Your IT Ecosystem. Taken Care Of.</h2>
+          <p>Comprehensive care of your cloud or on-premises infrastructure and applications:</p>
+          <ul>
+            <li>Consulting</li>
+            <li>Security</li>
+            <li>Implementation</li>
+            <li>Help desk services</li>
+            <li>Management and support</li>
+            <li>Migration</li>
+          </ul>
+        </div>
+          <img src={eco} alt="technology ecosystem" className='basis-1/2 w-12'/>
       </section>
     </main>
   );
@@ -188,15 +206,15 @@ function ServicesSection() {
   return (
     <>
       <div className="hidden lg:flex gap-6 xl:gap-10 pr-8 shadow-3xl relative translate-x-[2%] w-[98%] h-[570px] rounded-md">
-        <aside className="bg-main-shade min-w-fit py-6 px-4 shadow-2xl text-white font-medium text-xl flex flex-col justify-start items-start gap-4 -translate-y-4 -translate-x-7">
+        <aside className="bg-main-shade min-w-fit py-6 shadow-2xl text-white font-medium text-xl flex flex-col justify-start items-start gap-4 -translate-y-4 -translate-x-7">
           {headingList.map((el, i) => {
             return (
               <div
                 onClick={() => setService(el)}
                 className={
                   service === el
-                    ? "bg-main px-4 py-5 pr-30 translate-x-7 xl:translate-x-10 shadow-3xl cursor-pointer w-[250px] xlg:w-[300px] xl:w-[350px] duration-200 "
-                    : " px-4 py-5 pr-30 w-[250px] xlg:w-[300px] xl:w-[350px] translate-x-5 xl:translate-x-10 hover:underline cursor-pointer duration-200"
+                    ? "bg-main px-4 py-5 pr-30 translate-x-5 shadow-3xl cursor-pointer w-[270px] xlg:w-[300px] xl:w-[350px] duration-200 "
+                    : " px-4 py-5 pr-30 w-[270px] xlg:w-[300px] xl:w-[350px] translate-x-5 hover:underline cursor-pointer duration-200"
                 }
                 key={i}
               >
@@ -231,3 +249,4 @@ function EachService({heading, desc, list, containerStyles}) {
     </div>
   );
 }
+
