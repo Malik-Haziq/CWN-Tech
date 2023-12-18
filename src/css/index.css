@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
+@layer components{
   .orange-line::after{
     content: '';
     @apply block w-14 h-1 absolute -bottom-4 bg-tertiary rounded-lg;
@@ -18,8 +18,21 @@
 }
 
 .section{
-  padding: 0 128px;
+  padding: 0 264px;
 }
+
+@media (max-width: 1660px) {
+  .section{
+    padding: 0 184px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .section{
+    padding: 0 128px;
+  }
+}
+
 
 @media (max-width: 1440px) {
   .section{

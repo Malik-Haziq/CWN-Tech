@@ -18,6 +18,7 @@ export default {
       'main': "#3EB7BB",
       'main-tint': "#66c9cc",
       'main-shade': "#1E9799",
+      'main-mint': "#f0f9fa",
       'main-dark': "#125F60",
       'secondary': "#FAFAFA",
       'tertiary': "#ED8B00",

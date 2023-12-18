@@ -89,11 +89,12 @@ export function Home() {
       </section>
 
       {/* ////////////////////////  Ecosystem */}
-      <section className="section mb-16 flex gap-10">
-        <div className='basis-1/2'>
-          <h2 className="h2">Every Part of Your IT Ecosystem. Taken Care Of.</h2>
-          <p>Comprehensive care of your cloud or on-premises infrastructure and applications:</p>
-          <ul>
+      <section className="section mb-16">
+        <div className='flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl'>
+        <div className='xlg:basis-auto'>
+          <h2 className="h2 mb-6 lg:mb-10">Every Part of Your IT Ecosystem. Taken Care Of.</h2>
+          <p className='text-sub-para text-lg sm:text-xl mb-6'>Comprehensive care of your cloud or on-premises infrastructure and applications:</p>
+          <ul className='text-para text-base lg:text-xl list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <li>Consulting</li>
             <li>Security</li>
             <li>Implementation</li>
@@ -102,7 +103,8 @@ export function Home() {
             <li>Migration</li>
           </ul>
         </div>
-          <img src={eco} alt="technology ecosystem" className='basis-1/2 w-12'/>
+          <img src={eco} alt="technology ecosystem" className='mx-auto w-[450px] xlg:w-unset xlg:basis-2/5 '/>
+        </div>
       </section>
     </main>
   );
@@ -205,7 +207,7 @@ function ServicesSection() {
 
   return (
     <>
-      <div className="hidden lg:flex gap-6 xl:gap-10 pr-8 shadow-3xl relative translate-x-[2%] w-[98%] h-[570px] rounded-md">
+      <div className="hidden lg:flex gap-6 xl:gap-10 pr-8 shadow-3xl relative translate-x-[2%] w-[98%] h-[570px] rounded-3xl">
         <aside className="bg-main-shade min-w-fit py-6 shadow-2xl text-white font-medium text-xl flex flex-col justify-start items-start gap-4 -translate-y-4 -translate-x-7">
           {headingList.map((el, i) => {
             return (
