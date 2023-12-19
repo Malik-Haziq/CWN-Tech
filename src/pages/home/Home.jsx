@@ -1,4 +1,4 @@
-import eco from '@images/ecosystem.svg';
+import eco from "@images/ecosystem.svg";
 import homeBg from "@images/bg.webp";
 import Button from "@components/button/button";
 import cae from "@images/featured/cae.webp";
@@ -8,6 +8,7 @@ import itrsoftware from "@images/featured/itrsoftware.webp";
 import realpage from "@images/featured/realpage.webp";
 import controlit from "@images/featured/controlit.webp";
 import speechagain from "@images/featured/speechagain.webp";
+import price from "@icons/services/budget.svg";
 import { useState } from "react";
 
 export function Home() {
@@ -89,21 +90,59 @@ export function Home() {
       </section>
 
       {/* ////////////////////////  Ecosystem */}
-      <section className="section mb-16">
-        <div className='flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl'>
-        <div className='xlg:basis-auto'>
-          <h2 className="h2 mb-6 lg:mb-10">Every Part of Your IT Ecosystem. Taken Care Of.</h2>
-          <p className='text-sub-para text-lg sm:text-xl mb-6'>Comprehensive care of your cloud or on-premises infrastructure and applications:</p>
-          <ul className='text-para text-base lg:text-xl list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4'>
-            <li>Consulting</li>
-            <li>Security</li>
-            <li>Implementation</li>
-            <li>Help desk services</li>
-            <li>Management and support</li>
-            <li>Migration</li>
-          </ul>
+      <section className="section mb-32">
+        <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl">
+          <div className="xlg:basis-auto">
+            <h2 className="h2 mb-6 lg:mb-10">
+              Every Part of Your IT Ecosystem. Taken Care Of.
+            </h2>
+            <p className="text-sub-para text-lg sm:text-xl mb-6">
+              Comprehensive care of your cloud or on-premises infrastructure and
+              applications:
+            </p>
+            <ul className="text-para text-base lg:text-xl list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>Consulting</li>
+              <li>Security</li>
+              <li>Implementation</li>
+              <li>Help desk services</li>
+              <li>Management and support</li>
+              <li>Migration</li>
+            </ul>
+          </div>
+          <img
+            src={eco}
+            alt="technology ecosystem"
+            className="mx-auto w-[450px] xlg:w-unset xlg:basis-2/5 "
+          />
         </div>
-          <img src={eco} alt="technology ecosystem" className='mx-auto w-[450px] xlg:w-unset xlg:basis-2/5 '/>
+      </section>
+
+      {/* ///////////////////////////////////*/}
+      <section className="section mb-32">
+        <h2 className="h2">Cooperation with us helps to</h2>
+        <div className="flex flex-col sm:flex-row justify-between gap-8">
+          <div className="shadow-3xl rounded-3xl p-6">
+            <img src={price} alt="budget icon" className="w-16 mb-7" />
+            <h3 className="h3 mb-6 sub-heading uppercase">Quick & Inexpensive</h3>
+            <p className="sub-para">
+              Save up to 40% in costs compared to in-house development and
+              reduce time to market up to 30%.
+            </p>
+          </div>
+          <div className="shadow-3xl rounded-3xl p-6">
+            <img src={price} alt="budget icon" className="w-16 mb-7" />
+            <h3 className="h3 mb-6 sub-heading uppercase">GET CUSTOM SERVICE</h3>
+            <p className="sub-para">
+            You are in the driver’s seat of your future product. If you want to execute a certain feature, we will make it happen for you.
+            </p>
+          </div>
+          <div className="shadow-3xl rounded-3xl p-6">
+            <img src={price} alt="budget icon" className="w-16 mb-7" />
+            <h3 className="h3 mb-6 sub-heading uppercase">INNOVATIVE SOLUTIONS</h3>
+            <p className="sub-para">
+            Benefit from our team's creative and forward-thinking approach to problem-solving
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -226,23 +265,37 @@ function ServicesSection() {
           })}
         </aside>
         {service === current.heading && (
-          <EachService heading={current.heading} desc={current.desc} list={current.list}/>
+          <EachService
+            heading={current.heading}
+            desc={current.desc}
+            list={current.list}
+          />
         )}
       </div>
       <div className="block lg:hidden">
-        {services.map((el,i)=>{
-          return <EachService heading={el.heading} desc={el.desc} list={el.list} containerStyles={"shadow-3xl px-4 py-8"} key={i}/>
+        {services.map((el, i) => {
+          return (
+            <EachService
+              heading={el.heading}
+              desc={el.desc}
+              list={el.list}
+              containerStyles={"shadow-3xl px-4 py-8"}
+              key={i}
+            />
+          );
         })}
       </div>
     </>
   );
 }
 
-function EachService({heading, desc, list, containerStyles}) {
+function EachService({ heading, desc, list, containerStyles }) {
   return (
-    <div className={"my-10 "+ containerStyles} >
-      <h3 className="h3 mb-10 text-sub-heading">{heading}</h3>
-      <p className="text-sub-para text-lg md:text-xl leading-8 mb-5 sm:mb-12">{desc}</p>
+    <div className={"my-10 " + containerStyles}>
+      <h3 className="sub-heading mb-10 text-sub-heading">{heading}</h3>
+      <p className="text-sub-para text-lg md:text-xl leading-8 mb-5 sm:mb-12">
+        {desc}
+      </p>
       <ul className="grid sm:grid-cols-2 text-lg md:text-xl gap-y-2 sm:gap-y-4 md:gap-y-8 gap-2  list-disc list-inside sm:text-sub-para">
         {list.map((li, i) => {
           return <li key={i}>{li}</li>;
@@ -251,4 +304,3 @@ function EachService({heading, desc, list, containerStyles}) {
     </div>
   );
 }
-
