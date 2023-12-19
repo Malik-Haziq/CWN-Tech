@@ -112,7 +112,7 @@ export function Home() {
           <img
             src={eco}
             alt="technology ecosystem"
-            className="mx-auto w-[450px] xlg:w-unset xlg:basis-2/5 "
+            className="mx-auto w-[450px] md:hidden xlg:inline-block xlg:w-unset xlg:basis-2/5 "
           />
         </div>
       </section>
@@ -120,8 +120,8 @@ export function Home() {
       {/* ///////////////////////////////////*/}
       <section className="section mb-32">
         <h2 className="h2">Cooperation with us helps to</h2>
-        <div className="flex flex-col sm:flex-row justify-between gap-8">
-          <div className="shadow-3xl rounded-3xl p-6">
+        <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap">
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={price} alt="budget icon" className="w-16 mb-7" />
             <h3 className="h3 mb-6 sub-heading uppercase">Quick & Inexpensive</h3>
             <p className="sub-para">
@@ -129,20 +129,28 @@ export function Home() {
               reduce time to market up to 30%.
             </p>
           </div>
-          <div className="shadow-3xl rounded-3xl p-6">
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={price} alt="budget icon" className="w-16 mb-7" />
             <h3 className="h3 mb-6 sub-heading uppercase">GET CUSTOM SERVICE</h3>
             <p className="sub-para">
             You are in the driver’s seat of your future product. If you want to execute a certain feature, we will make it happen for you.
             </p>
           </div>
-          <div className="shadow-3xl rounded-3xl p-6">
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={price} alt="budget icon" className="w-16 mb-7" />
             <h3 className="h3 mb-6 sub-heading uppercase">INNOVATIVE SOLUTIONS</h3>
             <p className="sub-para">
             Benefit from our team's creative and forward-thinking approach to problem-solving
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* /////////////////////////////////// */}
+      <section className="section mb-32">
+        <h2 className="h2">Our core clients are VC-backed startups</h2>
+        <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl">
+          
         </div>
       </section>
     </main>

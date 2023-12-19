@@ -11,7 +11,8 @@ export default {
         'xlg': '1140px',
       },
       boxShadow:{
-        '3xl': '0 2px 37px 0 rgba(0,0,0,.1)'
+        '3xl': '0 2px 37px 0 rgba(0,0,0,.1)',
+        'card': '0px 4px 60px 0px rgba(213, 213, 213, 0.40);'
       }
     },
     colors: {
