@@ -161,11 +161,11 @@ export function Home() {
         <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
           <img
             src={challenge}
-            alt="technology ecosystem"
+            alt="Problem solving"
             className="mx-auto w-[400px] md:hidden xlg:inline-block xlg:w-unset "
           />
           <div className="">
-            <h3 className="sub-heading mb-10 ">
+            <h3 className="sub-heading mb-10 xl:mb-14">
             Are you facing these challenges?
             </h3>
             <ul className="text-sub-para list-inside list-disc text-lg sm:text-xl lg:text-2xl">
@@ -175,6 +175,20 @@ export function Home() {
             </ul>
           </div>
         </div>
+      </section>
+
+      {/* /////////////////////// Who we are */}
+      <section className="section mb-32 flex">
+        <div>
+          <h2 className="h2">Who we are</h2>
+          <p>CWN Technologies is a full-cycle app & software development company which covers specific client business needs with the help of the best possible technology solutions.</p>
+          <p>Since 2018, we have been inventing digital solutions, helping startups and SMBs come out on top in their markets.</p>
+        </div>
+        <img
+            src={challenge}
+            alt="Problem solving"
+            className="mx-auto w-[400px] md:hidden xlg:inline-block xlg:w-unset "
+          />
       </section>
     </main>
   );
