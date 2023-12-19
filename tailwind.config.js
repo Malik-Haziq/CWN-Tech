@@ -9,6 +9,7 @@ export default {
     extend: {
       screens: {
         'xlg': '1140px',
+        'xm': '490px'
       },
       boxShadow:{
         '3xl': '0 2px 37px 0 rgba(0,0,0,.1)',

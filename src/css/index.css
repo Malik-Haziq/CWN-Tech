@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @layer components{
+  .h2{
+    @apply text-3xl lg:text-4xl font-semibold relative mb-16 orange-line;
+  }
+
+  .sub-heading{
+    @apply text-xl lg:text-2xl xl:text-3xl font-medium relative sub-orange-line sm:orange-line;
+  }
+
+  .h3{
+    @apply text-lg lg:text-xl xl:text-2xl font-medium relative sub-orange-line;
+  }
+}
+
+@layer utilities{
   .orange-line::after{
     content: '';
     @apply block w-14 h-1 absolute -bottom-4 bg-tertiary rounded-lg;
@@ -13,16 +27,9 @@
     @apply block w-14 h-1 absolute -bottom-3 bg-tertiary rounded-lg;
   }
 
-  .h2{
-    @apply text-3xl lg:text-4xl font-semibold relative mb-16 orange-line;
-  }
-
-  .sub-heading{
-    @apply text-xl lg:text-2xl xl:text-3xl font-medium relative orange-line;
-  }
-
-  .h3{
-    @apply text-lg lg:text-xl xl:text-2xl font-medium relative sub-orange-line;
+  .li::before{
+    content: '';
+    @apply block h-[10px] w-[10px] sm:w-3 sm:h-3 rounded-sm absolute left-1 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-main;
   }
 }
 

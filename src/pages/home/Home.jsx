@@ -1,4 +1,5 @@
 import eco from "@images/ecosystem.svg";
+import challenge from "@images/challenge/Problem solving-amico.svg";
 import homeBg from "@images/bg.webp";
 import Button from "@components/button/button";
 import cae from "@images/featured/cae.webp";
@@ -101,12 +102,12 @@ export function Home() {
               applications:
             </p>
             <ul className="text-para text-base lg:text-xl list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <li>Consulting</li>
-              <li>Security</li>
-              <li>Implementation</li>
-              <li>Help desk services</li>
-              <li>Management and support</li>
-              <li>Migration</li>
+              <li className="li relative">Consulting</li>
+              <li className="li relative">Security</li>
+              <li className="li relative">Implementation</li>
+              <li className="li relative">Help desk services</li>
+              <li className="li relative">Management and support</li>
+              <li className="li relative">Migration</li>
             </ul>
           </div>
           <img
@@ -120,27 +121,35 @@ export function Home() {
       {/* ///////////////////////////////////*/}
       <section className="section mb-32">
         <h2 className="h2">Cooperation with us helps to</h2>
-        <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap">
+        <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={price} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">Quick & Inexpensive</h3>
-            <p className="sub-para">
+            <h3 className="h3 mb-6 sub-heading uppercase">
+              Quick & Inexpensive
+            </h3>
+            <p className="text-sub-para ">
               Save up to 40% in costs compared to in-house development and
               reduce time to market up to 30%.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={price} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">GET CUSTOM SERVICE</h3>
-            <p className="sub-para">
-            You are in the driver’s seat of your future product. If you want to execute a certain feature, we will make it happen for you.
+            <h3 className="h3 mb-6 sub-heading uppercase">
+              GET CUSTOM SERVICE
+            </h3>
+            <p className="text-sub-para ">
+              You are in the driver’s seat of your future product. If you want
+              to execute a certain feature, we will make it happen for you.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={price} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">INNOVATIVE SOLUTIONS</h3>
-            <p className="sub-para">
-            Benefit from our team's creative and forward-thinking approach to problem-solving
+            <h3 className="h3 mb-6 sub-heading uppercase">
+              INNOVATIVE SOLUTIONS
+            </h3>
+            <p className="text-sub-para ">
+              Benefit from our team's creative and forward-thinking approach to
+              problem-solving
             </p>
           </div>
         </div>
@@ -149,8 +158,22 @@ export function Home() {
       {/* /////////////////////////////////// */}
       <section className="section mb-32">
         <h2 className="h2">Our core clients are VC-backed startups</h2>
-        <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl">
-          
+        <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
+          <img
+            src={challenge}
+            alt="technology ecosystem"
+            className="mx-auto w-[400px] md:hidden xlg:inline-block xlg:w-unset "
+          />
+          <div className="">
+            <h3 className="sub-heading mb-10 ">
+            Are you facing these challenges?
+            </h3>
+            <ul className="text-sub-para list-inside list-disc text-lg sm:text-xl lg:text-2xl">
+              <li className="mb-7 flex items-center"><div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div><p>Your project is not moving in the right direction?</p></li>
+              <li className="mb-7 flex items-center"><div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>You're struggling to build a team of in-house developers?</li>
+              <li className="mb-7 flex items-center"><div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>The cost of building a team of developers is skyrocketing?</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
