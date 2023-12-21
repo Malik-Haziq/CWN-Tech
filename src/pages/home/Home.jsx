@@ -166,12 +166,21 @@ export function Home() {
           />
           <div className="">
             <h3 className="sub-heading mb-10 xl:mb-14">
-            Are you facing these challenges?
+              Are you facing these challenges?
             </h3>
             <ul className="text-sub-para list-inside list-disc text-lg sm:text-xl lg:text-2xl">
-              <li className="mb-7 flex items-center"><div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div><p>Your project is not moving in the right direction?</p></li>
-              <li className="mb-7 flex items-center"><div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>You're struggling to build a team of in-house developers?</li>
-              <li className="mb-7 flex items-center"><div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>The cost of building a team of developers is skyrocketing?</li>
+              <li className="mb-7 flex items-center">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
+                <p>Your project is not moving in the right direction?</p>
+              </li>
+              <li className="mb-7 flex items-center">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
+                You're struggling to build a team of in-house developers?
+              </li>
+              <li className="mb-7 flex items-center">
+                <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
+                The cost of building a team of developers is skyrocketing?
+              </li>
             </ul>
           </div>
         </div>
@@ -181,14 +190,84 @@ export function Home() {
       <section className="section mb-32 flex flex-col lg:flex-row justify-between items-center">
         <div className="basis-1/2 text-lg md:text-xl">
           <h2 className="h2 mb-8 sm:mb-16">Who we are</h2>
-          <p className="text-sub-para mb-4">CWN Technologies is a full-cycle app & software development company which covers specific client business needs with the help of the best possible technology solutions.</p>
-          <p className="text-sub-para">Since 2018, we have been inventing digital solutions, helping startups and SMBs come out on top in their markets.</p>
+          <p className="text-sub-para mb-4">
+            CWN Technologies is a full-cycle app & software development company
+            which covers specific client business needs with the help of the
+            best possible technology solutions.
+          </p>
+          <p className="text-sub-para">
+            Since 2018, we have been inventing digital solutions, helping
+            startups and SMBs come out on top in their markets.
+          </p>
         </div>
         <img
-            src={challenge}
-            alt="Problem solving"
-            className="mx-auto w-[400px] xlg:w-unset "
-          />
+          src={challenge}
+          alt="Problem solving"
+          className="mx-auto w-[400px] xlg:w-unset "
+        />
+      </section>
+
+      {/* ///////////////////////  process */}
+      <section className="section mb-32">
+        <h2 className="h2">Process we follow</h2>
+        <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">1. Requirement Gathering</h3>
+            <p className="text-sub-para text-center">
+              We follow the first and foremost priority of gathering
+              requirements, resources, and information to begin our project.
+            </p>
+          </div>
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">2. UI/UX Design</h3>
+            <p className="text-sub-para text-center">
+              We create catchy and charming designs with the latest tools of
+              designing to make it a best user-friendly experience.
+            </p>
+          </div>
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">3. Prototype</h3>
+            <p className="text-sub-para text-center">
+              After designing, you will get your prototype, which will be sent
+              ahead for the development process for the product.
+            </p>
+          </div>
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">4. Development</h3>
+            <p className="text-sub-para text-center">
+              Development of mobile application/web/blockchain started using
+              latest tools and technologies with transparency.
+            </p>
+          </div>
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">5. Quality Assurance</h3>
+            <p className="text-sub-para text-center">
+              Hyperlink values quality and provides 100% bug free application
+              with no compromisation in it.
+            </p>
+          </div>
+          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">6. Deployment</h3>
+            <p className="text-sub-para text-center">
+              After trial and following all processes, your app is ready to
+              launch on the App store or Play Store.
+            </p>
+          </div>
+          <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
+            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">7. Support & Maintenance</h3>
+            <p className="text-sub-para text-center">
+              Our company offers you all support and the team is always ready to
+              answer every query after deployment.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );
