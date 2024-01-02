@@ -213,7 +213,9 @@ export function Home() {
         <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">1. Requirement Gathering</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              1. Requirement Gathering
+            </h3>
             <p className="text-sub-para text-center">
               We follow the first and foremost priority of gathering
               requirements, resources, and information to begin our project.
@@ -221,7 +223,9 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">2. UI/UX Design</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              2. UI/UX Design
+            </h3>
             <p className="text-sub-para text-center">
               We create catchy and charming designs with the latest tools of
               designing to make it a best user-friendly experience.
@@ -229,7 +233,9 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">3. Prototype</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              3. Prototype
+            </h3>
             <p className="text-sub-para text-center">
               After designing, you will get your prototype, which will be sent
               ahead for the development process for the product.
@@ -237,7 +243,9 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">4. Development</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              4. Development
+            </h3>
             <p className="text-sub-para text-center">
               Development of mobile application/web/blockchain started using
               latest tools and technologies with transparency.
@@ -245,7 +253,9 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">5. Quality Assurance</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              5. Quality Assurance
+            </h3>
             <p className="text-sub-para text-center">
               Hyperlink values quality and provides 100% bug free application
               with no compromisation in it.
@@ -253,7 +263,9 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">6. Deployment</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              6. Deployment
+            </h3>
             <p className="text-sub-para text-center">
               After trial and following all processes, your app is ready to
               launch on the App store or Play Store.
@@ -261,7 +273,9 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
             <img src={price} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">7. Support & Maintenance</h3>
+            <h3 className="mb-2 text-lg lg:text-xl font-medium">
+              7. Support & Maintenance
+            </h3>
             <p className="text-sub-para text-center">
               Our company offers you all support and the team is always ready to
               answer every query after deployment.
@@ -269,7 +283,96 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* ///////////////////////  Contact  */}
+      <section className="section mb-32 bg-main-mint">
+        <div className="py-16">
+          <h2 className="h2 mb-8">Let's Connect!</h2>
+          <p className="text-para mb-8">
+            Send us a message, and we'll promptly discuss your project with you.
+          </p>
+          <section className="flex flex-col lg:flex-row gap-10 lg:gap-20">
+            <form className="flex flex-col gap-8">
+              <textarea
+                cols="30"
+                rows="4"
+                placeholder="How we can help you?"
+                className="text-sub-para resize-none p-4 rounded-lg focus:outline-none max-w-[592px]"
+              ></textarea>
+              <div className="flex flex-col sm:flex-row gap-8">
+                <Input type={"text"} placeholder={"Full Name*"} />
+                <Input type={"email"} placeholder={"Work Email*"} />
+              </div>
+              <div className="flex flex-col sm:flex-row gap-8">
+                <Input type={"tel"} placeholder={"Work Phone"} />
+                <label className="text-sub-para text-sm flex items-center gap-2">
+                  <input type="checkbox" className="w-4 h-4" />
+                  <span>
+                    I agree with
+                    <a
+                      href="#"
+                      className="text-main hover:text-sub-para duration-500"
+                    >
+                      terms & conditions
+                    </a>
+                  </span>
+                </label>
+              </div>
+              <button className="cursor-pointer bg-main px-7 py-3 mt-2 uppercase font-semibold text-white rounded-lg duration-500 hover:bg-main-tint focus:bg-main-shade w-fit">
+                Get in touch
+              </button>
+            </form>
+            <div className="">
+              <h3 className="text-sub-heading font-medium text-3xl mb-6">
+                What’s next?
+              </h3>
+              <ol className=" flex flex-col gap-6 text-xl text-sub-para ">
+                <li className="flex items-center gap-4">
+                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
+                    1
+                  </div>
+                  <p>
+                    We start by signing an NDA to ensure your ideas are
+                    protected.
+                  </p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
+                    2
+                  </div>
+                  <p>Then, our team will analyze your requirements.</p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
+                    3
+                  </div>
+                  <p>You get a detailed project outline.</p>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
+                    4
+                  </div>
+                  <p>
+                    We bring your project to life, so you can focus on growing
+                    your business.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </section>
+        </div>
+      </section>
     </main>
+  );
+}
+
+function Input({ type, placeholder }) {
+  return (
+    <input
+      type={type}
+      className="border-none focus:outline-none p-4 rounded-lg text-sub-para"
+      placeholder={placeholder}
+    />
   );
 }
 

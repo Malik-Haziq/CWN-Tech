@@ -19,6 +19,7 @@ export default {
     colors: {
       'main': "#3EB7BB",
       'main-tint': "#66c9cc",
+      'main-tint-1': "#94D9DB",
       'main-shade': "#1E9799",
       'main-mint': "#f0f9fa",
       'main-dark': "#125F60",
