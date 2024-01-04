@@ -41,6 +41,7 @@ export function Home() {
           <Button
             text={"Let's discuss your project"}
             styles="px-4 sm:px-6 lg:px-10 py-4"
+            href="#contact"
           />
         </div>
       </header>

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components{
+  .h1{
+    @apply text-5xl lg:text-6xl font-bold mb-6 ;
+  }
+
   .h2{
     @apply text-3xl lg:text-4xl font-semibold relative mb-16 orange-line;
   }

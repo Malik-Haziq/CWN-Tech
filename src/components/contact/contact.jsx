@@ -1,5 +1,5 @@
 export default function Contact(){
-  return <section className="section bg-main-mint">
+  return <section className="section bg-main-mint" id="contact">
   <div className="py-16">
     <h2 className="h2 mb-8">Let's Connect!</h2>
     <p className="text-para mb-8">

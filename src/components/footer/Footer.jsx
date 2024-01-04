@@ -7,7 +7,6 @@ import youtube from "@icons/social-media/youtube.svg";
 import instagram from "@icons/social-media/instagram.svg";
 import x from "@icons/social-media/twitter.svg";
 
-
 export default function Footer() {
   return (
     <footer className="section">
