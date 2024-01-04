@@ -1,12 +1,12 @@
 export default function Contact(){
-  return <section className="section mb-32 bg-main-mint">
+  return <section className="section bg-main-mint">
   <div className="py-16">
     <h2 className="h2 mb-8">Let's Connect!</h2>
     <p className="text-para mb-8">
       Send us a message, and we'll promptly discuss your project with you.
     </p>
     <section className="flex flex-col lg:flex-row gap-10 lg:gap-20">
-      <form className="flex flex-col gap-8">
+      <form className="flex flex-col gap-8 basis-3/4">
         <textarea
           cols="30"
           rows="4"
@@ -36,11 +36,11 @@ export default function Contact(){
           Get in touch
         </button>
       </form>
-      <div className="">
+      <div className="basis-auto">
         <h3 className="text-sub-heading font-medium text-3xl mb-6">
           What’s next?
         </h3>
-        <ol className=" flex flex-col gap-6 text-xl text-sub-para ">
+        <ol className=" flex flex-col gap-6 text-lg lg:text-xl text-sub-para">
           <li className="flex items-center gap-4">
             <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
               1

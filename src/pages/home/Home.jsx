@@ -1,8 +1,6 @@
 import eco from "@images/ecosystem.svg";
 import challenge from "@images/challenge/Problem solving-amico.svg";
 import homeBg from "@images/bg.webp";
-import Button from "@components/button/button";
-import Contact from "@components/contact/contact";
 import cae from "@images/featured/cae.webp";
 import dextro from "@images/featured/dextro.webp";
 import doxy from "@images/featured/doxy.webp";
@@ -11,6 +9,11 @@ import realpage from "@images/featured/realpage.webp";
 import controlit from "@images/featured/controlit.webp";
 import speechagain from "@images/featured/speechagain.webp";
 import price from "@icons/services/budget.svg";
+
+import Button from "@components/button/button";
+import Contact from "@components/contact/contact";
+import Footer from '@components/footer/Footer'
+
 import { useState } from "react";
 
 export function Home() {
@@ -286,14 +289,13 @@ export function Home() {
       </section>
 
       {/* ///////////////////////  Contact  */}
-      <Contact/>
+      <Contact />
 
-      
+      {/* ///////////////////////   Footer */}
+      <Footer/>
     </main>
   );
 }
-
-
 
 function ServicesSection() {
   const [service, setService] = useState("Web Development");
