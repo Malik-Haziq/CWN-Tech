@@ -68,7 +68,7 @@ export default function Contact(){
             </div>
             <p>
               We bring your project to life, so you can focus on growing
-              your business.
+              your business. 
             </p>
           </li>
         </ol>
