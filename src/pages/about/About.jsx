@@ -1,5 +1,7 @@
-import Button from "@components/button/button";
 import Header from "@components/header/Header";
+import WhoAeAre from "@components/who-we-are/WhoWeAre";
+import Contact from "@components/contact/contact";
+import Footer from "@components/footer/Footer";
 
 import about from "@images/about/about-us.svg";
 
@@ -21,6 +23,24 @@ export function About() {
         img={about}
         imgAlt="About us image"
       />
+
+      {/* /////////////////////  Whom we serve */}
+      <section className="section mt-32">
+        <h2 className="h2">Whom we serve</h2>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
+          <div className="rounded-2xl border-2 py-4 px-5 shadow-card">
+            <h3 className="text-lg lg:text-xl xl:text-2xl font-medium ">Non-IT enterprises</h3>
+            <p>Services to improve business performance, optimize customer service, and tap in digital transformation.</p>
+          </div>
+        </div>
+      </section>
+      {/* ///////////////////  Who we are */}
+      <WhoAeAre />
+      {/* /////////////////////  contact */}
+      <Contact />
+
+      {/* /////////////////  Footer */}
+      <Footer />
     </main>
   );
 }
