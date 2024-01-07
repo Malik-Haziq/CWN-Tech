@@ -4,19 +4,22 @@
 
 @layer components{
   .h1{
-    @apply text-5xl lg:text-6xl font-bold mb-6 ;
+    @apply text-5xl lg:text-6xl font-bold mb-6;
   }
 
   .h2{
-    @apply text-3xl lg:text-4xl font-semibold relative mb-16 orange-line;
+    @apply text-3xl lg:text-4xl font-bold relative mb-16 orange-line;
   }
 
   .sub-heading{
-    @apply text-xl lg:text-2xl xl:text-3xl font-medium relative sub-orange-line sm:orange-line;
+    @apply text-xl lg:text-2xl xl:text-3xl font-semibold relative sub-orange-line sm:orange-line;
   }
 
   .h3{
-    @apply text-lg lg:text-xl xl:text-2xl font-medium relative sub-orange-line;
+    @apply text-lg lg:text-xl xl:text-2xl font-semibold relative sub-orange-line;
+  }
+  p,h3,h4,a{
+    @apply font-poppins;
   }
 }
 
