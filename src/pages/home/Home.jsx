@@ -32,13 +32,10 @@ export function Home() {
           </span>
           <h1 className="font-bold text-4xl lg:text-8xl md:text-7xl sm:text-5xl mb-2 xl:w-10/12">
             Your
-            <span className="text-main font-sumana font-bold">Product.</span>
+            <span className="text-main"> Product.</span>
             Your
-            <span className="text-main font-sumana font-bold"> Idea.</span> Our
-            <span className="text-main font-sumana font-bold">
-              
-              Innovation
-            </span>
+            <span className="text-main"> Idea.</span> Our
+            <span className="text-main"> Innovation </span>
             and Engineering.
           </h1>
           <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10">
@@ -211,9 +208,7 @@ export function Home() {
           <Button text="Book a Call" styles="bg-transparent text-black mb-5" />
           <p className="text-light text-center">
             Or, drop your details in the
-            <a href="#contact" className="text-[#ffc16b] font-semibold">
-              form
-            </a>
+            <a href="#contact" className="text-[#ffc16b] font-semibold"> form </a>
             below to share your requirements.
           </p>
         </div>
