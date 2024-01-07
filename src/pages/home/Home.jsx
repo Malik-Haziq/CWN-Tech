@@ -198,7 +198,7 @@ export function Home() {
       {/* /////////////////////////  Book a call */}
       <section className="section bg-main-shade mb-32  ">
         <div className="flex flex-col gap-3 items-center py-14">
-          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center text-secondary font-poppins max-w-[950px]">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center text-white font-poppins max-w-[950px]">
             Ready to Discuss Your Project? or Let's Discuss Your Project
           </h2>
           <p className="text-center text-light leading-7 mb-4 text-lg max-w-[900px]">
