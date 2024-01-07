@@ -12,7 +12,7 @@ import price from "@icons/services/budget.svg";
 
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
-import Footer from '@components/footer/Footer'
+import Footer from "@components/footer/Footer";
 import WhoAeAre from "@components/who-we-are/WhoWeAre";
 
 import { useState } from "react";
@@ -193,7 +193,7 @@ export function Home() {
       </section>
 
       {/* /////////////////////// Who we are */}
-      <WhoAeAre/>
+      <WhoAeAre />
 
       {/* ///////////////////////  process */}
       <section className="section mb-32">
@@ -276,7 +276,7 @@ export function Home() {
       <Contact />
 
       {/* ///////////////////////   Footer */}
-      <Footer/>
+      <Footer />
     </main>
   );
 }

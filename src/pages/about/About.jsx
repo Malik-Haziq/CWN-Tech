@@ -29,12 +29,12 @@ export function About() {
         <h2 className="h2">Whom we serve</h2>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1">
-            <h3 className="text-sub-heading text-xl xl:text-2xl font-medium mb-2">Non-IT enterprises</h3>
-            <p className="text-para">Empowering non-IT enterprises, we provide services aimed at enhancing business performance, optimizing customer service, and driving digital transformation initiatives.</p>
+            <h3 className="text-sub-heading text-xl xl:text-2xl font-medium mb-3">Non-IT enterprises</h3>
+            <p className="text-sub-para ">Empowering non-IT enterprises, we provide services aimed at enhancing business performance, optimizing customer service, and driving digital transformation initiatives.</p>
           </div>
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1"> 
             <h3 className="text-sub-heading text-xl xl:text-2xl font-medium mb-2">Software product companies</h3>
-            <p className="text-para">For software product companies, our services focus on accelerating time-to-market and rapidly attracting customers for their new products, ensuring a competitive edge in the market.</p>
+            <p className="text-sub-para">For software product companies, our services focus on accelerating time-to-market and rapidly attracting customers for their new products, ensuring a competitive edge in the market.</p>
           </div>
         </div>
       </section>
