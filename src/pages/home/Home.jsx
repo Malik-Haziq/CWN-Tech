@@ -31,9 +31,15 @@ export function Home() {
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
           <h1 className="font-bold text-4xl lg:text-8xl md:text-7xl sm:text-5xl mb-2 xl:w-10/12">
-            Your <span className="text-main font-sumana font-bold">Product.</span> Your
+            Your
+            <span className="text-main font-sumana font-bold">Product.</span>
+            Your
             <span className="text-main font-sumana font-bold"> Idea.</span> Our
-            <span className="text-main font-sumana font-bold"> Innovation</span> and Engineering.
+            <span className="text-main font-sumana font-bold">
+              
+              Innovation
+            </span>
+            and Engineering.
           </h1>
           <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10">
             Elevate your vision using our extensive range of software
@@ -195,11 +201,21 @@ export function Home() {
       {/* /////////////////////////  Book a call */}
       <section className="section bg-main-shade mb-32  ">
         <div className="flex flex-col gap-3 items-center py-14">
-
-        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center text-secondary font-poppins max-w-[950px]">Ready to Discuss Your Project? or Let's Discuss Your Project</h2>
-        <p className="text-center text-light leading-7 mb-4 text-lg max-w-[900px]">We're excited to help you achieve your goals and transform them into a top-notch digital solution. Claim your free consultation now!</p>
-        <Button text="Book a Call" styles="bg-transparent text-black mb-5"/>
-        <p className="text-light text-center">Or, drop your details in the <a href="#contact" className="text-[#ffc16b] font-semibold">form</a> below to share your requirements.</p>
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl text-center text-secondary font-poppins max-w-[950px]">
+            Ready to Discuss Your Project? or Let's Discuss Your Project
+          </h2>
+          <p className="text-center text-light leading-7 mb-4 text-lg max-w-[900px]">
+            We're excited to help you achieve your goals and transform them into
+            a top-notch digital solution. Claim your free consultation now!
+          </p>
+          <Button text="Book a Call" styles="bg-transparent text-black mb-5" />
+          <p className="text-light text-center">
+            Or, drop your details in the
+            <a href="#contact" className="text-[#ffc16b] font-semibold">
+              form
+            </a>
+            below to share your requirements.
+          </p>
         </div>
       </section>
 
