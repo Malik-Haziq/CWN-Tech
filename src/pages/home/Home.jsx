@@ -9,6 +9,11 @@ import realpage from "@images/featured/realpage.webp";
 import controlit from "@images/featured/controlit.webp";
 import speechagain from "@images/featured/speechagain.webp";
 import price from "@icons/services/budget.svg";
+import javascript from "@icons/stack/java-script.jpg";
+import react from "@icons/stack/React.png";
+import angular from "@icons/stack/angular.png";
+import bootstrap from "@icons/stack/bootstrap.png";
+import tailwind from "@icons/stack/tailwind.png";
 
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
@@ -96,7 +101,7 @@ export function Home() {
       {/* ///////////////////////  Explore Our Offering */}
 
       <section className="section mb-32">
-        <h2 className="h2">Explore Our Offering</h2>
+        <h2 className="h2">What we offer</h2>
         <ServicesSection />
       </section>
 
@@ -164,6 +169,26 @@ export function Home() {
           </div>
         </div>
       </section>
+
+        {/* //////////////////////  Technology */}
+        <section className="section mb-32">
+          <h2 className="h2">Technology Stack</h2>
+          <section>
+            <div className="flex flex-col sm:flex-row items-center flex-1 gap-16 border-b-2">
+              <div className="flex flex-col sm:flex-row items-center justify-center">
+                <img src="" alt="" />
+                <h3 className="text-xl font-semibold text-sub-heading ">Front-end</h3>
+              </div>
+              <div className="flex items-center gap-8 flex-wrap">
+                <img src={javascript} alt="javascript" className="h-8"/>
+                <img src={react} alt="react" className="h-8"/>
+                <img src={angular} alt="angular" className="h-8"/>
+                <img src={tailwind} alt="tailwind" className="h-8"/>
+                <img src={bootstrap} alt="bootstrap" className="h-8"/>
+              </div>
+            </div>
+          </section>
+        </section>
 
       {/* /////////////////////////////////// */}
       <section className="section mb-32">
