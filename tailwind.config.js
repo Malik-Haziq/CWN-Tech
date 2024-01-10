@@ -26,7 +26,7 @@ export default {
       'secondary': "#FAFAFA",
       'tertiary': "#ED8B00",
       
-      'heading': '#222222',
+      'heading': '#242323',
       'sub-heading': "#333333",
       'para': "#3B3C3D",
       'sub-para': "#616161",
