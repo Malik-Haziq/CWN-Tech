@@ -19,7 +19,7 @@ export default function WhoWeAre() {
       <img
         src={challenge}
         alt="Problem solving"
-        className="mx-auto w-[400px] xlg:w-unset "
+        className="w-[400px] xlg:w-unset "
       />
     </section>
   );
