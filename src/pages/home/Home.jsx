@@ -22,8 +22,6 @@ import WhoAeAre from "@components/who-we-are/WhoWeAre";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
 
-import { useState } from "react";
-
 export function Home() {
   return (
     <main className="font-">

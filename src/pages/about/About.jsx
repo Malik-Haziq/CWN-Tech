@@ -3,6 +3,7 @@ import WhoAeAre from "@components/who-we-are/WhoWeAre";
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
 import BookCall from "@components/book-call/BookCall";
+import Services from "@components/services/Services";
 
 
 import about from "@images/about/about-us.svg";
@@ -73,6 +74,8 @@ export function About() {
       </section>
       {/* ///////////////////  Who we are */}
       <WhoAeAre />
+      {/* /////////////////////  Services */}
+      <Services/>
       {/* /////////////////////  Book a call */}
       <BookCall />
       {/* /////////////////////  contact */}
