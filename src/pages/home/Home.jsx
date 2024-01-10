@@ -171,7 +171,7 @@ export function Home() {
       </section>
 
         {/* //////////////////////  Technology */}
-        <section className="section mb-32">
+        {/* <section className="section mb-32">
           <h2 className="h2">Technology Stack</h2>
           <section>
             <div className="flex flex-col sm:flex-row items-center flex-1 gap-16 border-b-2">
@@ -188,7 +188,7 @@ export function Home() {
               </div>
             </div>
           </section>
-        </section>
+        </section> */}
 
       {/* /////////////////////////////////// */}
       <section className="section mb-32">

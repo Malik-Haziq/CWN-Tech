@@ -2,6 +2,7 @@ import Header from "@components/header/Header";
 import WhoAeAre from "@components/who-we-are/WhoWeAre";
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
+import BookCall from "@components/book-call/BookCall";
 
 import about from "@images/about/about-us.svg";
 
@@ -41,6 +42,8 @@ export function About() {
       
       {/* ///////////////////  Who we are */}
       <WhoAeAre />
+      {/* /////////////////////  Book a call */}
+      <BookCall/>
       {/* /////////////////////  contact */}
       <Contact />
 
