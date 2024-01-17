@@ -22,7 +22,7 @@ export default function Contact(){
           <label className="text-sub-para text-sm flex items-center gap-2">
             <input type="checkbox" className="w-4 h-4" />
             <span>
-              I agree with
+              I agree with&nbsp;
               <a
                 href="#"
                 className="text-main hover:text-sub-para duration-500"
