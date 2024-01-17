@@ -68,6 +68,9 @@ export function Services() {
 
       {/* ///////////////  Contact */}
       <Contact/>
+
+      {/* ////////////////////   Footer */}
+      <Footer/>
     </main>
   );
 }
