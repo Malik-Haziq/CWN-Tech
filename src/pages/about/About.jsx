@@ -5,7 +5,6 @@ import Footer from "@components/footer/Footer";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
 
-
 import about from "@images/about/about-us.svg";
 import ourStory from "@images/about/our-story.svg" 
 
@@ -19,9 +18,7 @@ export function About() {
       {/* /////////////////  Header */}
       <Header
         heading="About us"
-        text="CWN Technologies is a full-cycle app & software development
-              company which covers specific client business needs and manage
-              them with the help of the best possible technology solutions."
+        text="With our full range of digital solutions and development services, we can bring your ideas to life and maximize your value in any market."
         buttonText="Contact Us"
         buttonHref="#contact"
         img={about}

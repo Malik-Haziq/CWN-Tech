@@ -25,6 +25,7 @@ export default {
       'main-dark': "#125F60",
       'secondary': "#FAFAFA",
       'tertiary': "#ED8B00",
+      'tertiary-shade': "#d17a01",
       
       'heading': '#242323',
       'sub-heading': "#333333",

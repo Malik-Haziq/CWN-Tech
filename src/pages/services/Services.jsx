@@ -1,3 +1,67 @@
+import Header from "@components/header/Header";
+import WhoAeAre from "@components/who-we-are/WhoWeAre";
+import Contact from "@components/contact/contact";
+import Footer from "@components/footer/Footer";
+import BookCall from "@components/book-call/BookCall";
+import ServicesSection from "@components/services/Services";
+
+import services from "@images/services/services.svg";
+import project from "@images/services/project-manger.svg";
+import webDevelopment from "@images/services/web-development.svg";
+
 export function Services() {
-  return <div>Services</div>;
+  const headerBg = {
+    background: `linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,
+  };
+  return (
+    <main>
+      {/* /////////////////  Header */}
+      <Header
+        heading="Services we provide"
+        text="CWN Technologies is a full-cycle app & software development
+              company which covers specific client business needs and manage
+              them with the help of the best possible technology solutions."
+        buttonText="Contact Us"
+        buttonHref="#contact"
+        img={services}
+        imgAlt="About us image"
+      />
+
+      {/* ///////////////  Our core Service */}
+      <section className="section mb-32">
+        <h2 className="h2">Our core Services</h2>
+        <div className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
+          <img
+            src={webDevelopment}
+            alt="Problem solving"
+            className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5"
+          />
+          <div className="basis-4/6 lg:basis-3/5 ">
+            <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
+              Web Development
+            </h3>
+            <p className="text-md sm:text-lg leading-7 text-para mb-16">We engineer dynamic and responsive websites that captivate audiences across devices. Our expertise encompasses the entire web development spectrum, from front-end design to back-end functionality.</p>
+            <a href="#" className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl ">Book a call</a>
+          </div>
+        </div>
+        <div className="flex flex-col-reverse items-center md:flex-row gap-5 lg:gap-20 bg-[#F6F7F8] px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl ">
+          <div className="basis-3/5 ">
+            <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
+            Project management
+            </h3>
+            <p className="text-md sm:text-lg leading-7 text-para mb-16">Effective coordination of the project is the foundation of its success. We provide services of well-equipped, highly proficient project managers.</p>
+            <a href="#" className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl ">Book a call</a>
+          </div>
+          <img
+            src={project}
+            alt="Problem solving"
+            className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/5"
+          />
+        </div>
+      </section>
+
+      {/* //////////////  Services */}
+      <ServicesSection/>
+    </main>
+  );
 }
