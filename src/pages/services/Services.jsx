@@ -66,7 +66,8 @@ export function Services() {
       {/* //////////////// Who we are */}
       <WhoAeAre/>
 
-      
+      {/* ///////////////  Contact */}
+      <Contact/>
     </main>
   );
 }
