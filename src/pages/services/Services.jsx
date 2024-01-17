@@ -40,17 +40,36 @@ export function Services() {
             <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
               Web Development
             </h3>
-            <p className="text-md sm:text-lg leading-7 text-para mb-16">We engineer dynamic and responsive websites that captivate audiences across devices. Our expertise encompasses the entire web development spectrum, from front-end design to back-end functionality.</p>
-            <a href="#" className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl ">Book a call</a>
+            <p className="text-md sm:text-lg leading-7 text-para mb-16">
+              We engineer dynamic and responsive websites that captivate
+              audiences across devices. Our expertise encompasses the entire web
+              development spectrum, from front-end design to back-end
+              functionality.
+            </p>
+            <a
+              href="#"
+              className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl "
+            >
+              Book a call
+            </a>
           </div>
         </div>
         <div className="flex flex-col-reverse items-center md:flex-row gap-5 lg:gap-20 bg-[#F6F7F8] px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl ">
           <div className="basis-3/5 ">
             <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
-            Project management
+              Project management
             </h3>
-            <p className="text-md sm:text-lg leading-7 text-para mb-16">Effective coordination of the project is the foundation of its success. We provide services of well-equipped, highly proficient project managers.</p>
-            <a href="#" className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl ">Book a call</a>
+            <p className="text-md sm:text-lg leading-7 text-para mb-16">
+              Effective coordination of the project is the foundation of its
+              success. We provide services of well-equipped, highly proficient
+              project managers.
+            </p>
+            <a
+              href="#"
+              className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl "
+            >
+              Book a call
+            </a>
           </div>
           <img
             src={project}
@@ -61,16 +80,16 @@ export function Services() {
       </section>
 
       {/* //////////////  Services */}
-      <ServicesSection/>
+      <ServicesSection />
 
       {/* //////////////// Who we are */}
-      <WhoAeAre/>
+      <WhoAeAre />
 
       {/* ///////////////  Contact */}
-      <Contact/>
+      <Contact />
 
       {/* ////////////////////   Footer */}
-      <Footer/>
+      <Footer />
     </main>
   );
 }
