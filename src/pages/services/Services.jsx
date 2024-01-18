@@ -10,9 +10,6 @@ import project from "@images/services/project-manger.svg";
 import webDevelopment from "@images/services/web-development.svg";
 
 export function Services() {
-  const headerBg = {
-    background: `linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,
-  };
   return (
     <main>
       {/* /////////////////  Header */}
@@ -28,7 +25,7 @@ export function Services() {
       />
 
       {/* ///////////////  Our core Service */}
-      <section className="section mb-32 mt-32">
+      <section className="section mb-32 md:mt-16">
         <h2 className="h2">Our core Services</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
           <img

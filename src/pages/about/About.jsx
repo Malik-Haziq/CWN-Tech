@@ -26,7 +26,7 @@ export function About() {
       />
 
       {/* /////////////////////  Whom we serve */}
-      <section className="section mt-32 mb-32">
+      <section className="section md:mt-16 mb-32">
         <h2 className="h2">Whom we serve</h2>
         <div className="flex flex-col sm:flex-row items-stretch justify-between gap-10">
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1">
