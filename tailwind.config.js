@@ -34,7 +34,8 @@ export default {
       'sub': "#B1B6B9",
       'white': "#FFFFFF",
       'black': "#000000",
-
+      
+      'light-gray': "#F6F7F8",
       'light': "#FAFAFA"
     },
     fontFamily: {

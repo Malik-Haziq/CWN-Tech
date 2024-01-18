@@ -3,6 +3,7 @@ import WhoAeAre from "@components/who-we-are/WhoWeAre";
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
 import BookCall from "@components/book-call/BookCall";
+import BookCallBtn from "@components/bookCallBtn/BookCallBtn";
 import ServicesSection from "@components/services/Services";
 
 import services from "@images/services/services.svg";
@@ -43,15 +44,10 @@ export function Services() {
               development spectrum, from front-end design to back-end
               functionality.
             </p>
-            <a
-              href="#"
-              className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl "
-            >
-              Book a call
-            </a>
+            <BookCallBtn/>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-center md:flex-row gap-5 lg:gap-20 bg-[#F6F7F8] px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl ">
+        <div className="flex flex-col-reverse items-center md:flex-row gap-5 lg:gap-20 bg-light-gray px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl ">
           <div className="basis-3/5 ">
             <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
               Project management
@@ -61,12 +57,7 @@ export function Services() {
               success. We provide services of well-equipped, highly proficient
               project managers.
             </p>
-            <a
-              href="#"
-              className="text-tertiary-shade hover:text-tertiary duration-200 border-b-[1px] text-xl "
-            >
-              Book a call
-            </a>
+            <BookCallBtn/>
           </div>
           <img
             src={project}
