@@ -24,7 +24,7 @@ export function Services() {
         buttonText="Contact Us"
         buttonHref="#contact"
         img={services}
-        imgAlt="About us image"
+        imgAlt="service image"
       />
 
       {/* ///////////////  Our core Service */}
