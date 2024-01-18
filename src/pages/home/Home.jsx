@@ -188,11 +188,11 @@ export function Home() {
       {/* /////////////////////////////////// */}
       <section className="section mb-32">
         <h2 className="h2">Our core clients are VC-backed startups</h2>
-        <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
+        <div className="flex flex-col items-center md:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
           <img
             src={challenge}
             alt="Problem solving"
-            className="mx-auto w-[400px] md:hidden xlg:inline-block xlg:w-unset "
+            className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset "
           />
           <div className="">
             <h3 className="sub-heading mb-10 xl:mb-14">

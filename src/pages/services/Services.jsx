@@ -28,7 +28,7 @@ export function Services() {
       />
 
       {/* ///////////////  Our core Service */}
-      <section className="section mb-32">
+      <section className="section mb-32 mt-32">
         <h2 className="h2">Our core Services</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
           <img
@@ -84,6 +84,9 @@ export function Services() {
 
       {/* //////////////// Who we are */}
       <WhoAeAre />
+
+      {/* /////////////////  Book a call */}
+      <BookCall/>
 
       {/* ///////////////  Contact */}
       <Contact />
