@@ -15,7 +15,7 @@ export function Services() {
     <main>
       {/* /////////////////  Header */}
       <Header
-        heading="Services we provide"
+        heading="Services"
         text="CWN Technologies is a full-cycle app & software development
               company which covers specific client business needs and manage
               them with the help of the best possible technology solutions."
