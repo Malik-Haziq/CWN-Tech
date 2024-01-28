@@ -12,7 +12,7 @@ export default function BookCall() {
           We're excited to help you achieve your goals and transform them into a
           top-notch digital solution. Claim your free consultation now!
         </p>
-        <Button text="Book a Call" styles="bg-transparent text-black mb-5" />
+        <Button text="Book a Call" styles="bg-transparent text-black mb-5" href={"https://calendly.com/malikhaziq153/30min"} />
         <p className="text-light text-center">
           Or, drop your details in the
           <a href="#contact" className="text-[#ffc16b] font-semibold">
