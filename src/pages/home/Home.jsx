@@ -14,6 +14,16 @@ import react from "@icons/stack/React.png";
 import angular from "@icons/stack/angular.png";
 import bootstrap from "@icons/stack/bootstrap.png";
 import tailwind from "@icons/stack/tailwind.png";
+import service from "@icons/benefits/service.png";
+import cost from "@icons/benefits/cost.png";
+import solution from "@icons/benefits/solution.png";
+import requirement from "@icons/process/requirment.png";
+import ui from "@icons/process/ux-design.png";
+import prototype from "@icons/process/prototype.png";
+import development from "@icons/process/development.png";
+import qa from "@icons/process/testing.png";
+import deployment from "@icons/process/deployment.png";
+import maintenance from "@icons/process/maintenance.png";
 
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
@@ -130,10 +140,10 @@ export function Home() {
 
       {/* ///////////////////////////////////*/}
       <section className="section mb-32">
-        <h2 className="h2">Cooperation with us helps to</h2>
+        <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={price} alt="budget icon" className="w-16 mb-7" />
+            <img src={cost} alt="budget icon" className="w-16 mb-7" />
             <h3 className="h3 mb-6 sub-heading uppercase">
               Quick & Inexpensive
             </h3>
@@ -143,9 +153,9 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={price} alt="budget icon" className="w-16 mb-7" />
+            <img src={service} alt="budget icon" className="w-16 mb-7" />
             <h3 className="h3 mb-6 sub-heading uppercase">
-              GET CUSTOM SERVICE
+              CUSTOM SERVICE
             </h3>
             <p className="text-sub-para ">
               You are in the driver’s seat of your future product. If you want
@@ -153,7 +163,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={price} alt="budget icon" className="w-16 mb-7" />
+            <img src={solution} alt="budget icon" className="w-16 mb-7" />
             <h3 className="h3 mb-6 sub-heading uppercase">
               INNOVATIVE SOLUTIONS
             </h3>
@@ -227,7 +237,7 @@ export function Home() {
         <h2 className="h2">Process we follow</h2>
         <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={requirement} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               1. Requirement Gathering
             </h3>
@@ -237,7 +247,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={ui} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               2. UI/UX Design
             </h3>
@@ -247,7 +257,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={prototype} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               3. Prototype
             </h3>
@@ -257,7 +267,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={development} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               4. Development
             </h3>
@@ -267,7 +277,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={qa} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               5. Quality Assurance
             </h3>
@@ -277,7 +287,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={deployment} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               6. Deployment
             </h3>
@@ -287,7 +297,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
-            <img src={price} alt="budget icon" className="w-16 mb-3" />
+            <img src={maintenance} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               7. Support & Maintenance
             </h3>
