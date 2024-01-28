@@ -47,7 +47,7 @@ export default function Navbar() {
             {navLinks.map((link, i) => {
               return <NavLink link={link} key={i} onToggleNav={toggleNav} />;
             })}
-            <Button text={"Get in Touch"} href={""} styles="sm:hidden w-fit"/>
+            <Button text={"Get in Touch"} href={"#contact"} styles="sm:hidden w-fit"/>
             <ContactInfo containerStyles={"sm:hidden bg-white"} />
           </ul>
         </div>
