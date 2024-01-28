@@ -17,7 +17,7 @@ import tailwind from "@icons/stack/tailwind.png";
 import service from "@icons/benefits/service.png";
 import cost from "@icons/benefits/cost.png";
 import solution from "@icons/benefits/solution.png";
-import requirement from "@icons/process/requirment.png";
+import requirement from "@icons/process/requirement.png";
 import ui from "@icons/process/ux-design.png";
 import prototype from "@icons/process/prototype.png";
 import development from "@icons/process/development.png";

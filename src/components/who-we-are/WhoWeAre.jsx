@@ -1,4 +1,4 @@
-import challenge from "@images/challenge/Problem solving-amico.svg";
+import team from "@images/team.svg";
 
 
 export default function WhoWeAre() {
@@ -17,7 +17,7 @@ export default function WhoWeAre() {
         </p>
       </div>
       <img
-        src={challenge}
+        src={team}
         alt="Problem solving"
         className="w-[400px] xlg:w-unset "
       />
