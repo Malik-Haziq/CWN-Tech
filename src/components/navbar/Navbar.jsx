@@ -18,12 +18,13 @@ export default function Navbar() {
   };
 
   const navLinks = [
+    { text: "Home", path: "/" },
     { text: "About", path: "/about" },
     { text: "Services", path: "/services" },
     { text: "Solutions", path: "/solutions" },
-    { text: "Portfolio", path: "/portfolio" },
-    { text: "Blogs", path: "/blogs" },
-    { text: "Company", path: "/company" },
+    // { text: "Portfolio", path: "/portfolio" },
+    // { text: "Blogs", path: "/blogs" },
+    // { text: "Company", path: "/company" },
   ];
 
   // TODO: add dropdown to nav links
@@ -39,8 +40,8 @@ export default function Navbar() {
           <ul
             className={
               isMenuOpen
-                ? "absolute pl-4 right-0 top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static"
-                : "absolute pl-4 right-full top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static"
+                ? "absolute pl-8 right-0 top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static"
+                : "absolute pl-8 right-full top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static"
             }
           >
             {navLinks.map((link, i) => {
@@ -51,7 +52,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex gap-4">
-          <Button text={"Get in Touch"} href={""} styles="hidden sm:block"/>
+          <Button text={"Get in Touch"} href={"#contact"} styles="hidden sm:block"/>
           <img
             src={isMenuOpen ? cross : menu}
             alt="menu"
