@@ -6,7 +6,7 @@ export default function Contact(){
       Send us a message, and we'll promptly discuss your project with you.
     </p>
     <section className="flex flex-col lg:flex-row gap-10 lg:gap-20">
-      <form className="flex flex-col gap-8 basis-3/4">
+      <form className="flex flex-col gap-8 basis-3/4" name="contact" netlify>
         <textarea
           cols="30"
           rows="4"
