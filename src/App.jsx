@@ -8,6 +8,7 @@ import {
   Portfolio,
   Company,
   Blogs,
+  PrivacyPolicy,
 } from "@pages";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </>
   );
