@@ -3,6 +3,7 @@ import "../../css/index.css";
 import logo from "@icons/logo.svg";
 import mail from "@icons/mail.svg";
 import phone from "@icons/phone.svg";
+import downArrow from "@icons/chivron-down.svg";
 import menu from "@icons/menu.svg";
 import cross from "@icons/cross.svg";
 import Button from "@components/button/button";
@@ -39,8 +40,8 @@ export default function Navbar() {
           <ul
             className={
               isMenuOpen
-                ? "absolute pl-8 right-0 top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static"
-                : "absolute pl-8 right-full top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static"
+                ? "absolute pl-8 right-0 top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static z-50"
+                : "absolute pl-8 right-full top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static z-50"
             }
           >
             {navLinks.map((link, i) => {
@@ -87,7 +88,7 @@ function ContactInfo({ containerStyles }) {
       }
     >
       <a
-        href="mailto:info@codewithnaqvi.com"
+        href="mailto:contact@codewithnaqvi.com"
         className="flex gap-2 items-center justify-center hover:text-black"
       >
         <img src={mail} alt="mail icon" className="w-5" />
