@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <img src={logo} alt="cwn logo" />
           <p className="text-sub-para">
-            4 Mann Island, Merseyside, Liverpool, England L3 1BP, United Kingdom
+            51-A Samsani Rd, Block F2 Block F 2 Phase 1 Johar Town, Lahore,
           </p>
         </div>
         <div>
@@ -70,7 +70,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/CodeNaqvi" target="_blank">
               <img src={x} alt="x icon" />
             </a>
           </li>

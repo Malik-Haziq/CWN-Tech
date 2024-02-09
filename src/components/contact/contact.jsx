@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Contact(){
   return <section className="section bg-main-mint" id="contact">
   <div className="py-16">
@@ -23,12 +25,12 @@ export default function Contact(){
             <input type="checkbox" className="w-4 h-4" />
             <span>
               I agree with&nbsp;
-              <a
-                href="#"
+              <Link
+                to="/privacy-policy"
                 className="text-main hover:text-sub-para duration-500"
               >
                 terms & conditions
-              </a>
+              </Link>
             </span>
           </label>
         </div>

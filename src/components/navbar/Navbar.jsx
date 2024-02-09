@@ -3,7 +3,6 @@ import "../../css/index.css";
 import logo from "@icons/logo.svg";
 import mail from "@icons/mail.svg";
 import phone from "@icons/phone.svg";
-import downArrow from "@icons/chivron-down.svg";
 import menu from "@icons/menu.svg";
 import cross from "@icons/cross.svg";
 import Button from "@components/button/button";
