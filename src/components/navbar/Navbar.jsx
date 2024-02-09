@@ -98,7 +98,7 @@ function ContactInfo({ containerStyles }) {
       </a>
       <a className="flex gap-1 items-center justify-center">
         <img src={phone} alt="phone icon" className="w-4" />
-        +923074485229
+        +923078875229
       </a>
       <a className="flex gap-1 items-center justify-center">
         <img src={phone} alt="phone icon" className="w-4" />

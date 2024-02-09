@@ -34,7 +34,7 @@ export default function Footer() {
             <li>
               <a className="flex gap-1 items-center justify-center">
                 <img src={phone} alt="phone icon" className="w-4" />
-                +92 3074485229
+                +92 3078875229
               </a>
             </li>
             <li>

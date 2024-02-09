@@ -539,8 +539,8 @@ export function PrivacyPolicy() {
           </li>
         </ul>
 
-        {/* ///////////// */}
       </div>
+      {/* ///////////// */}
       <Footer />
     </main>
   );
