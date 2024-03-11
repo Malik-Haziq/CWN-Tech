@@ -538,7 +538,6 @@ export function PrivacyPolicy() {
             <span>By phone number: +923054388079</span>
           </li>
         </ul>
-
       </div>
       {/* ///////////// */}
       <Footer />
