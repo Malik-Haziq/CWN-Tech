@@ -16,7 +16,7 @@ export function Services() {
       {/* /////////////////  Header */}
       <Header
         heading="Services"
-        text="CWN Technologies is a full-cycle app & software development
+        text="We are a software development
               company which covers specific client business needs and manage
               them with the help of the best possible technology solutions."
         buttonText="Contact Us"
@@ -44,7 +44,7 @@ export function Services() {
               development spectrum, from front-end design to back-end
               functionality.
             </p>
-            <BookCallBtn/>
+            <BookCallBtn />
           </div>
         </div>
         <div className="flex flex-col-reverse items-center md:flex-row gap-5 lg:gap-20 bg-light-gray px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl ">
@@ -57,7 +57,7 @@ export function Services() {
               success. We provide services of well-equipped, highly proficient
               project managers.
             </p>
-            <BookCallBtn/>
+            <BookCallBtn />
           </div>
           <img
             src={project}
@@ -74,7 +74,7 @@ export function Services() {
       <WhoAeAre />
 
       {/* /////////////////  Book a call */}
-      <BookCall/>
+      <BookCall />
 
       {/* ///////////////  Contact */}
       <Contact />

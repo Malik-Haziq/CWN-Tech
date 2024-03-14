@@ -1,5 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import {
   Home,
   About,
@@ -24,6 +24,7 @@ export default function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/company" element={<Company />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="*" element={<Navigate to={"./"} replace />} />
       </Routes>
     </>
   );
