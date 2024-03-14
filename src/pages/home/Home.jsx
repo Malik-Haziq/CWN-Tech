@@ -54,8 +54,8 @@ export function Home() {
             and Engineering.
           </h1>
           <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10">
-            Elevate your vision using our extensive range of software
-            development and expansion solutions.
+            We are committed to grow your business with modern technologies,
+            build software, scale software that delivers business value.
           </p>
           <Button
             text={"Let's discuss your project"}

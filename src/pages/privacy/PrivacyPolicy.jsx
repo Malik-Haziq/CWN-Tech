@@ -3,7 +3,7 @@ import Footer from "@components/footer/Footer";
 export function PrivacyPolicy() {
   return (
     <main>
-      <div class="section mx-auto p-8 mt-12">
+      <div className="section mx-auto p-8 mt-12">
         <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
         <p className="text-md mb-4 text-sub-para">
           Last updated: February 08, 2024

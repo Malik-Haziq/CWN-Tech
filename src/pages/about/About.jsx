@@ -6,7 +6,7 @@ import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
 
 import about from "@images/about/about-us.svg";
-import ourStory from "@images/about/our-story.svg" 
+import ourStory from "@images/about/our-story.svg";
 
 export function About() {
   const headerBg = {
@@ -18,7 +18,7 @@ export function About() {
       {/* /////////////////  Header */}
       <Header
         heading="About us"
-        text="With our full range of digital solutions and development services, we can bring your ideas to life and maximize your value in any market."
+        text="With our full range of digital solutions and development services, we can bring your ideas to life and grow your business to maximize your value in any market."
         buttonText="Contact Us"
         buttonHref="#contact"
         img={about}
@@ -62,10 +62,14 @@ export function About() {
         <div className="basis-1/2 text-lg md:text-xl">
           <h2 className="h2 mb-8 sm:mb-16">Our Story</h2>
           <p className="text-sub-para mb-4 leading-8">
-          Founded in 2018 by a teacher and student, CWN has evolved from a dynamic duo to a robust team of over 15 skilled professionals. With a commitment to innovation and client satisfaction, we transform ideas into impactful software solutions. 
+            Founded in 2018 by Toqeer Naqvi, CWN has evolved from a dynamic duo
+            to a robust team of over 15 skilled professionals. With a commitment
+            to innovation and client satisfaction, we transform ideas into
+            impactful software solutions.
           </p>
           <p className="text-sub-para leading-8">
-          Join us on our journey of growth and excellence in the ever-evolving world of software development.
+            Join us on our journey of growth and excellence in the ever-evolving
+            world of software development.
           </p>
         </div>
       </section>
@@ -77,26 +81,33 @@ export function About() {
       <section className="section mt-32 mb-32">
         <div className="flex flex-col sm:flex-row items-stretch justify-between gap-10">
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1">
-            <h2 className="h2 mb-10">
-              Our vision
-            </h2>
+            <h2 className="h2 mb-10">Our vision</h2>
             <p className="text-sub-para mb-4 leading-8 text-lg">
-            At CWN, our vision is to be a trailblazer in technological innovation, pushing the boundaries to shape a future where software solutions set new standards. We aspire to create a digital realm defined by efficiency, accessibility, and transformative possibilities, empowering businesses and individuals alike.
+              At CWN, our vision is to be a trailblazer in technological
+              innovation, pushing the boundaries to shape a future where
+              software solutions set new standards. We aspire to create a
+              digital realm defined by efficiency, accessibility, and
+              transformation possibilities, empowering businesses and
+              individuals.
             </p>
           </div>
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1 ">
-          <h2 className="h2 mb-10">
-              Our mission
-            </h2>
+            <h2 className="h2 mb-10">Our mission</h2>
             <p className="text-sub-para mb-4 leading-8 text-lg">
-            Our mission at CWN is to design and deliver cutting-edge, customized software solutions that not only meet current requirements but anticipate future demands. Through collaboration, transparency, and a relentless pursuit of excellence, we aim to build lasting partnerships, providing clients with reliable and scalable solutions that drive positive impact in the dynamic landscape of software development.
+              Our mission at CWN is to design and deliver customized software
+              solutions that not only meet current requirements but anticipate
+              future demands. Through collaboration, transparency, and a
+              relentless pursuit of excellence, we aim to build lasting
+              partnerships, providing clients with reliable and scalable
+              solutions that drive positive impact in the dynamic landscape of
+              software development.
             </p>
           </div>
         </div>
       </section>
 
       {/* /////////////////////  Services */}
-      <Services/>
+      <Services />
 
       {/* /////////////////////  Book a call */}
       <BookCall />
