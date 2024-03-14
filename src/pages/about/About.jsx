@@ -9,10 +9,6 @@ import about from "@images/about/about-us.svg";
 import ourStory from "@images/about/our-story.svg";
 
 export function About() {
-  const headerBg = {
-    background: `linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,
-  };
-
   return (
     <main>
       {/* /////////////////  Header */}
