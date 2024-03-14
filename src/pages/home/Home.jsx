@@ -9,21 +9,21 @@ import realpage from "@images/featured/realpage.webp";
 import controlit from "@images/featured/controlit.webp";
 import speechagain from "@images/featured/speechagain.webp";
 import price from "@icons/services/budget.svg";
-import javascript from "@icons/stack/java-script.jpg";
-import react from "@icons/stack/React.png";
-import angular from "@icons/stack/angular.png";
-import bootstrap from "@icons/stack/bootstrap.png";
-import tailwind from "@icons/stack/tailwind.png";
-import service from "@icons/benefits/service.png";
-import cost from "@icons/benefits/cost.png";
-import solution from "@icons/benefits/solution.png";
-import requirement from "@icons/process/requirement.png";
-import ui from "@icons/process/ux-design.png";
-import prototype from "@icons/process/prototype.png";
-import development from "@icons/process/development.png";
-import qa from "@icons/process/testing.png";
-import deployment from "@icons/process/deployment.png";
-import maintenance from "@icons/process/maintenance.png";
+import javascript from "@icons/stack/java-script.webp";
+import react from "@icons/stack/React.webp";
+import angular from "@icons/stack/angular.webp";
+import bootstrap from "@icons/stack/bootstrap.webp";
+import tailwind from "@icons/stack/tailwind.webp";
+import service from "@icons/benefits/service.webp";
+import cost from "@icons/benefits/cost.webp";
+import solution from "@icons/benefits/solution.webp";
+import requirement from "@icons/process/requirement.webp";
+import ui from "@icons/process/ux-design.webp";
+import prototype from "@icons/process/prototype.webp";
+import development from "@icons/process/development.webp";
+import qa from "@icons/process/testing.webp";
+import deployment from "@icons/process/deployment.webp";
+import maintenance from "@icons/process/maintenance.webp";
 
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
@@ -108,7 +108,7 @@ export function Home() {
       </section>
 
       {/* ///////////////////////  What we offer */}
-      <Services/>
+      <Services />
 
       {/* ////////////////////////  Ecosystem */}
       <section className="section mb-32">
@@ -154,9 +154,7 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={service} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">
-              CUSTOM SERVICE
-            </h3>
+            <h3 className="h3 mb-6 sub-heading uppercase">CUSTOM SERVICE</h3>
             <p className="text-sub-para ">
               You are in the driver’s seat of your future product. If you want
               to execute a certain feature, we will make it happen for you.
@@ -175,8 +173,8 @@ export function Home() {
         </div>
       </section>
 
-        {/* //////////////////////  Technology */}
-        {/* <section className="section mb-32">
+      {/* //////////////////////  Technology */}
+      {/* <section className="section mb-32">
           <h2 className="h2">Technology Stack</h2>
           <section>
             <div className="flex flex-col sm:flex-row items-center flex-1 gap-16 border-b-2">
@@ -227,7 +225,7 @@ export function Home() {
       </section>
 
       {/* /////////////////////////  Book a call */}
-      <BookCall/>
+      <BookCall />
 
       {/* /////////////////////// Who we are */}
       <WhoAeAre />
