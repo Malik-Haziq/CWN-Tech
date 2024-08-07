@@ -36,11 +36,18 @@ export default {
       'black': "#000000",
       
       'light-gray': "#F6F7F8",
-      'light': "#FAFAFA"
+      'light': "#FAFAFA",
+      'gray': "rgba(209,213,219,.5)",
+
+      'gray-border': "rgb(209,213,219)",
+
     },
     fontFamily: {
       sumana: ['"Sumana"', 'serif'],
       poppins: ['"Poppins"', 'sans-serif'],
+    },
+    backgroundImage: {
+      'linearBg': 'linear-gradient(90deg, rgba(148, 217, 219, .5), rgba(46, 208, 110, 0))',
     },
   },
   plugins: [],

@@ -1,13 +1,13 @@
 import eco from "@images/ecosystem.svg";
 import challenge from "@images/challenge/Problem solving-amico.svg";
 import homeBg from "@images/bg.webp";
-import cae from "@images/featured/cae.webp";
 import dextro from "@images/featured/dextro.webp";
 import doxy from "@images/featured/doxy.webp";
 import itrsoftware from "@images/featured/itrsoftware.webp";
 import realpage from "@images/featured/realpage.webp";
 import controlit from "@images/featured/controlit.webp";
 import speechagain from "@images/featured/speechagain.webp";
+import safeherit from "@images/featured/safeherit.svg";
 import price from "@icons/services/budget.svg";
 import javascript from "@icons/stack/java-script.webp";
 import react from "@icons/stack/React.webp";
@@ -67,10 +67,10 @@ export function Home() {
 
       {/* /////////////////////////////////////////  Featured section */}
       <section className="section mb-32">
-        <h2 className="h2">Featured Brands</h2>
+        <h2 className="h2">Our Clients</h2>
         <div className="flex justify-between flex-wrap gap-2">
           <img
-            src={cae}
+            src={safeherit}
             alt="cae"
             className="grayscale hover:grayscale-0 duration-200"
           />
@@ -174,24 +174,65 @@ export function Home() {
       </section>
 
       {/* //////////////////////  Technology */}
-      {/* <section className="section mb-32">
+      <section className="section mb-32">
           <h2 className="h2">Technology Stack</h2>
-          <section>
-            <div className="flex flex-col sm:flex-row items-center flex-1 gap-16 border-b-2">
-              <div className="flex flex-col sm:flex-row items-center justify-center">
-                <img src="" alt="" />
-                <h3 className="text-xl font-semibold text-sub-heading ">Front-end</h3>
+          <section className="flex flex-col sm:flex-row gap-8 sm:gap-16 sm:border-t-[1px] border-gray-border">
+            <div className="flex flex-row sm:flex-col gap-y-12 flex-wrap items-start justify-between gap-4 sm:gap-10 border-b-[1px] sm:border-b-0 sm:border-r-[1px] border-gray-border py-4 sm:py-10">
+              <div>
+                <a className="text-lg sm:text-xl xlg:text-2xl hover:border-b-2 sm:hover:border-b-0 font-semibold text-sub-heading sm:rounded-full sm:pl-8 sm:pr-24 xlg:pr-32 py-4 duration-100 sm:hover:bg-linearBg cursor-pointer">Frontend</a>
               </div>
-              <div className="flex items-center gap-8 flex-wrap">
-                <img src={javascript} alt="javascript" className="h-8"/>
-                <img src={react} alt="react" className="h-8"/>
-                <img src={angular} alt="angular" className="h-8"/>
-                <img src={tailwind} alt="tailwind" className="h-8"/>
-                <img src={bootstrap} alt="bootstrap" className="h-8"/>
+              <div>
+                <a className="text-lg sm:text-xl xlg:text-2xl hover:border-b-2 sm:hover:border-b-0 font-semibold text-sub-heading sm:rounded-full sm:pl-8 sm:pr-24 xlg:pr-32 py-4 duration-100 sm:hover:bg-linearBg cursor-pointer ">Backend</a>
               </div>
-            </div>
+              <div>
+                <a className="text-lg sm:text-xl xlg:text-2xl hover:border-b-2 sm:hover:border-b-0 font-semibold text-sub-heading sm:rounded-full sm:pl-8 sm:pr-24 xlg:pr-32 py-4 duration-100 sm:hover:bg-linearBg cursor-pointer ">Database</a>
+              </div>
+              <div>
+                <a className="text-lg sm:text-xl xlg:text-2xl hover:border-b-2 sm:hover:border-b-0 font-semibold text-sub-heading sm:rounded-full sm:pl-8 sm:pr-24 xlg:pr-32 py-4 duration-100 sm:hover:bg-linearBg cursor-pointer ">Mobile</a>
+              </div>
+              <div>
+                <a className="text-lg sm:text-xl xlg:text-2xl hover:border-b-2 sm:hover:border-b-0 font-semibold text-sub-heading sm:rounded-full sm:pl-8 sm:pr-24 xlg:pr-32 py-4 duration-100 sm:hover:bg-linearBg cursor-pointer ">CMS</a>
+              </div>  
+              </div>
+              <div className="flex flex-col gap-8 py-10">
+                <h3 className="text-xl xlg:text-2xl font-semibold text-sub-heading">Frontend</h3>
+                <div className="flex gap-6 flex-wrap">
+                  <div className="bg-gray py-3 px-6 rounded-full hover:bg-heading hover:text-white duration-200 cursor-default">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                  <div className="bg-gray py-3 px-6 rounded-full">
+                    {/* <img src={javascript} alt="" /> */}
+                    <p>Javascript</p>
+                  </div>
+                </div>
+              </div>
           </section>
-        </section> */}
+        </section>
 
       {/* /////////////////////////////////// */}
       <section className="section mb-32">
