@@ -8,12 +8,12 @@ import itrsoftware from "@images/featured/itrsoftware.webp";
 import realpage from "@images/featured/realpage.webp";
 import controlit from "@images/featured/controlit.webp";
 import speechagain from "@images/featured/speechagain.webp";
-import price from "@icons/services/budget.svg";
-import javascript from "@icons/stack/java-script.webp";
-import react from "@icons/stack/React.webp";
-import angular from "@icons/stack/angular.webp";
-import bootstrap from "@icons/stack/bootstrap.webp";
-import tailwind from "@icons/stack/tailwind.webp";
+// import price from "@icons/services/budget.svg";
+// import javascript from "@icons/stack/java-script.webp";
+// import react from "@icons/stack/React.webp";
+// import angular from "@icons/stack/angular.webp";
+// import bootstrap from "@icons/stack/bootstrap.webp";
+// import tailwind from "@icons/stack/tailwind.webp";
 import service from "@icons/benefits/service.webp";
 import cost from "@icons/benefits/cost.webp";
 import solution from "@icons/benefits/solution.webp";
@@ -31,6 +31,12 @@ import Footer from "@components/footer/Footer";
 import WhoAeAre from "@components/who-we-are/WhoWeAre";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
+import WhyChooseUS from "../../components/why-choose-us/WhyChooseUs";
+import Awards from "../../components/Awards/Awards";
+import Certificates from "../../components/Certificates/certificates";
+import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
+
+
 
 export function Home() {
   return (
@@ -58,13 +64,19 @@ export function Home() {
             build software, scale software that delivers business value.
           </p>
           <Button
-            text={"Let's discuss your project"}
+            text={"Let'apos discuss your project"}
             styles="px-4 sm:px-6 lg:px-10 py-4"
             href="#contact"
           />
         </div>
       </header>
 
+      <WhyChooseUS />
+      <Awards />
+      <Certificates />
+      <Whatsapp />
+      
+      
       {/* /////////////////////////////////////////  Featured section */}
       <section className="section mb-32">
         <h2 className="h2">Featured Brands</h2>
@@ -166,8 +178,8 @@ export function Home() {
               INNOVATIVE SOLUTIONS
             </h3>
             <p className="text-sub-para ">
-              Benefit from our team's creative and forward-thinking approach to
-              problem-solving
+              Benefit from our team&apos;s creative and forward-thinking
+              approach to problem-solving
             </p>
           </div>
         </div>
@@ -213,7 +225,7 @@ export function Home() {
               </li>
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                You're struggling to build a team of in-house developers?
+                You&apos;re struggling to build a team of in-house developers?
               </li>
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>

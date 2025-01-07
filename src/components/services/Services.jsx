@@ -1,10 +1,13 @@
 import { useState } from "react";
+import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
+
 
 export default function Services() {
   return (
     <section className="section mb-32">
       <h2 className="h2">What we offer</h2>
       <ServicesSection />
+      <Whatsapp />
     </section>
   );
 }

@@ -7,6 +7,7 @@ import Services from "@components/services/Services";
 
 import about from "@images/about/about-us.svg";
 import ourStory from "@images/about/our-story.svg";
+import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 
 export function About() {
   const headerBg = {
@@ -24,6 +25,8 @@ export function About() {
         img={about}
         imgAlt="About us image"
       />
+
+      <Whatsapp />
 
       {/* /////////////////////  Whom we serve */}
       <section className="section md:mt-16 mb-32">

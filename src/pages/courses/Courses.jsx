@@ -1,10 +1,14 @@
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
 import BookCall from "@components/book-call/BookCall";
+import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
+
 
 export function Courses() {
   return (
     <main>
+
+      
       {/* YouTube Courses Section */}
       <section className="section mt-32 mb-32">
         <h1 className=" h1 mb-8">Learn from Our YouTube Channel</h1>
@@ -47,6 +51,8 @@ export function Courses() {
           />
         </div>
       </section>
+      <Whatsapp />
+
 
       {/* Book a call */}
       <BookCall />
