@@ -1,19 +1,20 @@
-import people from "../../assets/images/choose us/people.webp";
+import people from "../../assets/images/choose us/team.jpg";
 import arrow from "../../assets/images/choose us/arrow.svg";
+import { Link } from "react-router-dom";
 
 export default function WhyChooseUS() {
   return (
-    <section className="px-6 md:px-12 lg:px-20 xl:px-44 py-10 md:py-20 flex flex-col lg:flex-row gap-6">
+    <section className="section mb-32 flex flex-col lg:flex-row gap-6">
       {/* Left Section */}
       <div className="w-full lg:w-2/4 bg-main p-6 md:p-12 rounded-xl text-white">
-        <div className="flex justify-between items-center mb-6 md:mb-8 border-b pb-3 md:pb-5">
-          <h2 className="text-2xl md:text-4xl font-medium">Who we are</h2>
-          <a
-            href="#"
-            className="bg-white py-2 px-4 md:p-3 md:px-6 rounded-md text-main"
+        <div className="flex justify-between items-center mb-6 md:mb-8 border-b-2 border-main-tint-1 pb-2 md:pb-4">
+          <h3 className="text-2xl md:text-4xl font-medium">Who we are</h3>
+          <Link
+            to="/about-us"
+            className="bg-white hover:bg-main-mint py-2 px-4 md:p-3 md:px-6 rounded-md text-main hover:text-main-shade font-semibold duration-150"
           >
             About us
-          </a>
+          </Link>
         </div>
         <div>
           <p className="text-base md:text-lg mb-4">
@@ -33,9 +34,9 @@ export default function WhyChooseUS() {
         <img
           src={people}
           alt="people"
-          className="w-full max-w-xl lg:max-w-full mb-4 lg:mb-6 mx-auto"
+          className="w-full max-w-xl mb-4 lg:mb-6 h-fit"
         />
-        <div className="bg-main-tint-1 p-6 md:p-8 px-4 md:px-6 rounded-xl">
+        <div className="bg-main p-6 md:p-8 px-4 md:px-6 rounded-xl">
           <div className="flex justify-between items-center mb-4 md:mb-6">
             <h2 className="text-lg md:text-2xl font-medium text-white">
               Why choose us
@@ -47,27 +48,27 @@ export default function WhyChooseUS() {
               <p className="text-para text-sm md:text-base">
                 Products delivered:
               </p>
-              <p className="text-main text-lg font-medium">150+</p>
+              <p className="text-main text-lg font-medium">120+</p>
             </div>
             <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
               <p className="text-para text-sm md:text-base">
-                Products delivered:
+                Years on the market:
               </p>
-              <p className="text-main text-lg font-medium">150+</p>
+              <p className="text-main text-lg font-medium">10</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-4">
             <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
               <p className="text-para text-sm md:text-base">
-                Products delivered:
+                Client satisfaction rate:
               </p>
-              <p className="text-main text-lg font-medium">150+</p>
+              <p className="text-main text-lg font-medium">99.9%</p>
             </div>
             <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
               <p className="text-para text-sm md:text-base">
-                Products delivered:
+                Awards & certifications:
               </p>
-              <p className="text-main text-lg font-medium">150+</p>
+              <p className="text-main text-lg font-medium">20+</p>
             </div>
           </div>
         </div>

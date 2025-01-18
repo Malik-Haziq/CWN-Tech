@@ -9,7 +9,7 @@ import microsoft from "../../assets/images/certificates/microsoft.svg";
 export default function Awards() {
   return (
     <>
-      <section className="py-2 p-44 mb-12 flex gap-4">
+      <section className="section flex gap-4">
         <div className="bg-main py-6 px-6 rounded-lg w-6/12">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-4xl font-medium text-white">Inc. 5000</h2>

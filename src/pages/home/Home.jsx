@@ -33,10 +33,8 @@ import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
 import WhyChooseUS from "../../components/why-choose-us/WhyChooseUs";
 import Awards from "../../components/Awards/Awards";
-import Certificates from "../../components/Certificates/certificates";
+// import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
-
-
 
 export function Home() {
   return (
@@ -71,12 +69,6 @@ export function Home() {
         </div>
       </header>
 
-      <WhyChooseUS />
-      <Awards />
-      <Certificates />
-      <Whatsapp />
-      
-      
       {/* /////////////////////////////////////////  Featured section */}
       <section className="section mb-32">
         <h2 className="h2">Featured Brands</h2>
@@ -184,6 +176,11 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      <WhyChooseUS />
+      <Awards />
+      {/* <Certificates /> */}
+      <Whatsapp />
 
       {/* //////////////////////  Technology */}
       {/* <section className="section mb-32">

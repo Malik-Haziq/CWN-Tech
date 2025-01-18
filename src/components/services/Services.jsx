@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 
-
 export default function Services() {
   return (
     <section className="section mb-32">
@@ -160,7 +159,7 @@ function EachService({ heading, desc, list, containerStyles }) {
         {desc}
       </p>
       <ul className="grid sm:grid-cols-2 text-lg md:text-xl gap-y-2 sm:gap-y-4 md:gap-y-8 gap-2  list-disc list-inside sm:text-sub-para">
-        {list.map((li, i) => {
+        {list?.map((li, i) => {
           return <li key={i}>{li}</li>;
         })}
       </ul>
