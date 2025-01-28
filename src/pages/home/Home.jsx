@@ -35,6 +35,10 @@ import WhyChooseUS from "../../components/why-choose-us/WhyChooseUs";
 import Awards from "../../components/Awards/Awards";
 // import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
+import image1 from "../home/1.jpeg";
+import image2 from "../home/2.jpeg";
+import image3 from "../home/3.jpeg";
+import image4 from "../home/screen.png";
 
 export function Home() {
   return (
@@ -141,8 +145,68 @@ export function Home() {
           />
         </div>
       </section>
-
-      {/* ///////////////////////////////////*/}
+      <section className=" m-12">
+        <h2 className="text-center text-4xl font-bold mb-7">
+          Are you facing these challenges?
+        </h2>
+        <div className="cards flex gap-10  ">
+          <div className="card shadow-2xl p-5 border border-main  ms-3 rounded-lg">
+            <h4 className="text-main-dark text-lg font-semibold mb-5">
+              Regulatory Compliance
+            </h4>
+            <p className="mb-4">
+              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
+              from the start.
+            </p>
+            <img src={image1} alt="" className="w-80" />
+          </div>
+          <div className="card shadow-2xl p-5 border border-main rounded-lg">
+            <h4 className="text-main-dark text-lg font-semibold mb-5">
+              High Cost of In-House Team
+            </h4>
+            <p className="mb-4">
+              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
+              from the start.
+            </p>
+            <img src={image2} alt="" className=" w-96 bg-tertiary" />
+          </div>
+          <div className="card shadow-2xl p-5 border border-main rounded-lg">
+            <h4 className="text-main-dark text-lg font-semibold mb-5">
+              Looking for a Reliable Partner
+            </h4>
+            <p className="mb-4">
+              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
+              from the start.
+            </p>
+            <img src={image3} alt="" className=" w-96 " />
+          </div>
+        </div>
+      </section>
+      <section className="m-24 mb-8 bg-light-gray rounded ">
+        <div className=" flex justify-around shadow-xl p-3 ">
+          <div className="text">
+            <h2 className=" text-4xl font-bold mb-5">
+              Estimate cost of<br></br> development
+            </h2>
+            <p className=" mb-8 text-base ">
+              Don't let financial uncertainties limit you.
+            </p>
+            <a
+              href="#"
+              className="text-main-mint bg-main rounded-lg p-5 text-xl "
+            >
+              {" "}
+              Get Your Calaulation{" "}
+            </a>
+          </div>
+          <img src={image4} alt="" className="w-60" />
+          <h4 className="text-xl">
+            Our <span className="text-tertiary "> smart developers</span> build
+            <br></br> innovative, efficient, and high<br></br>-performance
+            solutions.
+          </h4>
+        </div>
+      </section>
       <section className="section mb-32">
         <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
