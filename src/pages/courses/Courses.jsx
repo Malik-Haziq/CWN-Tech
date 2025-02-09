@@ -9,6 +9,14 @@ import image4 from "../courses/js.jpeg";
 import image5 from "../courses/rails.jpeg";
 import image6 from "../courses/ruby.jpeg";
 import image7 from "../courses/c++.jpeg";
+import image8 from "../courses/haider.jpg";
+import image9 from "../courses/haziq.jpg";
+
+
+
+
+
+
 
 
 
@@ -19,7 +27,7 @@ export function Courses() {
   return (
     <main>
 
-      
+
       {/* YouTube Courses Section */}
       <header>
         <div className="m-20 flex justify-between" >
@@ -43,16 +51,16 @@ export function Courses() {
           <h2 className="mb-5 text-white text-2xl font-semibold p-5">Pakistan's Most Loved Coding Community ❤️</h2>
           <div className="flex justify-center gap-24 text-white">
             <div>
-              <h3 className="text-2xl">6,000,000+</h3>
+              <h3 className="text-2xl">1,000,000+</h3>
               <p className="text-xl font-semibold">Happy Learners</p>
             </div>
             <div>
-              <h3 className="text-2xl">2 CRORE+</h3>
+              <h3 className="text-2xl">10000+</h3>
               <p className="text-xl font-semibold">monthly views
               </p>
             </div>
             <div>
-              <h3 className="text-2xl">100,000+
+              <h3 className="text-2xl">10000+
               </h3>
               <p className="text-xl font-semibold"> monthly subscribers
               </p>
@@ -62,121 +70,133 @@ export function Courses() {
         </div>
         <div className="text-center m-10">
           <h2 className="text-main text-xl mb-4">New PLACEMENT PREP Batch🔥</h2>
-          <h5 className="text-2xl font-semibold mb-4">Sigma 6.0 : Development + DSA + Aptitude</h5>
+          <h5 className="text-2xl font-semibold mb-4">Sigma 1.0 : Full Stack Development</h5>
           <p className="mb-7 text-xl font-light">Start your placement preparation today!</p>
-          <a href="" className="bg-main p-3 text-white text-xl ">Explore More</a>
+          <a href="" className="bg-main p-3 text-white text-xl rounded ">Explore More</a>
         </div>
       </header>
       <section className="mb-10">
-      <h2 className="text-center text-3xl m-5 font-semibold pt-14">Level up your web development skills</h2>
-      <div className="flex gap-10 justify-center">
+        <h2 className="text-center text-3xl m-5 font-semibold pt-14">Level up your web development skills</h2>
+        <div className="flex gap-10 justify-center">
 
 
-        <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
-          <a href="#">
-            <img class="rounded-t-lg" src={image2} alt="" />
-          </a>
-          <div class="p-5">
+          <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
             <a href="#">
-              <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative HTML5 & CSS3 Course</h3>
+              <img class="rounded-t-lg " src={image2} alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="https://www.youtube.com/watch?v=VZHA_JHhyTw&list=PL9WbyKqkuCAY9qhsoZpdqq62ZrjY2y-2P" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              View Courses
+            <div class="p-5">
+              <a href="#">
+                <h3 class="mb-2 text-2xl font-bold tracking-tight  ">
+                  The Creative HTML 5 Course
+                </h3>
 
-            </a>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">HTML (HyperText Markup Language) is the standard language used to structure and display web content.
+              </p>
+              <a href="https://www.youtube.com/watch?v=VZHA_JHhyTw&list=PL9WbyKqkuCAY9qhsoZpdqq62ZrjY2y-2P" target="_blank" class="test-color  inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                View Courses
+
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
-          <a href="#">
-            <img class="rounded-t-lg" src={image3} alt="" />
-          </a>
-          <div class="p-5">
+          <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
             <a href="#">
-              <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative JavaScript Course</h3>
+              <img class="rounded-t-lg" src={image3} alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="https://www.youtube.com/watch?v=BhRekLm9k6E&list=PL9WbyKqkuCAaxrlsDs3y87Ckp0L6qQdIE" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            View Courses
-            </a>
+            <div class="p-5">
+              <a href="#">
+                <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative CSS 3 Course</h3>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">CSS (Cascading Style Sheets) is used to style and layout web pages, controlling visual presentation.
+              </p>
+              <a href="https://www.youtube.com/watch?v=BhRekLm9k6E&list=PL9WbyKqkuCAaxrlsDs3y87Ckp0L6qQdIE" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                View Courses
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
-          <a href="#">
-            <img class="rounded-t-lg" src={image4} alt="" />
-          </a>
-          <div class="p-5">
+          <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
             <a href="#">
-              <h3 class="mb-2 text-2xl font-bold">The Creative React JS Course</h3>
+              <img class="rounded-t-lg" src={image4} alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="https://www.youtube.com/watch?v=oC2NQVvhzTk&list=PL9WbyKqkuCAajVIrT9lFBQduvh9P7tGSb" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            View Courses
+            <div class="p-5">
+              <a href="#">
+                <h3 class="mb-2 text-2xl font-bold">The Creative  JS Course</h3>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">JavaScript is a versatile programming language used primarily for creating interactive and dynamic web content.
+              </p>
+              <a href="https://www.youtube.com/watch?v=oC2NQVvhzTk&list=PL9WbyKqkuCAajVIrT9lFBQduvh9P7tGSb" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                View Courses
 
-            </a>
+              </a>
+            </div>
           </div>
+
+
         </div>
+        <div className="flex gap-10 justify-center mt-10">
 
 
-      </div>
-      <div className="flex gap-10 justify-center mt-10">
-
-
-        <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
-          <a href="#">
-            <img class="rounded-t-lg" src={image5} alt="" />
-          </a>
-          <div class="p-5">
+          <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
             <a href="#">
-              <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative HTML5 & CSS3 Course</h3>
+              <img class="rounded-t-lg" src={image5} alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="https://www.youtube.com/watch?v=XEd4mZHUHDo&list=PL9WbyKqkuCAaRg4Z2_T-TSm7k2MZlCBKZ" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            View Courses
+            <div class="p-5">
+              <a href="#">
+                <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative Ruby Course</h3>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ruby is a dynamic, object-oriented programming language known for its simplicity, readability, and flexibility.
+              </p>
+              <a href="https://www.youtube.com/watch?v=XEd4mZHUHDo&list=PL9WbyKqkuCAaRg4Z2_T-TSm7k2MZlCBKZ" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                View Courses
 
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
-          <a href="#">
-            <img class="rounded-t-lg" src={image6} alt="" />
-          </a>
-          <div class="p-5">
+          <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
             <a href="#">
-              <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative JavaScript Course</h3>
+              <img class="rounded-t-lg" src={image6} alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="https://www.youtube.com/watch?v=bT0DP3i3tlw&list=PL9WbyKqkuCAYT-IPvo5PxR_hijMuR1RCB" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            View Courses
+            <div class="p-5">
+              <a href="#">
+                <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Creative Rails Course</h3>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Ruby on Rails is a web development framework simplifying database-driven applications using Ruby language.
+              </p>
+              <a href="https://www.youtube.com/watch?v=bT0DP3i3tlw&list=PL9WbyKqkuCAYT-IPvo5PxR_hijMuR1RCB" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                View Courses
 
-            </a>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
-          <a href="#">
-            <img class="rounded-t-lg" src={image7} alt="" />
-          </a>
-          <div class="p-5">
+          <div class="max-w-sm bg-red  rounded-lg shadow-2xl">
             <a href="#">
-              <h3 class="mb-2 text-2xl font-bold">The Creative React JS Course</h3>
+              <img class="rounded-t-lg " src={image7} alt="" />
             </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="https://www.youtube.com/watch?v=O5WedYY4bnI&list=PL9WbyKqkuCAbuaSfkGOVxaKfWQe3OkFcm" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            View Courses
+            <div class="p-5">
+              <a href="#">
+                <h3 class="mb-2 text-2xl font-bold">The Creative C++ Course</h3>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">C++ is a high-performance, object-oriented programming language used for system software, games, and applications.
+              </p>
+              <a href="https://www.youtube.com/watch?v=O5WedYY4bnI&list=PL9WbyKqkuCAbuaSfkGOVxaKfWQe3OkFcm" target="_blank" class="test-color inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-main rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                View Courses
 
-            </a>
+              </a>
+            </div>
           </div>
+
+
         </div>
-
-
-      </div>
       </section>
+
+
+
       <Whatsapp />
 
 
-     
+
       {/* Book a call */}
       <BookCall />
 
