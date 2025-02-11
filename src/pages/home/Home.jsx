@@ -35,10 +35,9 @@ import WhyChooseUS from "../../components/why-choose-us/WhyChooseUs";
 import Awards from "../../components/Awards/Awards";
 // import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
-import image1 from "../home/1.jpeg";
-import image2 from "../home/2.jpeg";
-import image3 from "../home/3.jpeg";
-import image4 from "../home/screen.png";
+import challengeImg1 from "../../assets/images/challenge/img.svg";
+import challengeImg2 from "../../assets/images/challenge/img-2.svg";
+import challengeImg3 from "../../assets/images/challenge/img-3.svg";
 
 export function Home() {
   return (
@@ -145,84 +144,76 @@ export function Home() {
           />
         </div>
       </section>
-      <section className=" m-12">
-        <h2 className="text-center text-4xl font-bold mb-7">
-          Are you facing these challenges?
-        </h2>
-        <div className="cards flex gap-10  ">
-          <div className="card shadow-2xl p-5 border border-main  ms-3 rounded-lg">
-            <h4 className="text-main-dark text-lg font-semibold mb-5">
+      {/* ////////////////////////  Challenges you face   */}
+
+      <section className="section mb-32">
+        <h2 className="h2">Are you facing these challenges?</h2>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
+            <h3 className="text-sub-heading text-lg font-semibold mb-3">
               Regulatory Compliance
-            </h4>
-            <p className="mb-4">
+            </h3>
+            <p className="mb-6">
               We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
               from the start.
             </p>
-            <img src={image1} alt="" className="w-80" />
+            <img
+              src={challengeImg1}
+              alt="Regulatory compliance image"
+              className="mx-auto"
+            />
           </div>
-          <div className="card shadow-2xl p-5 border border-main rounded-lg">
-            <h4 className="text-main-dark text-lg font-semibold mb-5">
+          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
+            <h4 className="text-sub-heading text-lg font-semibold mb-3">
               High Cost of In-House Team
             </h4>
-            <p className="mb-4">
-              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
-              from the start.
+            <p className="mb-6">
+              Our outsourcing offers top-tier development expertise at 2-3 times
+              the cost efficiency of an in-house team.
             </p>
-            <img src={image2} alt="" className=" w-96 bg-tertiary" />
+            <img
+              src={challengeImg2}
+              alt="High cost graph"
+              className="mx-auto"
+            />
           </div>
-          <div className="card shadow-2xl p-5 border border-main rounded-lg">
-            <h4 className="text-main-dark text-lg font-semibold mb-5">
+          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
+            <h4 className="text-sub-heading text-lg font-semibold mb-3">
               Looking for a Reliable Partner
             </h4>
-            <p className="mb-4">
-              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
-              from the start.
+            <p className="mb-6">
+              We minimize workflow risks, ensuring clear communication,
+              structured progress, and staying within your budget and timeline.
             </p>
-            <img src={image3} alt="" className=" w-96 " />
+            <img
+              src={challengeImg3}
+              alt="Reliable partner image"
+              className="mx-auto"
+            />
           </div>
         </div>
       </section>
-      <section className="m-24 mb-8 bg-light-gray rounded ">
-        <div className=" flex justify-around shadow-xl p-3 ">
-          <div className="text">
-            <h2 className=" text-4xl font-bold mb-5">
-              Estimate cost of<br></br> development
-            </h2>
-            <p className=" mb-8 text-base ">
-              Don't let financial uncertainties limit you.
-            </p>
-            <a
-              href="#"
-              className="text-main-mint bg-main rounded-lg p-5 text-xl "
-            >
-              {" "}
-              Get Your Calaulation{" "}
-            </a>
-          </div>
-          <img src={image4} alt="" className="w-60" />
-          <h4 className="text-xl">
-            Our <span className="text-tertiary "> smart developers</span> build
-            <br></br> innovative, efficient, and high<br></br>-performance
-            solutions.
-          </h4>
-        </div>
-      </section>
+
+      {/* ////////////////////////  Benefits you get */}
+
       <section className="section mb-32">
         <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={cost} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">
+            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               Quick & Inexpensive
             </h3>
-            <p className="text-sub-para ">
+            <p className="text-sub-para">
               Save up to 40% in costs compared to in-house development and
               reduce time to market up to 30%.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={service} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">CUSTOM SERVICE</h3>
+            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
+              CUSTOM SERVICE
+            </h3>
             <p className="text-sub-para ">
               You are in the driver’s seat of your future product. If you want
               to execute a certain feature, we will make it happen for you.
@@ -230,7 +221,7 @@ export function Home() {
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
             <img src={solution} alt="budget icon" className="w-16 mb-7" />
-            <h3 className="h3 mb-6 sub-heading uppercase">
+            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               INNOVATIVE SOLUTIONS
             </h3>
             <p className="text-sub-para ">
