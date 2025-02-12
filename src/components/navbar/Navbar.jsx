@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import "../../css/index.css";
 import logo from "@icons/logo.svg";
 import mail from "@icons/mail.svg";
 import phone from "@icons/phone.svg";
-import downArrow from "@icons/chivron-down.svg";
 import menu from "@icons/menu.svg";
 import cross from "@icons/cross.svg";
 import Button from "@components/button/button";
@@ -35,7 +35,7 @@ export default function Navbar() {
       <ContactInfo containerStyles={"hidden sm:flex"} />
       <div className="section flex justify-between items-center relative">
         <Link to="/">
-          <img src={logo} alt="cwn logo" className={'w-32 sm:w-[160px]'}/>
+          <img src={logo} alt="cwn logo" className={"w-32 sm:w-[160px]"} />
         </Link>
         <div>
           <ul
@@ -48,12 +48,20 @@ export default function Navbar() {
             {navLinks.map((link, i) => {
               return <NavLink link={link} key={i} onToggleNav={toggleNav} />;
             })}
-            <Button text={"Get in Touch"} href={"#contact"} styles="sm:hidden w-fit"/>
+            <Button
+              text={"Start a Project"}
+              href={"#contact"}
+              styles="sm:hidden w-fit"
+            />
             <ContactInfo containerStyles={"sm:hidden bg-white"} />
           </ul>
         </div>
         <div className="flex gap-4">
-          <Button text={"Get in Touch"} href={"#contact"} styles="hidden sm:block"/>
+          <Button
+            text={"Start a Project"}
+            href={"#contact"}
+            styles="hidden sm:block"
+          />
           <img
             src={isMenuOpen ? cross : menu}
             alt="menu"

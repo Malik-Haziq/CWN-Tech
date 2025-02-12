@@ -65,7 +65,7 @@ export function Home() {
             build software, scale software that delivers business value.
           </p>
           <Button
-            text={"Let'apos discuss your project"}
+            text={"Let's discuss your project"}
             styles="px-4 sm:px-6 lg:px-10 py-4"
             href="#contact"
           />
