@@ -97,12 +97,12 @@ function ContactInfo({ containerStyles }) {
       }
     >
       <a
-        href="mailto:contact@codewithnaqvi.com"
+        href="mailto:codewithnaqvi@gmail.com"
         className="flex gap-2 items-center justify-center hover:text-black"
       >
         <img src={mail} alt="mail icon" className="w-5" />
         <span className="hover:text-inherit duration-200">
-          contact@codewithnaqvi.com
+          codewithnaqvi@gmail.com
         </span>
       </a>
       <a className="flex gap-1 items-center justify-center">
