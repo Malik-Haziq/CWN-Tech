@@ -122,7 +122,7 @@ export function Home() {
         <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl">
           <div className="xlg:basis-auto">
             <h2 className="h2 mb-6 lg:mb-10">
-              Every Part of Your IT Ecosystem. Taken Care Of.
+              Every part of your IT Ecosystem.<br/> Taken care of.
             </h2>
             <p className="text-sub-para text-lg sm:text-xl mb-6">
               Comprehensive care of your cloud or on-premises infrastructure and

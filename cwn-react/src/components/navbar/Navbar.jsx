@@ -98,7 +98,7 @@ function ContactInfo({ containerStyles }) {
     >
       <a
         href="mailto:codewithnaqvi@gmail.com"
-        className="flex gap-2 items-center justify-center hover:text-black"
+        className="flex gap-2 items-center justify-center hover:text-black py-3"
       >
         <img src={mail} alt="mail icon" className="w-5" />
         <span className="hover:text-inherit duration-200">

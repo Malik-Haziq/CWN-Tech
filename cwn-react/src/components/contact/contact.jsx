@@ -19,27 +19,29 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    fetch("https://dce9-103-101-232-206.ngrok-free.app/api/v1/users", {
+  
+    fetch("https://codewithnaqvi.com/send_email.php", {
       method: "POST",
-      body: JSON.stringify({ user: formData }),
+      body: JSON.stringify(formData),
       headers: {
         "Content-Type": "application/json",
       },
     })
-      .then((res) => {
-        res.json();
-        if (res.status !== 200) {
-          console.log(res.statusText);
-        }
-        console.log(res);
-      })
-      // .catch((err) => console.log(err))
-      .finally(() => {
-        // show module
-      });
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+      return res.json();
+    })
+    .then((result) => {
+      console.log(result);
+      alert(result.message);
+    })
+    .catch((err) => {
+      console.error("Failed to send email:", err);
+      alert("Something went wrong!");
+    });
   };
-
   return (
     <>
     <Whatsapp />
@@ -61,7 +63,7 @@ export default function Contact() {
                 cols="30"
                 rows="4"
                 placeholder="How we can help you?"
-                className="text-sub-para resize-none p-4 rounded-lg focus:outline-none max-w-[592px]"
+                className="text-sub-para resize-none w-full p-4 rounded-lg"
                 value={formData.contact_message}
                 onChange={handleChange}
               ></textarea>
@@ -88,8 +90,9 @@ export default function Contact() {
                   placeholder={"Work Phone"}
                   value={formData.phone_no}
                   onChange={handleChange}
+                  className="max-w-[592px]"
                 />
-                <label className="text-sub-para text-sm flex items-center gap-2">
+                <label className="text-sub-para text-sm flex items-center gap-2 w-full">
                   <input type="checkbox" className="w-4 h-4" />
                   <span>
                     I agree with&nbsp;
@@ -155,7 +158,7 @@ function Input({ name, type, placeholder, onChange }) {
     <input
       name={name}
       type={type}
-      className="border-none focus:outline-none p-4 rounded-lg text-sub-para"
+      className="border-none w-full p-4 rounded-lg text-sub-para"
       placeholder={placeholder}
       onChange={onChange}
     />
