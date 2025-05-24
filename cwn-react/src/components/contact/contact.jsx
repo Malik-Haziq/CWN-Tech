@@ -10,9 +10,8 @@ export default function Contact() {
     contact_message: "",
     terms_and_conditions: false
   };
-  const [alertMessage, setAlertMessage] = useState("");
-  const [alertType, setAlertType] = useState("success");
-  const [showAlert, setShowAlert] = useState(false);
+
+  const [showPopup, setShowPopup] = useState(false);
   const [formData, setFormData] = useState(inputData);
 
   const handleChange = (e) => {
@@ -25,6 +24,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     fetch("https://codewithnaqvi.com/send_email.php", {
       method: "POST",
       body: JSON.stringify(formData),
@@ -32,25 +32,51 @@ export default function Contact() {
         "Content-Type": "application/json",
       },
     })
-    .then((res) => {
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-      return res.json();
-    })
-    .then((result) => {
-      setAlertMessage(result.message);
-      setAlertType("success");
-      setShowAlert(true);
-      setFormData({ contact_message: '', name: '', email: '', phone_no: '', terms_and_conditions: ""});
-    })
-    .catch((err) => {
-      console.error("Failed to send email:", err);
-      alert("Something went wrong!");
-    });
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
+      })
+      .then(() => {
+        setShowPopup(true);
+        setFormData(inputData);
+
+        // Auto-close popup after 5 seconds
+        setTimeout(() => setShowPopup(false), 5000);
+      })
+      .catch((err) => {
+        console.error("Failed to send email:", err);
+      });
   };
+
   return (
     <>
-    <Whatsapp />
-      <section className="section bg-main-mint" id="contact">   
+      <Whatsapp />
+
+      {/* Popup Modal */}
+      {showPopup && (
+        <>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-green-300 max-w-sm w-full z-50 text-center">
+              <p className="text-green-600 text-lg font-semibold">
+                Thanks, our team will contact you soon!
+              </p>
+              <button
+                onClick={() => setShowPopup(false)}
+                className="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+          <div
+            className="fixed inset-0 bg-black bg-opacity-30 z-40"
+            onClick={() => setShowPopup(false)}
+          />
+        </>
+      )}
+
+      {/* Contact Form Section */}
+      <section className="section bg-main-mint" id="contact">
         <div className="py-16">
           <h2 className="h2 mb-8">Let's Connect!</h2>
           <p className="text-para mb-8">
@@ -64,7 +90,7 @@ export default function Contact() {
               method="POST"
             >
               <textarea
-                name={"contact_message"}
+                name="contact_message"
                 cols="30"
                 rows="4"
                 placeholder="How we can help you?"
@@ -72,30 +98,31 @@ export default function Contact() {
                 value={formData.contact_message}
                 onChange={handleChange}
               ></textarea>
+
               <div className="flex flex-col sm:flex-row gap-8">
                 <Input
-                  name={"name"}
-                  type={"text"}
-                  placeholder={"Full Name*"}
+                  name="name"
+                  type="text"
+                  placeholder="Full Name*"
                   value={formData.name}
                   onChange={handleChange}
                 />
                 <Input
-                  name={"email"}
-                  type={"email"}
-                  placeholder={"Work Email*"}
+                  name="email"
+                  type="email"
+                  placeholder="Work Email*"
                   value={formData.email}
                   onChange={handleChange}
                 />
               </div>
+
               <div className="flex flex-col sm:flex-row gap-8">
                 <Input
-                  name={"phone_no"}
-                  type={"tel"}
-                  placeholder={"Work Phone"}
+                  name="phone_no"
+                  type="tel"
+                  placeholder="Work Phone"
                   value={formData.phone_no}
                   onChange={handleChange}
-                  className="max-w-[592px]"
                 />
                 <label className="text-sub-para text-sm flex items-center gap-2 w-full">
                   <input
@@ -105,55 +132,41 @@ export default function Contact() {
                     checked={formData.terms_and_conditions}
                     className="w-4 h-4"
                   />
-                   <span>
+                  <span>
                     I agree with&nbsp;
                     <Link
                       to="/privacy-policy"
-                      className="text-main hover:text-sub-para duration-500">
+                      className="text-main hover:text-sub-para duration-500"
+                    >
                       terms & conditions
                     </Link>
                   </span>
                 </label>
               </div>
+
               <button className="cursor-pointer bg-main px-7 py-3 mt-2 uppercase font-semibold text-white rounded-lg duration-500 hover:bg-main-tint focus:bg-main-shade w-fit">
                 Get in touch
               </button>
             </form>
+
             <div className="basis-auto">
               <h3 className="text-sub-heading font-medium text-3xl mb-6">
                 What’s next?
               </h3>
-              <ol className=" flex flex-col gap-6 text-lg lg:text-xl text-sub-para">
-                <li className="flex items-center gap-4">
-                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
-                    1
-                  </div>
-                  <p>
-                    We start by signing an NDA to ensure your ideas are
-                    protected.
-                  </p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
-                    2
-                  </div>
-                  <p>Then, our team will analyze your requirements.</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
-                    3
-                  </div>
-                  <p>You get a detailed project outline.</p>
-                </li>
-                <li className="flex items-center gap-4">
-                  <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
-                    4
-                  </div>
-                  <p>
-                    We bring your project to life, so you can focus on growing
-                    your business.
-                  </p>
-                </li>
+              <ol className="flex flex-col gap-6 text-lg lg:text-xl text-sub-para">
+                {[
+                  "We start by signing an NDA to ensure your ideas are protected.",
+                  "Then, our team will analyze your requirements.",
+                  "You get a detailed project outline.",
+                  "We bring your project to life, so you can focus on growing your business.",
+                ].map((step, index) => (
+                  <li key={index} className="flex items-center gap-4">
+                    <div className="bg-main-tint-1 text-para rounded-full w-9 h-9 shrink-0 flex items-center justify-center">
+                      {index + 1}
+                    </div>
+                    <p>{step}</p>
+                  </li>
+                ))}
               </ol>
             </div>
           </section>
@@ -163,7 +176,7 @@ export default function Contact() {
   );
 }
 
-function Input({ name, type, placeholder,value, onChange }) {
+function Input({ name, type, placeholder, value, onChange }) {
   return (
     <input
       name={name}
@@ -172,10 +185,6 @@ function Input({ name, type, placeholder,value, onChange }) {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      
     />
   );
 }
-
-
-  
