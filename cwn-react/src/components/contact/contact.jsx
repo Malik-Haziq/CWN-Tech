@@ -8,42 +8,49 @@ export default function Contact() {
     email: "",
     phone_no: "",
     contact_message: "",
+    terms_and_conditions: false
   };
-
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState("success");
+  const [showAlert, setShowAlert] = useState(false);
   const [formData, setFormData] = useState(inputData);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData, "hello");
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    fetch("https://dce9-103-101-232-206.ngrok-free.app/api/v1/users", {
+    fetch("https://codewithnaqvi.com/send_email.php", {
       method: "POST",
-      body: JSON.stringify({ user: formData }),
+      body: JSON.stringify(formData),
       headers: {
         "Content-Type": "application/json",
       },
     })
-      .then((res) => {
-        res.json();
-        if (res.status !== 200) {
-          console.log(res.statusText);
-        }
-        console.log(res);
-      })
-      // .catch((err) => console.log(err))
-      .finally(() => {
-        // show module
-      });
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      return res.json();
+    })
+    .then((result) => {
+      setAlertMessage(result.message);
+      setAlertType("success");
+      setShowAlert(true);
+      setFormData({ contact_message: '', name: '', email: '', phone_no: '', terms_and_conditions: ""});
+    })
+    .catch((err) => {
+      console.error("Failed to send email:", err);
+      alert("Something went wrong!");
+    });
   };
-
   return (
     <>
     <Whatsapp />
-      <section className="section bg-main-mint" id="contact">
+      <section className="section bg-main-mint" id="contact">   
         <div className="py-16">
           <h2 className="h2 mb-8">Let's Connect!</h2>
           <p className="text-para mb-8">
@@ -61,7 +68,7 @@ export default function Contact() {
                 cols="30"
                 rows="4"
                 placeholder="How we can help you?"
-                className="text-sub-para resize-none p-4 rounded-lg focus:outline-none max-w-[592px]"
+                className="text-sub-para resize-none w-full p-4 rounded-lg"
                 value={formData.contact_message}
                 onChange={handleChange}
               ></textarea>
@@ -88,15 +95,21 @@ export default function Contact() {
                   placeholder={"Work Phone"}
                   value={formData.phone_no}
                   onChange={handleChange}
+                  className="max-w-[592px]"
                 />
-                <label className="text-sub-para text-sm flex items-center gap-2">
-                  <input type="checkbox" className="w-4 h-4" />
-                  <span>
+                <label className="text-sub-para text-sm flex items-center gap-2 w-full">
+                  <input
+                    type="checkbox"
+                    name="terms_and_conditions"
+                    onChange={handleChange}
+                    checked={formData.terms_and_conditions}
+                    className="w-4 h-4"
+                  />
+                   <span>
                     I agree with&nbsp;
                     <Link
                       to="/privacy-policy"
-                      className="text-main hover:text-sub-para duration-500"
-                    >
+                      className="text-main hover:text-sub-para duration-500">
                       terms & conditions
                     </Link>
                   </span>
@@ -150,14 +163,19 @@ export default function Contact() {
   );
 }
 
-function Input({ name, type, placeholder, onChange }) {
+function Input({ name, type, placeholder,value, onChange }) {
   return (
     <input
       name={name}
       type={type}
-      className="border-none focus:outline-none p-4 rounded-lg text-sub-para"
+      className="border-none w-full p-4 rounded-lg text-sub-para"
       placeholder={placeholder}
+      value={value}
       onChange={onChange}
+      
     />
   );
 }
+
+
+  

@@ -14,7 +14,7 @@ export default function Footer() {
         <div>
           <img src={logo} alt="cwn logo" />
           <p className="text-sub-para">
-            51-A Samsani Rd, Block F2 Block F 2 Phase 1 Johar Town, Lahore,
+           Al-Raheem Garden phase 4 near PCC Shopping Mart, Metro City office Lahore.
           </p>
         </div>
         <div>
@@ -27,7 +27,7 @@ export default function Footer() {
               >
                 <img src={mail} alt="mail icon" className="w-5" />
                 <span className="hover:text-inherit duration-200">
-                  contact@codewithnaqvi.com
+                  codewithnaqvi@gmail.com
                 </span>
               </a>
             </li>

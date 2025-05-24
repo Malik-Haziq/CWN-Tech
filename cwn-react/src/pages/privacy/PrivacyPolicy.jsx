@@ -520,7 +520,7 @@ export function PrivacyPolicy() {
         </p>
         <ul className="list-disc list-inside flex flex-col gap-3 text-para">
           <li>
-            <span>By email: contact@codewithnaqvi.com</span>
+            <span>By email: codewithnaqvi@gmail.com</span>
           </li>
           <li>
             <span>
