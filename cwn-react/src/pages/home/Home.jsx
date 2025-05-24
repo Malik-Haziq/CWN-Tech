@@ -40,6 +40,16 @@ import challengeImg2 from "../../assets/images/challenge/img-2.svg";
 import challengeImg3 from "../../assets/images/challenge/img-3.svg";
 
 export function Home() {
+  const brandLogos = [
+    cae,
+    dextro,
+    doxy,
+    itrsoftware,
+    realpage,
+    controlit,
+    speechagain,
+  ];
+
   return (
     <main>
       <header
@@ -74,43 +84,27 @@ export function Home() {
 
       {/* /////////////////////////////////////////  Featured section */}
       <section className="section mb-32">
-        <h2 className="h2">Featured Brands</h2>
-        <div className="flex justify-between flex-wrap gap-2">
-          <img
-            src={cae}
-            alt="cae"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
-          <img
-            src={dextro}
-            alt="dextro"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
-          <img
-            src={doxy}
-            alt="doxy"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
-          <img
-            src={itrsoftware}
-            alt="itrsoftware"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
-          <img
-            src={realpage}
-            alt="realpage"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
-          <img
-            src={controlit}
-            alt="controlit"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
-          <img
-            src={speechagain}
-            alt="speechagain"
-            className="grayscale hover:grayscale-0 duration-200"
-          />
+        <h2 className="h2 mb-8">Featured Brands</h2>
+        <div className="overflow-x-hidden py-4">
+          <div className="flex animate-slide">
+            {brandLogos.map((imgSrc, index) => (
+              <img
+                key={index}
+                src={imgSrc}
+                alt="brand"
+                className="mx-8 h-16 grayscale hover:grayscale-0 duration-200 flex-shrink-0"
+              />
+            ))}
+            {/* Duplicate the images for seamless loop */}
+            {brandLogos.map((imgSrc, index) => (
+              <img
+                key={index + "copy"}
+                src={imgSrc}
+                alt="brand"
+                className="mx-8 h-16 grayscale hover:grayscale-0 duration-200 flex-shrink-0"
+              />
+            ))}
+          </div>
         </div>
       </section>
 
