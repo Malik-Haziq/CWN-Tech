@@ -1,6 +1,17 @@
 import people from "../../assets/images/choose us/team.jpg";
 import arrow from "../../assets/images/choose us/arrow.svg";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
+
+<Helmet>
+  <title>Code With Naqvi - Learn Web Development</title>
+  <meta name="description" content="Code With Naqvi offers React, Rails, and web dev tutorials." />
+  <meta name="keywords" content="React, Rails, Web Development, Code With Naqvi" />
+  <meta property="og:title" content="Code With Naqvi" />
+  <meta property="og:description" content="React and Rails tutorials for developers." />
+  <meta property="og:image" content="/cover-image.jpg" />
+</Helmet>
+
 
 export default function WhyChooseUS() {
   return (
