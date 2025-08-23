@@ -17,9 +17,9 @@ export function Courses() {
   return (
     <main>
       <Seo
-        title="Courses | Code With Naqvi"
-        description="Enhance your skills with CWN's programming courses and resources."
-        keywords="courses, programming, Code With Naqvi"
+        title="Courses | Code With Naqvi - YouTube"
+        description="Enhance your skills with CodeWithNaqvi's YouTube programming courses and resources."
+        keywords="courses, programming, Code With Naqvi, YouTube, codewithnaqvi"
       />
       <Header
         heading="Learn & become the Top 1% software developer"
@@ -52,7 +52,9 @@ export function Courses() {
         </div>
       </section>
       <section className="section mb-32 bg-gray-50 py-16 rounded-xl">
-        <h2 className="h2 text-center mb-12">Level up your web development skills</h2>
+        <h2 className="h2 text-center mb-12 center-orange-line">
+          Level up your web development skills with CodeWithNaqvi on YouTube
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <CourseCard
             thumbnail={htmlThumbnail}
@@ -140,10 +142,10 @@ function CourseCard({ thumbnail, thumbnailAlt, title, description, link }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="group block rounded-xl overflow-hidden bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl cursor-pointer"
+      className="group block h-full rounded-xl overflow-hidden bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:scale-105 cursor-pointer flex flex-col"
     >
       <img
-        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
         src={thumbnail}
         alt={thumbnailAlt}
       />
