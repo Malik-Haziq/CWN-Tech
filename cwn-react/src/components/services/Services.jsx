@@ -39,7 +39,7 @@ function ServicesSection() {
     },
     {
       heading: "Software Development",
-      desc: "A software development company with 34 years of business excellence, we can develop reliable, scalable and secure software solutions for any OS, browser and device. We bring together deep industry expertise and the latest IT advancements to deliver custom solutions and products that perfectly fit the needs and behavior of their users.",
+      desc: "As a forward-thinking software development company, we craft reliable, scalable, and secure solutions for any platform, browser, or device. Our blend of industry insight and cutting-edge technologies ensures every product we build aligns seamlessly with user needs and expectations.",
       list: [
         "Software consulting",
         "Software development",
