@@ -9,10 +9,16 @@ import ServicesSection from "@components/services/Services";
 import services from "@images/services/services.svg";
 import project from "@images/services/project-manger.svg";
 import webDevelopment from "@images/services/web-development.svg";
+import Seo from "@components/seo/Seo";
 
 export function Services() {
   return (
     <main>
+      <Seo
+        title="Software Development Services | CWN"
+        description="Discover CWN's web development and project management services tailored to your business."
+        keywords="services, software development, CWN"
+      />
       {/* /////////////////  Header */}
       <Header
         heading="Services"
