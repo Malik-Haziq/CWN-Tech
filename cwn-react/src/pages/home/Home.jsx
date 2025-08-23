@@ -200,7 +200,7 @@ export function Home() {
         <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={cost} alt="budget icon" className="w-16 mb-7" />
+            <img src={cost} alt="cost icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               Quick & Inexpensive
             </h3>
@@ -210,7 +210,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={service} alt="budget icon" className="w-16 mb-7" />
+            <img src={service} alt="service icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               CUSTOM SERVICE
             </h3>
@@ -220,7 +220,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={solution} alt="budget icon" className="w-16 mb-7" />
+            <img src={solution} alt="solution icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               INNOVATIVE SOLUTIONS
             </h3>
