@@ -56,9 +56,21 @@ export default function Contact() {
       {showPopup && (
         <>
           <div className="fixed inset-0 flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-green-300 max-w-sm w-full z-50 text-center">
-              <p className="text-green-600 text-lg font-semibold">
-                Thanks, our team will contact you soon!
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-green-300 max-w-sm w-full z-50 text-center animate-pop">
+              <p className="text-green-600 text-lg font-semibold flex items-center justify-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.03-2.28a.75.75 0 0 0-1.06-1.06L11 13.88l-2.22-2.22a.75.75 0 1 0-1.06 1.06l2.75 2.75a.75.75 0 0 0 1.06 0l4.75-4.75z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span>Thank you for reaching out. Our team will review your message and contact you shortly.</span>
               </p>
               <button
                 onClick={() => setShowPopup(false)}
@@ -69,7 +81,7 @@ export default function Contact() {
             </div>
           </div>
           <div
-            className="fixed inset-0 bg-black bg-opacity-30 z-40"
+            className="fixed inset-0 bg-black bg-opacity-30 z-40 animate-fade"
             onClick={() => setShowPopup(false)}
           />
         </>
