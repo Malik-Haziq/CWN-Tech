@@ -39,6 +39,7 @@ import challengeImg1 from "../../assets/images/challenge/img.svg";
 import challengeImg2 from "../../assets/images/challenge/img-2.svg";
 import challengeImg3 from "../../assets/images/challenge/img-3.svg";
 import Seo from "@components/seo/Seo";
+import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 
 export function Home() {
   const brandLogos = [
@@ -58,7 +59,8 @@ export function Home() {
         description="We build and scale modern software solutions that deliver business value."
         keywords="CWN, Code With Naqvi, software development, web development"
       />
-      <header
+      <AnimatedSection
+        as="header"
         style={{
           background: `url(${homeBg}), linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,
         }}
@@ -86,10 +88,10 @@ export function Home() {
             href="#contact"
           />
         </div>
-      </header>
+      </AnimatedSection>
 
       {/* /////////////////////////////////////////  Featured section */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2 mb-8">Featured Brands</h2>
         <div className="overflow-x-hidden py-4">
           <div className="flex animate-slide">
@@ -112,13 +114,13 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ///////////////////////  What we offer */}
       <Services />
 
       {/* ////////////////////////  Ecosystem */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl">
           <div className="xlg:basis-auto">
             <h2 className="h2 mb-6 lg:mb-10">
@@ -143,10 +145,10 @@ export function Home() {
             className="mx-auto w-[450px] md:hidden xlg:inline-block xlg:w-unset xlg:basis-2/5 "
           />
         </div>
-      </section>
+      </AnimatedSection>
       {/* ////////////////////////  Challenges you face   */}
 
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Are you facing these challenges?</h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="shadow-lg p-8 border border-sub rounded-3xl ">
@@ -192,11 +194,11 @@ export function Home() {
             />
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ////////////////////////  Benefits you get */}
 
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
@@ -230,7 +232,7 @@ export function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       <WhyChooseUS />
       <Awards />
@@ -258,7 +260,7 @@ export function Home() {
         </section> */}
 
       {/* /////////////////////////////////// */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Our core clients are VC-backed startups</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
           <img
@@ -286,7 +288,7 @@ export function Home() {
             </ul>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* /////////////////////////  Book a call */}
       <BookCall />
@@ -295,7 +297,7 @@ export function Home() {
       <WhoAeAre />
 
       {/* ///////////////////////  process */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Process we follow</h2>
         <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
@@ -369,7 +371,7 @@ export function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ///////////////////////  Contact  */}
       <Contact />

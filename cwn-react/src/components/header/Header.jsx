@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import Button from "@components/button/button";
 import "./Header.css";
+import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 
 export default function Header({
   heading,
@@ -16,7 +17,7 @@ export default function Header({
   };
 
   return (
-    <div className="section" style={headerBg}>
+    <AnimatedSection as="div" className="section" style={headerBg}>
       <header className="flex flex-col md:flex-row justify-between items-center py-16 gap-8">
         <div className="basis-1/2">
           <h1 className="h1">{heading}</h1>
@@ -32,6 +33,6 @@ export default function Header({
           </div>
         </div>
       </header>
-    </div>
+    </AnimatedSection>
   );
 }
