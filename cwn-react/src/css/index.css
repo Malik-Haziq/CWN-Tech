@@ -46,6 +46,10 @@
     @apply block w-14 h-1 absolute -bottom-4 bg-tertiary rounded-lg;
   }
 
+  .center-orange-line::after {
+    @apply left-1/2 -translate-x-1/2;
+  }
+
   .sub-orange-line::after {
     content: "";
     @apply block w-14 h-1 absolute -bottom-3 bg-tertiary rounded-lg;
