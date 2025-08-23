@@ -11,15 +11,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
-<Helmet>
-  <title>Code With Naqvi - Learn Web Development</title>
-  <meta name="description" content="Code With Naqvi offers React, Rails, and web dev tutorials." />
-  <meta name="keywords" content="React, Rails, Web Development, Code With Naqvi" />
-  <meta property="og:title" content="Code With Naqvi" />
-  <meta property="og:description" content="React and Rails tutorials for developers." />
-  <meta property="og:image" content="/cover-image.jpg" />
-</Helmet>
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -42,6 +33,23 @@ export default function Navbar() {
   // TODO: update info of top nav
   return (
     <nav>
+      <Helmet>
+        <title>Code With Naqvi - Learn Web Development</title>
+        <meta
+          name="description"
+          content="Code With Naqvi offers React, Rails, and web dev tutorials."
+        />
+        <meta
+          name="keywords"
+          content="React, Rails, Web Development, Code With Naqvi"
+        />
+        <meta property="og:title" content="Code With Naqvi" />
+        <meta
+          property="og:description"
+          content="React and Rails tutorials for developers."
+        />
+        <meta property="og:image" content="/cover-image.jpg" />
+      </Helmet>
       <ContactInfo containerStyles={"hidden sm:flex"} />
       <div className="section flex justify-between items-center relative">
         <Link to="/">
@@ -115,11 +123,17 @@ function ContactInfo({ containerStyles }) {
           codewithnaqvi@gmail.com
         </span>
       </a>
-      <a className="flex gap-1 items-center justify-center">
+      <a
+        href="tel:+923078875229"
+        className="flex gap-1 items-center justify-center"
+      >
         <img src={phone} alt="phone icon" className="w-4" />
         +923078875229
       </a>
-      <a className="flex gap-1 items-center justify-center">
+      <a
+        href="tel:+923054388079"
+        className="flex gap-1 items-center justify-center"
+      >
         <img src={phone} alt="phone icon" className="w-4" />
         +923054388079
       </a>
