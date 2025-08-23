@@ -1,0 +1,42 @@
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  aspect-ratio: 1 / 1;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  background: conic-gradient(#3EB7BB, #1E9799, #3EB7BB);
+  z-index: -1;
+  animation: spin 8s linear infinite;
+}
+
+.floating-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
