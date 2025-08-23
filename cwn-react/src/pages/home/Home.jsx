@@ -38,6 +38,7 @@ import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import challengeImg1 from "../../assets/images/challenge/img.svg";
 import challengeImg2 from "../../assets/images/challenge/img-2.svg";
 import challengeImg3 from "../../assets/images/challenge/img-3.svg";
+import Seo from "@components/seo/Seo";
 
 export function Home() {
   const brandLogos = [
@@ -52,6 +53,11 @@ export function Home() {
 
   return (
     <main>
+      <Seo
+        title="CWN - Software Product Development Company"
+        description="We build and scale modern software solutions that deliver business value."
+        keywords="CWN, Code With Naqvi, software development, web development"
+      />
       <header
         style={{
           background: `url(${homeBg}), linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,

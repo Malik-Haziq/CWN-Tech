@@ -10,10 +10,16 @@ import services from "@images/solutions/solution.svg";
 import innovation from "@images/solutions/innovation.svg";
 import development from "@images/solutions/development.svg";
 import developmentStrategy from "@images/solutions/development-strategy.svg";
+import Seo from "@components/seo/Seo";
 
 export function Solutions() {
   return (
     <main>
+      <Seo
+        title="Software Solutions | CWN"
+        description="Explore CWN's scalable software solutions and dedicated development support."
+        keywords="solutions, software development, CWN"
+      />
       {/* ///////////////////////   Header */}
       <Header
         heading="Startup Software Development"

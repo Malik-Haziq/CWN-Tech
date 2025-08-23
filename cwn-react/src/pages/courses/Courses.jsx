@@ -4,6 +4,7 @@ import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import Header from "../../components/header/Header";
+import Seo from "@components/seo/Seo";
 
 import courseHeaderImg from "../../assets/images/courses/sir.jpeg";
 import htmlThumbnail from "../../assets/images/courses/html.jpeg";
@@ -16,6 +17,11 @@ import cppThumbnail from "../../assets/images/courses/c++.jpeg";
 export function Courses() {
   return (
     <main>
+      <Seo
+        title="Courses | Code With Naqvi"
+        description="Enhance your skills with CWN's programming courses and resources."
+        keywords="courses, programming, Code With Naqvi"
+      />
       <Header
         heading="Learn & become the Top 1% software developer"
         text="We have the best professors who teach web development to beginners, And help them to become high level developer and to dominate the market."

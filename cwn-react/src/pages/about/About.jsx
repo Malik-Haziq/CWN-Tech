@@ -8,10 +8,16 @@ import Services from "@components/services/Services";
 import about from "@images/about/about-us.svg";
 import ourStory from "@images/about/our-story.svg";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
+import Seo from "@components/seo/Seo";
 
 export function About() {
   return (
     <main>
+      <Seo
+        title="About Us | Code With Naqvi"
+        description="Learn about CWN's mission and the team crafting innovative software solutions."
+        keywords="About CWN, Code With Naqvi, software company"
+      />
       {/* /////////////////  Header */}
       <Header
         heading="About us"
