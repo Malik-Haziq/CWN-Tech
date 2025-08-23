@@ -1,15 +1,6 @@
 /* eslint-disable react/prop-types */
 import Button from "@components/button/button";
-import { Helmet } from 'react-helmet';
-
-<Helmet>
-  <title>Code With Naqvi - Learn Web Development</title>
-  <meta name="description" content="Code With Naqvi offers React, Rails, and web dev tutorials." />
-  <meta name="keywords" content="React, Rails, Web Development, Code With Naqvi" />
-  <meta property="og:title" content="Code With Naqvi" />
-  <meta property="og:description" content="React and Rails tutorials for developers." />
-  <meta property="og:image" content="/cover-image.jpg" />
-</Helmet>
+import "./Header.css";
 
 export default function Header({
   heading,
@@ -29,16 +20,16 @@ export default function Header({
       <header className="flex flex-col md:flex-row justify-between items-center py-16 gap-8">
         <div className="basis-1/2">
           <h1 className="h1">{heading}</h1>
-          <img
-            src={img}
-            alt="about us image"
-            className="w-full md:hidden mb-5"
-          />
+          <div className="image-wrapper md:hidden mb-5">
+            <img src={img} alt={imgAlt} className="floating-img" />
+          </div>
           <p className="text-para text-lg mb-12">{text}</p>
           <Button href={buttonHref} text={buttonText} styles={buttonStyles} />
         </div>
         <div className="basis-1/2">
-          <img src={img} alt={imgAlt} className="w-full hidden md:block" />
+          <div className="image-wrapper hidden md:block">
+            <img src={img} alt={imgAlt} className="floating-img" />
+          </div>
         </div>
       </header>
     </div>
