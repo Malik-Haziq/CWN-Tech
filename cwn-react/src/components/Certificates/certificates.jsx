@@ -24,18 +24,18 @@ export default function Awards() {
             Named among the Inc.5000 (2020, 2021, 2022, 2023) & Regionals (2021,
             2022, 2024) fastest-growing private companies in America
           </p>
-          <img src={awards} alt="awards" />
+          <img loading="lazy" src={awards} alt="awards" />
         </div>
         <div className="border py-6 px-6 rounded-lg w-6/12">
           <h2 className="text-4xl font-medium mb-5 text-s">Certifications</h2>
           <div className="flex justify-between mb-6">
-            <img src={awards1} alt="awards1" />
-            <img src={awards2} alt="awards2" />
-            <img src={awards3} alt="awards3" />
+            <img loading="lazy" src={awards1} alt="awards1" />
+            <img loading="lazy" src={awards2} alt="awards2" />
+            <img loading="lazy" src={awards3} alt="awards3" />
           </div>
           <div className="flex justify-center gap-8 items-center">
-            <img src={aws} alt="aws" />
-            <img src={microsoft} alt="microsoft" />
+            <img loading="lazy" src={aws} alt="aws" />
+            <img loading="lazy" src={microsoft} alt="microsoft" />
           </div>
         </div>
       </section>

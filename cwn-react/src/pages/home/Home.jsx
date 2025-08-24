@@ -96,7 +96,7 @@ export function Home() {
         <div className="overflow-x-hidden py-4">
           <div className="flex animate-slide">
             {brandLogos.map((imgSrc, index) => (
-              <img
+              <img loading="lazy"
                 key={index}
                 src={imgSrc}
                 alt="brand"
@@ -105,7 +105,7 @@ export function Home() {
             ))}
             {/* Duplicate the images for seamless loop */}
             {brandLogos.map((imgSrc, index) => (
-              <img
+              <img loading="lazy"
                 key={index + "copy"}
                 src={imgSrc}
                 alt="brand"
@@ -139,7 +139,7 @@ export function Home() {
               <li className="li relative">Migration</li>
             </ul>
           </div>
-          <img
+          <img loading="lazy"
             src={eco}
             alt="technology ecosystem"
             className="mx-auto w-[450px] md:hidden xlg:inline-block xlg:w-unset xlg:basis-2/5 "
@@ -159,7 +159,7 @@ export function Home() {
               We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
               from the start.
             </p>
-            <img
+            <img loading="lazy"
               src={challengeImg1}
               alt="Regulatory compliance image"
               className="mx-auto"
@@ -173,7 +173,7 @@ export function Home() {
               Our outsourcing offers top-tier development expertise at 2-3 times
               the cost efficiency of an in-house team.
             </p>
-            <img
+            <img loading="lazy"
               src={challengeImg2}
               alt="High cost graph"
               className="mx-auto"
@@ -187,7 +187,7 @@ export function Home() {
               We minimize workflow risks, ensuring clear communication,
               structured progress, and staying within your budget and timeline.
             </p>
-            <img
+            <img loading="lazy"
               src={challengeImg3}
               alt="Reliable partner image"
               className="mx-auto"
@@ -202,7 +202,7 @@ export function Home() {
         <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={cost} alt="cost icon" className="w-16 mb-7" />
+            <img loading="lazy" src={cost} alt="cost icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               Quick & Inexpensive
             </h3>
@@ -212,7 +212,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={service} alt="service icon" className="w-16 mb-7" />
+            <img loading="lazy" src={service} alt="service icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               CUSTOM SERVICE
             </h3>
@@ -222,7 +222,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={solution} alt="solution icon" className="w-16 mb-7" />
+            <img loading="lazy" src={solution} alt="solution icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               INNOVATIVE SOLUTIONS
             </h3>
@@ -245,15 +245,15 @@ export function Home() {
           <section>
             <div className="flex flex-col sm:flex-row items-center flex-1 gap-16 border-b-2">
               <div className="flex flex-col sm:flex-row items-center justify-center">
-                <img src="" alt="" />
+                <img loading="lazy" src="" alt="" />
                 <h3 className="text-xl font-semibold text-sub-heading ">Front-end</h3>
               </div>
               <div className="flex items-center gap-8 flex-wrap">
-                <img src={javascript} alt="javascript" className="h-8"/>
-                <img src={react} alt="react" className="h-8"/>
-                <img src={angular} alt="angular" className="h-8"/>
-                <img src={tailwind} alt="tailwind" className="h-8"/>
-                <img src={bootstrap} alt="bootstrap" className="h-8"/>
+                <img loading="lazy" src={javascript} alt="javascript" className="h-8"/>
+                <img loading="lazy" src={react} alt="react" className="h-8"/>
+                <img loading="lazy" src={angular} alt="angular" className="h-8"/>
+                <img loading="lazy" src={tailwind} alt="tailwind" className="h-8"/>
+                <img loading="lazy" src={bootstrap} alt="bootstrap" className="h-8"/>
               </div>
             </div>
           </section>
@@ -263,7 +263,7 @@ export function Home() {
       <AnimatedSection className="section mb-32">
         <h2 className="h2">Our core clients are VC-backed startups</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
-          <img
+          <img loading="lazy"
             src={challenge}
             alt="Problem solving"
             className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset "
@@ -301,7 +301,7 @@ export function Home() {
         <h2 className="h2">Process we follow</h2>
         <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={requirement} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={requirement} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               1. Requirement Gathering
             </h3>
@@ -311,7 +311,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={ui} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={ui} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               2. UI/UX Design
             </h3>
@@ -321,7 +321,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={prototype} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={prototype} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               3. Prototype
             </h3>
@@ -331,7 +331,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={development} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={development} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               4. Development
             </h3>
@@ -341,7 +341,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={qa} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={qa} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               5. Quality Assurance
             </h3>
@@ -351,7 +351,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={deployment} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={deployment} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               6. Deployment
             </h3>
@@ -361,7 +361,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
-            <img src={maintenance} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={maintenance} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               7. Support & Maintenance
             </h3>

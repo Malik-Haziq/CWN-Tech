@@ -146,7 +146,7 @@ function CourseCard({ thumbnail, thumbnailAlt, title, description, link }) {
       rel="noreferrer"
       className="group block h-full rounded-xl overflow-hidden bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:scale-105 cursor-pointer flex flex-col"
     >
-      <img
+      <img loading="lazy"
         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
         src={thumbnail}
         alt={thumbnailAlt}

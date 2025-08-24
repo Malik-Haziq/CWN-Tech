@@ -71,7 +71,7 @@ export function Solutions() {
 function DiscoveryPhase() {
   return (
     <section className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xl:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
-      <img
+      <img loading="lazy"
         src={innovation}
         alt="innovation idea"
         className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5"
@@ -118,7 +118,7 @@ function MVPDevelopment() {
         </ul>
         <BookCallBtn />
       </div>
-      <img
+      <img loading="lazy"
         src={development}
         alt="product development"
         className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5"
@@ -130,7 +130,7 @@ function MVPDevelopment() {
 function ProductStrategy() {
   return (
     <section className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xl:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
-      <img
+      <img loading="lazy"
         src={developmentStrategy}
         alt="product strategy solving"
         className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5"

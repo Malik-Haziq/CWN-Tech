@@ -60,7 +60,7 @@ export function About() {
 
       {/* /////////////////////  Our story */}
       <AnimatedSection className="section mb-32 flex flex-col-reverse lg:flex-row justify-between items-center">
-        <img
+        <img loading="lazy"
           src={ourStory}
           alt="Problem solving"
           className="w-[400px] xlg:w-unset "

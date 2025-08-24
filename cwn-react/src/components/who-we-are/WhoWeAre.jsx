@@ -15,7 +15,7 @@ export default function WhoWeAre() {
           and SMBs come out on top in their markets.
         </p>
       </div>
-      <img
+      <img loading="lazy"
         src={team}
         alt="Problem solving"
         className="w-[400px] xlg:w-unset "
