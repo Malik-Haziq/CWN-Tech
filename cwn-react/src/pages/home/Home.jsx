@@ -61,12 +61,22 @@ export function Home() {
       />
       <AnimatedSection
         as="header"
-        style={{
-          background: `url(${homeBg}), linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,
-        }}
-        className="section"
+        className="section relative overflow-hidden"
       >
-        <div className=" py-24 lg:py-36">
+        <img
+          src={homeBg}
+          alt=""
+          fetchpriority="high"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)",
+          }}
+        />
+        <div className="py-24 lg:py-36">
           <span className="bg-main text-xs sm:text-sm lg:text-base rounded-lg py-1 px-3 text-white mb-2 inline-block">
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
