@@ -35,7 +35,7 @@ export function Services() {
       <section className="section mb-32 md:mt-16">
         <h2 className="h2">Our core Services</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
-          <img
+          <img loading="lazy"
             src={webDevelopment}
             alt="Web development"
             className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5 transition-transform duration-500 hover:scale-105"
@@ -65,7 +65,7 @@ export function Services() {
             </p>
             <BookCallBtn />
           </div>
-          <img
+          <img loading="lazy"
             src={project}
             alt="Project management"
             className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/5 transition-transform duration-500 hover:scale-105"

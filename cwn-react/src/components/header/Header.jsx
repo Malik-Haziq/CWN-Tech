@@ -22,14 +22,14 @@ export default function Header({
         <div className="basis-1/2">
           <h1 className="h1">{heading}</h1>
           <div className="image-wrapper md:hidden mb-5">
-            <img src={img} alt={imgAlt} className="floating-img" />
+            <img loading="lazy" src={img} alt={imgAlt} className="floating-img" />
           </div>
           <p className="text-para text-lg mb-12">{text}</p>
           <Button href={buttonHref} text={buttonText} styles={buttonStyles} />
         </div>
         <div className="basis-1/2">
           <div className="image-wrapper hidden md:block">
-            <img src={img} alt={imgAlt} className="floating-img" />
+            <img loading="lazy" src={img} alt={imgAlt} className="floating-img" />
           </div>
         </div>
       </header>

@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="section">
       <div className="py-10 flex flex-col xm:flex-row xm:items-center justify-between gap-10 border-b-[1px] border-sub">
         <div>
-          <img src={logo} alt="cwn logo" />
+          <img loading="lazy" src={logo} alt="cwn logo" />
           <p className="text-sub-para">
            Al-Raheem Garden phase 4 near PCC Shopping Mart, Metro City office Lahore.
           </p>
@@ -35,7 +35,7 @@ export default function Footer() {
                 href="mailto:info@codewithnaqvi.com"
                 className="flex gap-2 items-center justify-center hover:text-para"
               >
-                <img src={mail} alt="mail icon" className="w-5" />
+                <img loading="lazy" src={mail} alt="mail icon" className="w-5" />
                 <span className="hover:text-inherit duration-200">
                   codewithnaqvi@gmail.com
                 </span>
@@ -43,13 +43,13 @@ export default function Footer() {
             </li>
             <li>
               <a className="flex gap-1 items-center justify-center">
-                <img src={phone} alt="phone icon" className="w-4" />
+                <img loading="lazy" src={phone} alt="phone icon" className="w-4" />
                 +92 3078875229
               </a>
             </li>
             <li>
               <a className="flex gap-1 items-center justify-center">
-                <img src={phone} alt="phone icon" className="w-4" />
+                <img loading="lazy" src={phone} alt="phone icon" className="w-4" />
                 +92 3054388079
               </a>
             </li>
@@ -61,27 +61,27 @@ export default function Footer() {
         <ul className="flex items-center gap-6">
           <li>
             <a href="https://www.linkedin.com/company/code-with-naqvi/" target="_blank">
-              <img src={linkedin} alt="linkedin icon" />
+              <img loading="lazy" src={linkedin} alt="linkedin icon" />
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/@CodeWithNaqvi" target="_blank">
-              <img src={youtube} alt="youtube icon" />
+              <img loading="lazy" src={youtube} alt="youtube icon" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/codewithnaqvi/" target="_blank">
-              <img src={instagram} alt="instagram icon" />
+              <img loading="lazy" src={instagram} alt="instagram icon" />
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/codewithnaqvi" target="_blank">
-              <img src={facebook} alt="facebook icon" />
+              <img loading="lazy" src={facebook} alt="facebook icon" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/CodeNaqvi" target="_blank">
-              <img src={x} alt="x icon" />
+              <img loading="lazy" src={x} alt="x icon" />
             </a>
           </li>
         </ul>

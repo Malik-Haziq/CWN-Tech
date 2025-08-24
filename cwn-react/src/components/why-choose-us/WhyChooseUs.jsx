@@ -42,7 +42,7 @@ export default function WhyChooseUS() {
 
       {/* Right Section */}
       <div className="w-full lg:w-2/4">
-        <img
+        <img loading="lazy"
           src={people}
           alt="people"
           className="w-full max-w-xl mb-4 lg:mb-6 h-fit"
@@ -52,7 +52,7 @@ export default function WhyChooseUS() {
             <h2 className="text-lg md:text-2xl font-medium text-white">
               Why choose us
             </h2>
-            <img src={arrow} alt="arrow" />
+            <img loading="lazy" src={arrow} alt="arrow" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-2">
             <div className="flex gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md justify-between sm:justify-start">

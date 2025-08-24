@@ -52,7 +52,7 @@ export default function Navbar() {
       <ContactInfo containerStyles={"hidden sm:flex"} />
       <div className="section flex justify-between items-center relative">
         <Link to="/">
-          <img src={logo} alt="cwn logo" className={"w-32 sm:w-[160px]"} />
+          <img loading="lazy" src={logo} alt="cwn logo" className={"w-32 sm:w-[160px]"} />
         </Link>
 
         {/* Desktop navigation */}
@@ -65,7 +65,7 @@ export default function Navbar() {
 
         {/* Mobile menu icon */}
         {!isMenuOpen && (
-          <img
+          <img loading="lazy"
             src={menu}
             alt="menu"
             className="w-9 cursor-pointer xlg:hidden"
@@ -76,7 +76,7 @@ export default function Navbar() {
         {/* Mobile navigation overlay */}
         {isMenuOpen && (
           <ul className="fixed inset-0 flex flex-col items-center justify-center gap-8 bg-white z-50 xlg:hidden">
-            <img
+            <img loading="lazy"
               src={cross}
               alt="close menu"
               className="absolute top-4 right-4 w-9 cursor-pointer"
@@ -119,7 +119,7 @@ function ContactInfo({ containerStyles }) {
         href="mailto:codewithnaqvi@gmail.com"
         className="flex gap-2 items-center justify-center hover:text-black py-3"
       >
-        <img src={mail} alt="mail icon" className="w-5" />
+        <img loading="lazy" src={mail} alt="mail icon" className="w-5" />
         <span className="hover:text-inherit duration-200">
           codewithnaqvi@gmail.com
         </span>
@@ -128,14 +128,14 @@ function ContactInfo({ containerStyles }) {
         href="tel:+923078875229"
         className="flex gap-1 items-center justify-center"
       >
-        <img src={phone} alt="phone icon" className="w-4" />
+        <img loading="lazy" src={phone} alt="phone icon" className="w-4" />
         +923078875229
       </a>
       <a
         href="tel:+923054388079"
         className="flex gap-1 items-center justify-center"
       >
-        <img src={phone} alt="phone icon" className="w-4" />
+        <img loading="lazy" src={phone} alt="phone icon" className="w-4" />
         +923054388079
       </a>
     </div>
