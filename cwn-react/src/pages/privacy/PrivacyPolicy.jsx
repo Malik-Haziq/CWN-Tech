@@ -1,8 +1,14 @@
 import Footer from "@components/footer/Footer";
+import Seo from "@components/seo/Seo";
 
 export function PrivacyPolicy() {
   return (
     <main>
+      <Seo
+        title="Privacy Policy | Code With Naqvi"
+        description="Review Code With Naqvi's privacy practices and how we handle your data."
+        keywords="privacy policy, Code With Naqvi"
+      />
       <div className="section mx-auto p-8 mt-12">
         <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
         <p className="text-md mb-4 text-sub-para">

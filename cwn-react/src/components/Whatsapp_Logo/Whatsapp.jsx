@@ -38,20 +38,20 @@ export default function Whatsapp() {
       <div className="fixed bottom-4 right-4 z-50">
         {" "}
         {/* Added z-index here */}
-        <img
+        <img loading="lazy"
           src={WhatsappImg}
           alt="WhatsApp"
-          className="w-16 rounded-full shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+          className="w-16 shadow-lg cursor-pointer transition-transform transform hover:scale-105"
           onClick={toggleChatbox}
         />
       </div>
 
       <div className="fixed bottom-4 left-4 z-50">
         <a href="tel://+923078875229">
-          <img
+          <img loading="lazy"
             src={PhoneImg}
             alt="WhatsApp"
-            className="w-12 rounded-full shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+            className="w-12 shadow-lg cursor-pointer transition-transform transform hover:scale-105"
           />
         </a>
       </div>
@@ -65,10 +65,10 @@ export default function Whatsapp() {
           <div className="items-center justify-between mb-3 p-5 py-4 bg-main-dark rounded-t-xl">
             <div className="flex justify-between">
               <div className="flex items-center gap-4">
-                <img
+                <img loading="lazy"
                   src={WhatsappImg}
                   alt="WhatsApp logo"
-                  className="w-10 h-22 rounded-full"
+                  className="w-10 h-22"
                 />
                 <div>
                   <p className="font-semibold text-md text-white mb-1">

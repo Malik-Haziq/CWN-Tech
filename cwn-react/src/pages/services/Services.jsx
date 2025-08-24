@@ -9,10 +9,16 @@ import ServicesSection from "@components/services/Services";
 import services from "@images/services/services.svg";
 import project from "@images/services/project-manger.svg";
 import webDevelopment from "@images/services/web-development.svg";
+import Seo from "@components/seo/Seo";
 
 export function Services() {
   return (
     <main>
+      <Seo
+        title="Software Development Services | CWN"
+        description="Discover CWN's web development and project management services tailored to your business."
+        keywords="services, software development, CWN"
+      />
       {/* /////////////////  Header */}
       <Header
         heading="Services"
@@ -29,10 +35,10 @@ export function Services() {
       <section className="section mb-32 md:mt-16">
         <h2 className="h2">Our core Services</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 lg:gap-20 bg-main-mint px-5 xm:px-10 py-8 sm:py-10 lg:px-16 rounded-3xl mb-16">
-          <img
+          <img loading="lazy"
             src={webDevelopment}
             alt="Web development"
-            className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5"
+            className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5 transition-transform duration-500 hover:scale-105"
           />
           <div className="basis-4/6 lg:basis-3/5 ">
             <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
@@ -59,10 +65,10 @@ export function Services() {
             </p>
             <BookCallBtn />
           </div>
-          <img
+          <img loading="lazy"
             src={project}
             alt="Project management"
-            className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/5"
+            className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/5 transition-transform duration-500 hover:scale-105"
           />
         </div>
       </section>

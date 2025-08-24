@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
-
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import Header from "../../components/header/Header";
+import Seo from "@components/seo/Seo";
+import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 
 import courseHeaderImg from "../../assets/images/courses/sir.jpeg";
 import htmlThumbnail from "../../assets/images/courses/html.jpeg";
@@ -16,6 +17,11 @@ import cppThumbnail from "../../assets/images/courses/c++.jpeg";
 export function Courses() {
   return (
     <main>
+      <Seo
+        title="Courses | Code With Naqvi - YouTube"
+        description="Enhance your skills with CodeWithNaqvi's YouTube programming courses and resources."
+        keywords="courses, programming, Code With Naqvi, YouTube, codewithnaqvi"
+      />
       <Header
         heading="Learn & become the Top 1% software developer"
         text="We have the best professors who teach web development to beginners, And help them to become high level developer and to dominate the market."
@@ -46,8 +52,10 @@ export function Courses() {
           </div>
         </div>
       </section>
-      <section className="section mb-32">
-        <h2 className="h2">Level up your web development skills</h2>
+      <section className="section mb-32 bg-gray-50 py-16 rounded-xl">
+        <h2 className="h2 text-center mb-12 center-orange-line">
+          Level up your web development skills with CodeWithNaqvi on YouTube
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <CourseCard
             thumbnail={htmlThumbnail}
@@ -77,7 +85,7 @@ export function Courses() {
             link={
               "https://www.youtube.com/watch?v=oC2NQVvhzTk&list=PL9WbyKqkuCAajVIrT9lFBQduvh9P7tGSb"
             }
-            title={"The Creative CSS Course"}
+            title={"The Creative JavaScript Course"}
             description={
               "JavaScript is a versatile programming language used primarily for creating interactive and dynamic web content."
             }
@@ -131,24 +139,25 @@ export function Courses() {
 
 function CourseCard({ thumbnail, thumbnailAlt, title, description, link }) {
   return (
-    <div className="rounded-xl shadow-xl">
-      <a href={link}>
-        <img className="rounded-t-xl" src={thumbnail} alt={thumbnailAlt} />
-      </a>
-      <div className="px-5 py-10">
-        <h3 className="mb-4 text-2xl font-semibold text-sub-heading   ">
-          {title}
-        </h3>
-        <p className="mb-8 text-para">{description}</p>
-        <a
-          href={link}
-          target="_blank"
-          className="px-5 py-3 text-white text-lg font-semibold bg-main rounded-lg"
-          rel="noreferrer"
-        >
-          View Courses
-        </a>
+    <AnimatedSection
+      as="a"
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="group block h-full rounded-xl overflow-hidden bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:scale-105 cursor-pointer flex flex-col"
+    >
+      <img loading="lazy"
+        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+        src={thumbnail}
+        alt={thumbnailAlt}
+      />
+      <div className="p-6">
+        <h3 className="mb-3 text-2xl font-semibold text-sub-heading">{title}</h3>
+        <p className="mb-6 text-para">{description}</p>
+        <span className="inline-block px-5 py-3 text-white text-lg font-semibold bg-main rounded-lg group-hover:bg-main-shade transition-colors duration-300">
+          View Playlist
+        </span>
       </div>
-    </div>
+    </AnimatedSection>
   );
 }

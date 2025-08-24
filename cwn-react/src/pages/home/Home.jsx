@@ -38,6 +38,8 @@ import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import challengeImg1 from "../../assets/images/challenge/img.svg";
 import challengeImg2 from "../../assets/images/challenge/img-2.svg";
 import challengeImg3 from "../../assets/images/challenge/img-3.svg";
+import Seo from "@components/seo/Seo";
+import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 
 export function Home() {
   const brandLogos = [
@@ -52,25 +54,38 @@ export function Home() {
 
   return (
     <main>
-      <header
-        style={{
-          background: `url(${homeBg}), linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)`,
-        }}
-        className="section"
+      <Seo
+        title="CWN - Software Product Development Company"
+        description="We build and scale modern software solutions that deliver business value."
+        keywords="CWN, Code With Naqvi, software development, web development"
+      />
+      <AnimatedSection
+        as="header"
+        className="section relative overflow-hidden"
       >
-        <div className=" py-24 lg:py-36">
+        <img
+          src={homeBg}
+          alt=""
+          fetchpriority="high"
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)",
+          }}
+        />
+        <div className="py-24 lg:py-36">
           <span className="bg-main text-xs sm:text-sm lg:text-base rounded-lg py-1 px-3 text-white mb-2 inline-block">
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
           <h1 className="font-bold text-4xl lg:text-8xl md:text-7xl sm:text-5xl mb-2 xl:w-10/12">
-            Your
-            <span className="text-main"> Product.</span>
-            Your
-            <span className="text-main"> Idea.</span> Our
-            <span className="text-main"> Innovation </span>
-            and Engineering.
+            Your <span className="text-main">Product.</span>{" "}
+            Your <span className="text-main">Idea.</span>{" "}
+            Our <span className="text-main">Innovation</span> and Engineering.
           </h1>
-          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10">
+          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10 mt-8">
             We are committed to grow your business with modern technologies,
             build software, scale software that delivers business value.
           </p>
@@ -80,15 +95,15 @@ export function Home() {
             href="#contact"
           />
         </div>
-      </header>
+      </AnimatedSection>
 
       {/* /////////////////////////////////////////  Featured section */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32 mt-8">
         <h2 className="h2 mb-8">Featured Brands</h2>
         <div className="overflow-x-hidden py-4">
           <div className="flex animate-slide">
             {brandLogos.map((imgSrc, index) => (
-              <img
+              <img loading="lazy"
                 key={index}
                 src={imgSrc}
                 alt="brand"
@@ -97,7 +112,7 @@ export function Home() {
             ))}
             {/* Duplicate the images for seamless loop */}
             {brandLogos.map((imgSrc, index) => (
-              <img
+              <img loading="lazy"
                 key={index + "copy"}
                 src={imgSrc}
                 alt="brand"
@@ -106,13 +121,13 @@ export function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ///////////////////////  What we offer */}
       <Services />
 
       {/* ////////////////////////  Ecosystem */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <div className="flex flex-col xlg:flex-row gap-5 bg-main-mint px-5 py-8 sm:p-10 rounded-3xl">
           <div className="xlg:basis-auto">
             <h2 className="h2 mb-6 lg:mb-10">
@@ -131,16 +146,16 @@ export function Home() {
               <li className="li relative">Migration</li>
             </ul>
           </div>
-          <img
+          <img loading="lazy"
             src={eco}
             alt="technology ecosystem"
             className="mx-auto w-[450px] md:hidden xlg:inline-block xlg:w-unset xlg:basis-2/5 "
           />
         </div>
-      </section>
+      </AnimatedSection>
       {/* ////////////////////////  Challenges you face   */}
 
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Are you facing these challenges?</h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="shadow-lg p-8 border border-sub rounded-3xl ">
@@ -151,7 +166,7 @@ export function Home() {
               We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
               from the start.
             </p>
-            <img
+            <img loading="lazy"
               src={challengeImg1}
               alt="Regulatory compliance image"
               className="mx-auto"
@@ -165,7 +180,7 @@ export function Home() {
               Our outsourcing offers top-tier development expertise at 2-3 times
               the cost efficiency of an in-house team.
             </p>
-            <img
+            <img loading="lazy"
               src={challengeImg2}
               alt="High cost graph"
               className="mx-auto"
@@ -179,22 +194,22 @@ export function Home() {
               We minimize workflow risks, ensuring clear communication,
               structured progress, and staying within your budget and timeline.
             </p>
-            <img
+            <img loading="lazy"
               src={challengeImg3}
               alt="Reliable partner image"
               className="mx-auto"
             />
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ////////////////////////  Benefits you get */}
 
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Benefits you get</h2>
         <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={cost} alt="budget icon" className="w-16 mb-7" />
+            <img loading="lazy" src={cost} alt="cost icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               Quick & Inexpensive
             </h3>
@@ -204,7 +219,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={service} alt="budget icon" className="w-16 mb-7" />
+            <img loading="lazy" src={service} alt="service icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               CUSTOM SERVICE
             </h3>
@@ -214,7 +229,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img src={solution} alt="budget icon" className="w-16 mb-7" />
+            <img loading="lazy" src={solution} alt="solution icon" className="w-16 mb-7" />
             <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
               INNOVATIVE SOLUTIONS
             </h3>
@@ -224,10 +239,10 @@ export function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
-      <WhyChooseUS />
-      <Awards />
+  
+     
       {/* <Certificates /> */}
       <Whatsapp />
 
@@ -237,25 +252,25 @@ export function Home() {
           <section>
             <div className="flex flex-col sm:flex-row items-center flex-1 gap-16 border-b-2">
               <div className="flex flex-col sm:flex-row items-center justify-center">
-                <img src="" alt="" />
+                <img loading="lazy" src="" alt="" />
                 <h3 className="text-xl font-semibold text-sub-heading ">Front-end</h3>
               </div>
               <div className="flex items-center gap-8 flex-wrap">
-                <img src={javascript} alt="javascript" className="h-8"/>
-                <img src={react} alt="react" className="h-8"/>
-                <img src={angular} alt="angular" className="h-8"/>
-                <img src={tailwind} alt="tailwind" className="h-8"/>
-                <img src={bootstrap} alt="bootstrap" className="h-8"/>
+                <img loading="lazy" src={javascript} alt="javascript" className="h-8"/>
+                <img loading="lazy" src={react} alt="react" className="h-8"/>
+                <img loading="lazy" src={angular} alt="angular" className="h-8"/>
+                <img loading="lazy" src={tailwind} alt="tailwind" className="h-8"/>
+                <img loading="lazy" src={bootstrap} alt="bootstrap" className="h-8"/>
               </div>
             </div>
           </section>
         </section> */}
 
       {/* /////////////////////////////////// */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Our core clients are VC-backed startups</h2>
         <div className="flex flex-col items-center md:flex-row gap-5 bg-main-mint px-5 xm:px-10 pt-8 sm:pt-10 lg:px-16 rounded-3xl">
-          <img
+          <img loading="lazy"
             src={challenge}
             alt="Problem solving"
             className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset "
@@ -280,7 +295,7 @@ export function Home() {
             </ul>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* /////////////////////////  Book a call */}
       <BookCall />
@@ -289,11 +304,11 @@ export function Home() {
       <WhoAeAre />
 
       {/* ///////////////////////  process */}
-      <section className="section mb-32">
+      <AnimatedSection className="section mb-32">
         <h2 className="h2">Process we follow</h2>
         <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={requirement} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={requirement} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               1. Requirement Gathering
             </h3>
@@ -303,7 +318,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={ui} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={ui} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               2. UI/UX Design
             </h3>
@@ -313,7 +328,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={prototype} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={prototype} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               3. Prototype
             </h3>
@@ -323,7 +338,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={development} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={development} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               4. Development
             </h3>
@@ -333,7 +348,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={qa} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={qa} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               5. Quality Assurance
             </h3>
@@ -343,7 +358,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img src={deployment} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={deployment} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               6. Deployment
             </h3>
@@ -353,7 +368,7 @@ export function Home() {
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
-            <img src={maintenance} alt="budget icon" className="w-16 mb-3" />
+            <img loading="lazy" src={maintenance} alt="budget icon" className="w-16 mb-3" />
             <h3 className="mb-2 text-lg lg:text-xl font-medium">
               7. Support & Maintenance
             </h3>
@@ -363,7 +378,7 @@ export function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ///////////////////////  Contact  */}
       <Contact />
