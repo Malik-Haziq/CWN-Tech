@@ -241,8 +241,8 @@ export function Home() {
         </div>
       </AnimatedSection>
 
-      <WhyChooseUS />
-      <Awards />
+  
+     
       {/* <Certificates /> */}
       <Whatsapp />
 
