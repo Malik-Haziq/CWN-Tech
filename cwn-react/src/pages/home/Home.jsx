@@ -81,12 +81,9 @@ export function Home() {
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
           <h1 className="font-bold text-4xl lg:text-8xl md:text-7xl sm:text-5xl mb-2 xl:w-10/12">
-            Your
-            <span className="text-main"> Product.</span>
-            Your
-            <span className="text-main"> Idea.</span> Our
-            <span className="text-main"> Innovation </span>
-            and Engineering.
+            Your <span className="text-main">Product.</span>{" "}
+            Your <span className="text-main">Idea.</span> Our{" "}
+            <span className="text-main">Innovation</span> and Engineering.
           </h1>
           <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10">
             We are committed to grow your business with modern technologies,
