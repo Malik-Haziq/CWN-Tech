@@ -85,7 +85,7 @@ export function Home() {
             Your <span className="text-main">Idea.</span>{" "}
             Our <span className="text-main">Innovation</span> and Engineering.
           </h1>
-          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10">
+          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10 mt-8">
             We are committed to grow your business with modern technologies,
             build software, scale software that delivers business value.
           </p>
@@ -98,7 +98,7 @@ export function Home() {
       </AnimatedSection>
 
       {/* /////////////////////////////////////////  Featured section */}
-      <AnimatedSection className="section mb-32">
+      <AnimatedSection className="section mb-32 mt-8">
         <h2 className="h2 mb-8">Featured Brands</h2>
         <div className="overflow-x-hidden py-4">
           <div className="flex animate-slide">
