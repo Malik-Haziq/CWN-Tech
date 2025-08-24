@@ -38,7 +38,7 @@ export function Services() {
           <img
             src={webDevelopment}
             alt="Web development"
-            className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5"
+            className=" w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/6 lg:basis-2/5 transition-transform duration-500 hover:scale-105"
           />
           <div className="basis-4/6 lg:basis-3/5 ">
             <h3 className="text-sub-heading text-xl xl:text-2xl font-semibold mb-4">
@@ -68,7 +68,7 @@ export function Services() {
           <img
             src={project}
             alt="Project management"
-            className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/5"
+            className="mx-auto w-[400px] md:w-[300px] lg:w-[400px] xlg:w-unset basis-2/5 transition-transform duration-500 hover:scale-105"
           />
         </div>
       </section>

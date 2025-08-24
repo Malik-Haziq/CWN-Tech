@@ -1,9 +1,10 @@
-
+/* eslint-disable react/prop-types */
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import Header from "../../components/header/Header";
 import Seo from "@components/seo/Seo";
+import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 
 import courseHeaderImg from "../../assets/images/courses/sir.jpeg";
 import htmlThumbnail from "../../assets/images/courses/html.jpeg";
@@ -138,7 +139,8 @@ export function Courses() {
 
 function CourseCard({ thumbnail, thumbnailAlt, title, description, link }) {
   return (
-    <a
+    <AnimatedSection
+      as="a"
       href={link}
       target="_blank"
       rel="noreferrer"
@@ -156,6 +158,6 @@ function CourseCard({ thumbnail, thumbnailAlt, title, description, link }) {
           View Playlist
         </span>
       </div>
-    </a>
+    </AnimatedSection>
   );
 }

@@ -125,7 +125,7 @@ export default function Contact() {
                   cols="30"
                   rows="4"
                   placeholder="How we can help you?"
-                  className="text-sub-para resize-none w-full p-4 rounded-lg"
+                  className={`text-sub-para resize-none w-full p-4 rounded-lg border ${errors.contact_message ? 'border-red-500' : 'border-gray-200'}`}
                   value={formData.contact_message}
                   onChange={handleChange}
                 ></textarea>
@@ -219,7 +219,7 @@ function Input({ name, type, placeholder, value, onChange, error }) {
       <input
         name={name}
         type={type}
-        className="border-none w-full p-4 rounded-lg text-sub-para"
+        className={`w-full p-4 rounded-lg text-sub-para border ${error ? 'border-red-500' : 'border-gray-200'}`}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
