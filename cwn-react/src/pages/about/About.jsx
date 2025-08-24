@@ -9,6 +9,7 @@ import about from "@images/about/about-us.svg";
 import ourStory from "@images/about/our-story.svg";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import Seo from "@components/seo/Seo";
+import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 
 export function About() {
   return (
@@ -31,7 +32,7 @@ export function About() {
       <Whatsapp />
 
       {/* /////////////////////  Whom we serve */}
-      <section className="section md:mt-16 mb-32">
+      <AnimatedSection className="section md:mt-16 mb-32">
         <h2 className="h2">Whom we serve</h2>
         <div className="flex flex-col sm:flex-row items-stretch justify-between gap-10">
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1">
@@ -55,10 +56,10 @@ export function About() {
             </p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* /////////////////////  Our story */}
-      <section className="section mb-32 flex flex-col-reverse lg:flex-row justify-between items-center">
+      <AnimatedSection className="section mb-32 flex flex-col-reverse lg:flex-row justify-between items-center">
         <img
           src={ourStory}
           alt="Problem solving"
@@ -77,13 +78,13 @@ export function About() {
             world of software development.
           </p>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* ///////////////////  Who we are */}
       <WhoAeAre />
 
       {/* //////////////////////  Mission & Vision */}
-      <section className="section mt-32 mb-32">
+      <AnimatedSection className="section mt-32 mb-32">
         <div className="flex flex-col sm:flex-row items-stretch justify-between gap-10">
           <div className="rounded-2xl py-4 px-5 border-[1px] border-sub flex-1">
             <h2 className="h2 mb-10">Our vision</h2>
@@ -109,7 +110,7 @@ export function About() {
             </p>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* /////////////////////  Services */}
       <Services />
