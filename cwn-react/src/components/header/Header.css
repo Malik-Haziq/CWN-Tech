@@ -7,16 +7,8 @@
   margin-right: auto;
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
-}
-
-.image-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  background: conic-gradient(#3EB7BB, #1E9799, #3EB7BB);
-  z-index: -1;
-  animation: spin 8s linear infinite;
+  overflow: hidden;
+  border: 6px solid #3EB7BB;
 }
 
 .floating-img {
@@ -24,12 +16,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.image-wrapper:hover .floating-img {
+  transform: scale(1.05);
 }
 
 @keyframes float {
