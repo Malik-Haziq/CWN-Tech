@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import "../../css/index.css";
 import logo from "@icons/logo.svg";
 import mail from "@icons/mail.svg";
@@ -58,8 +59,8 @@ export default function Navbar() {
           <ul
             className={
               isMenuOpen
-                ? "absolute pl-8 right-0 top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen min-h-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static z-50"
-                : "absolute pl-8 right-full top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen min-h-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static z-50"
+                ? "absolute pl-8 right-0 top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static z-50"
+                : "absolute pl-8 right-full top-full flex flex-col py-8 gap-10 bg-white border-b-[1px] border-sub duration-500 ease-out w-screen xlg:flex-row xlg:py-0 xlg:w-fit xlg:border-none xlg:gap-12 xlg:static z-50"
             }
           >
             {navLinks.map((link, i) => {
@@ -70,6 +71,7 @@ export default function Navbar() {
               href={"#contact"}
               styles="sm:hidden w-fit"
             />
+            <ContactInfo containerStyles={"sm:hidden bg-white"} />
           </ul>
         </div>
         <div className="flex gap-4">
