@@ -17,12 +17,12 @@ export default {
       }
     },
     colors: {
-      'main': "#3EB7BB",
-      'main-tint': "#66c9cc",
-      'main-tint-1': "#94D9DB",
-      'main-shade': "#1E9799",
+      'main': "#125F60",
+      'main-tint': "#3EB7BB",
+      'main-tint-1': "#66c9cc",
+      'main-shade': "#0F4F51",
       'main-mint': "#f0f9fa",
-      'main-dark': "#125F60",
+      'main-dark': "#0B3A3B",
       'secondary': "#FAFAFA",
       'tertiary': "#ED8B00",
       'tertiary-shade': "#d17a01",
