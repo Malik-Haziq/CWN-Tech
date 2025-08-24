@@ -18,9 +18,38 @@ export default function Contact() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+    const fieldValue = type === "checkbox" ? checked : value;
+
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? checked : value,
+      [name]: fieldValue,
+    });
+
+    // Clear field-specific errors once the input is valid
+    setErrors((prevErrors) => {
+      const updatedErrors = { ...prevErrors };
+      switch (name) {
+        case "name":
+          if (fieldValue.trim()) delete updatedErrors.name;
+          break;
+        case "email":
+          if (
+            fieldValue.trim() &&
+            /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(fieldValue)
+          ) {
+            delete updatedErrors.email;
+          }
+          break;
+        case "contact_message":
+          if (fieldValue.trim()) delete updatedErrors.contact_message;
+          break;
+        case "terms_and_conditions":
+          if (fieldValue) delete updatedErrors.terms_and_conditions;
+          break;
+        default:
+          break;
+      }
+      return updatedErrors;
     });
   };
 

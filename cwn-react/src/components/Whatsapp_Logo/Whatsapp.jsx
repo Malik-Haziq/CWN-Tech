@@ -41,7 +41,7 @@ export default function Whatsapp() {
         <img
           src={WhatsappImg}
           alt="WhatsApp"
-          className="w-16 rounded-full shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+          className="w-16 shadow-lg cursor-pointer transition-transform transform hover:scale-105"
           onClick={toggleChatbox}
         />
       </div>
@@ -51,7 +51,7 @@ export default function Whatsapp() {
           <img
             src={PhoneImg}
             alt="WhatsApp"
-            className="w-12 rounded-full shadow-lg cursor-pointer transition-transform transform hover:scale-105"
+            className="w-12 shadow-lg cursor-pointer transition-transform transform hover:scale-105"
           />
         </a>
       </div>
@@ -68,7 +68,7 @@ export default function Whatsapp() {
                 <img
                   src={WhatsappImg}
                   alt="WhatsApp logo"
-                  className="w-10 h-22 rounded-full"
+                  className="w-10 h-22"
                 />
                 <div>
                   <p className="font-semibold text-md text-white mb-1">
