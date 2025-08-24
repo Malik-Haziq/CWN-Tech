@@ -159,7 +159,7 @@ export default function Contact() {
                   onChange={handleChange}
                 ></textarea>
                 {errors.contact_message && (
-                  <p className="text-red-500 text-sm mt-1">* {errors.contact_message}</p>
+                  <p className="error-text text-sm mt-1">* {errors.contact_message}</p>
                 )}
               </div>
 
@@ -210,7 +210,7 @@ export default function Contact() {
                     </span>
                   </label>
                   {errors.terms_and_conditions && (
-                    <p className="text-red-500 text-sm mt-1">* {errors.terms_and_conditions}</p>
+                    <p className="error-text text-sm mt-1">* {errors.terms_and_conditions}</p>
                   )}
                 </div>
               </div>
@@ -253,7 +253,7 @@ function Input({ name, type, placeholder, value, onChange, error }) {
         value={value}
         onChange={onChange}
       />
-      {error && <p className="text-red-500 text-sm mt-1">* {error}</p>}
+      {error && <p className="error-text text-sm mt-1">* {error}</p>}
     </div>
   );
 }
