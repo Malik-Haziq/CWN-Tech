@@ -9,12 +9,12 @@ export default function Awards() {
     <>
       <section className="section mb-32">
         <h2 className="h2">Awards & recognitions</h2>
-        <div className="flex justify-between flex-wrap">
-          <img src={logo1} alt="logo1" className="max-h-44" />
-          <img src={logo2} alt="logo2" className="max-h-44" />
-          <img src={logo3} alt="logo3" className="max-h-44" />
-          <img src={logo4} alt="logo4" className="max-h-44" />
-          <img src={logo5} alt="logo5" className="max-h-44" />
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+          <img src={logo1} alt="logo1" className="h-24 sm:h-32 object-contain" />
+          <img src={logo2} alt="logo2" className="h-24 sm:h-32 object-contain" />
+          <img src={logo3} alt="logo3" className="h-24 sm:h-32 object-contain" />
+          <img src={logo4} alt="logo4" className="h-24 sm:h-32 object-contain" />
+          <img src={logo5} alt="logo5" className="h-24 sm:h-32 object-contain" />
         </div>
       </section>
     </>

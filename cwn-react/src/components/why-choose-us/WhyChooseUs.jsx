@@ -54,28 +54,28 @@ export default function WhyChooseUS() {
             </h2>
             <img src={arrow} alt="arrow" />
           </div>
-          <div className="flex flex-wrap gap-4 mb-2">
-            <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-2">
+            <div className="flex gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md justify-between sm:justify-start">
               <p className="text-para text-sm md:text-base">
                 Products delivered:
               </p>
               <p className="text-main text-lg font-medium">120+</p>
             </div>
-            <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
+            <div className="flex gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md justify-between sm:justify-start">
               <p className="text-para text-sm md:text-base">
                 Years on the market:
               </p>
               <p className="text-main text-lg font-medium">10</p>
             </div>
           </div>
-          <div className="flex flex-wrap gap-4">
-            <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md justify-between sm:justify-start">
               <p className="text-para text-sm md:text-base">
                 Client satisfaction rate:
               </p>
               <p className="text-main text-lg font-medium">99.9%</p>
             </div>
-            <div className="flex flex-1 gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md">
+            <div className="flex gap-4 md:gap-6 bg-white p-2 px-4 items-center rounded-md justify-between sm:justify-start">
               <p className="text-para text-sm md:text-base">
                 Awards & certifications:
               </p>
