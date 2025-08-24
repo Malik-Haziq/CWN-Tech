@@ -81,6 +81,10 @@
   .animate-fade-up {
     animation: fade-up 0.6s ease-out forwards;
   }
+
+  .error-text {
+    color: red;
+  }
 }
 
 @layer utilities {
