@@ -1,21 +1,25 @@
 .image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 20rem;
-  aspect-ratio: 1 / 1;
+  max-width: 25rem;
+  aspect-ratio: 4 / 3;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50%;
+  border-radius: 1.5rem;
   animation: float 6s ease-in-out infinite;
   overflow: hidden;
-  border: 6px solid #3EB7BB;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .floating-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 1.5rem;
   transition: transform 0.5s ease-in-out;
 }
 
