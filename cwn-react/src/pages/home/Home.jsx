@@ -75,11 +75,11 @@ export function Home() {
               "linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)",
           }}
         />
-        <div className="py-24 lg:py-36">
+        <div className="py-20 lg:py-28">
           <span className="bg-main text-xs sm:text-sm lg:text-base rounded-lg py-1 px-3 text-white mb-2 inline-block">
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
-          <h1 className="font-bold text-4xl lg:text-8xl md:text-7xl sm:text-5xl mb-2 xl:w-10/12">
+          <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight mb-2 xl:w-10/12">
             Your <span className="text-main">Product.</span>{" "}
             Your <span className="text-main">Idea.</span>{" "}
             Our <span className="text-main">Innovation</span> and Engineering.

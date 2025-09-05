@@ -1,62 +1,103 @@
 import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
-import { Link } from "react-router-dom";
-import htmlThumbnail from "@images/courses/html.jpeg";
-import cssThumbnail from "@images/courses/css.jpeg";
-import jsThumbnail from "@images/courses/js.jpeg";
 
 export default function Learning() {
-  const resources = [
+  const features = [
     {
-      img: htmlThumbnail,
-      alt: "HTML Basics thumbnail",
-      title: "HTML Basics",
-      description: "Build a solid foundation with semantic HTML5.",
-      link: "/blogs",
+      icon: "🧭",
+      title: "Beginner-Friendly",
+      description:
+        "Step-by-step courses designed for absolute beginners to kickstart their coding journey.",
     },
     {
-      img: cssThumbnail,
-      alt: "CSS Mastery thumbnail",
-      title: "CSS Mastery",
-      description: "Craft beautiful, responsive layouts with modern CSS.",
-      link: "/blogs",
+      icon: "🧠",
+      title: "Advanced Concepts",
+      description:
+        "Deep dive into advanced topics and frameworks to level up your skills.",
     },
     {
-      img: jsThumbnail,
-      alt: "JavaScript Essentials thumbnail",
-      title: "JavaScript Essentials",
-      description: "Add interactivity with powerful JavaScript techniques.",
-      link: "/blogs",
+      icon: "🧪",
+      title: "Real-World Projects",
+      description:
+        "Learn by building real projects and gain hands‑on experience.",
+    },
+    {
+      icon: "💲",
+      title: "Affordable Pricing",
+      description:
+        "Access premium courses at prices tailored for students and professionals.",
+    },
+    {
+      icon: "📚",
+      title: "Comprehensive Resources",
+      description:
+        "Get templates, documentation, and code snippets to enhance your learning.",
+    },
+    {
+      icon: "📈",
+      title: "Industry Insights",
+      description:
+        "Stay updated with the latest trends from the tech industry to keep skills relevant.",
     },
   ];
 
   return (
     <AnimatedSection className="section mb-32">
-      <h2 className="h2 mb-12">Learning Resources</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        {resources.map((res) => (
+      <div className="mb-8">
+        <span className="text-sm font-medium text-sub-para">Courses</span>
+        <h2 className="h2 mt-1">Master Coding with Our Core Offerings</h2>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((item) => (
           <AnimatedSection
-            key={res.title}
-            as={Link}
-            to={res.link}
-            className="group block h-full rounded-xl overflow-hidden bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:scale-105"
+            key={item.title}
+            className="rounded-2xl bg-white border border-light-gray shadow-card p-6 hover:shadow-3xl transition-shadow"
           >
-            <img
-              loading="lazy"
-              src={res.img}
-              alt={res.alt}
-              className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-            <div className="p-6">
-              <h3 className="mb-3 text-2xl font-semibold text-sub-heading">{res.title}</h3>
-              <p className="mb-6 text-para">{res.description}</p>
-              <span className="inline-block px-5 py-3 text-white text-lg font-semibold bg-main rounded-lg group-hover:bg-main-shade transition-colors duration-300">
-                Learn More
-              </span>
+            <div className="flex items-start gap-4">
+              <div className="h-12 w-12 rounded-full bg-main-mint text-xl flex items-center justify-center">
+                <span aria-hidden>{item.icon}</span>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-sub-heading">{item.title}</h3>
+                <p className="text-sub-para mt-2">{item.description}</p>
+              </div>
             </div>
           </AnimatedSection>
         ))}
       </div>
+
+      {/* Testimonials */}
+      <div className="mt-16">
+        <h3 className="h2 text-center center-orange-line mb-8">Testimonials</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[
+            {
+              quote:
+                "I don't have words to thank this man. If you're a mere beginner, then you can trust this guy and put your time into his content.",
+              name: "Malik Haziq",
+              role: "Web Developer",
+            },
+            {
+              quote:
+                "For everyone who wants to level up their coding and dev skills — both basic and advanced stacks are covered and most of the content is free.",
+              name: "Ali Haider",
+              role: "Web Developer",
+            },
+          ].map((t) => (
+            <AnimatedSection
+              key={t.name}
+              className="rounded-2xl bg-white border border-light-gray p-6 shadow-card"
+            >
+              <div className="text-4xl text-sub mb-2">“</div>
+              <p className="text-sub-para mb-4">{t.quote}</p>
+              <div className="text-para">
+                <div className="font-semibold">{t.name}</div>
+                <div className="text-sm">{t.role}</div>
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+      </div>
     </AnimatedSection>
   );
 }
-

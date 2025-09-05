@@ -24,7 +24,7 @@ export default function AnimatedSection({
           }
         });
       },
-      { threshold: 0.9 }
+      { threshold: 0.2 }
     );
 
     observer.observe(node);
