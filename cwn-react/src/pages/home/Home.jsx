@@ -31,8 +31,6 @@ import Footer from "@components/footer/Footer";
 import WhoAeAre from "@components/who-we-are/WhoWeAre";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
-import WhyChooseUS from "../../components/why-choose-us/WhyChooseUs";
-import Awards from "../../components/Awards/Awards";
 // import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 import challengeImg1 from "../../assets/images/challenge/img.svg";
@@ -40,6 +38,7 @@ import challengeImg2 from "../../assets/images/challenge/img-2.svg";
 import challengeImg3 from "../../assets/images/challenge/img-3.svg";
 import Seo from "@components/seo/Seo";
 import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
+import Learning from "@components/learning/Learning";
 
 export function Home() {
   const brandLogos = [
@@ -66,7 +65,7 @@ export function Home() {
         <img
           src={homeBg}
           alt=""
-          fetchpriority="high"
+          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         />
         <div
@@ -241,8 +240,8 @@ export function Home() {
         </div>
       </AnimatedSection>
 
-  
-     
+      <Learning />
+
       {/* <Certificates /> */}
       <Whatsapp />
 
