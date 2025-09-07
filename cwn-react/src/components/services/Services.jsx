@@ -110,15 +110,15 @@ function ServicesSection() {
   return (
     <>
       <div className="hidden lg:flex gap-6 xl:gap-10 pr-8 shadow-3xl relative translate-x-[2%] w-[98%] h-[570px] rounded-3xl">
-        <aside className="bg-main-shade min-w-fit py-6 shadow-2xl text-white font-medium rounded-xl text-xl flex flex-col justify-start items-start gap-4 -translate-y-4 -translate-x-7">
+        <aside className="bg-main-shade min-w-fit py-6 shadow-2xl text-white font-medium rounded-xl text-xl flex flex-col justify-start items-start gap-3 -translate-y-4 -translate-x-7">
           {headingList.map((el, i) => {
             return (
               <div
                 onClick={() => setService(el)}
                 className={
                   service === el
-                    ? "bg-main px-4 py-5 pr-30 translate-x-5 shadow-3xl rounded-lg cursor-pointer w-[270px] xlg:w-[300px] xl:w-[350px] duration-200 "
-                    : " px-4 py-5 pr-30 w-[270px] xlg:w-[300px] xl:w-[350px] translate-x-5 hover:underline cursor-pointer duration-200"
+                    ? "bg-main ring-1 ring-white/20 px-4 py-5 pr-30 translate-x-5 shadow-3xl rounded-lg cursor-pointer w-[270px] xlg:w-[300px] xl:w-[350px] transition-all duration-200 "
+                    : "px-4 py-5 pr-30 w-[270px] xlg:w-[300px] xl:w-[350px] translate-x-5 hover:bg-white/15 hover:translate-x-3 hover:shadow-3xl rounded-lg cursor-pointer transition-all duration-200"
                 }
                 key={i}
               >

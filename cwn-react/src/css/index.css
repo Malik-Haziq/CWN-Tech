@@ -97,6 +97,10 @@ body {
 }
 
 @layer utilities {
+  /* Balance heading line breaks for better readability */
+  .text-balance {
+    text-wrap: balance;
+  }
   .orange-line::after {
     content: "";
     @apply block w-14 h-1 absolute -bottom-4 bg-tertiary rounded-lg;

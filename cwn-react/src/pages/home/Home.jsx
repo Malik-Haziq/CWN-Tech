@@ -79,16 +79,14 @@ export function Home() {
           <span className="bg-main text-xs sm:text-sm lg:text-base rounded-lg py-1 px-3 text-white mb-2 inline-block">
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
-          <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight mb-2 xl:w-10/12">
-            Using <span className="text-main"> Engineering</span> &{" "}
-            creativity to  <span className="text-main">transform</span>{" "}
-            your <span className="text-main">product</span>
+          <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-normal mb-3 max-w-3xl md:max-w-4xl leading-[1.2] sm:leading-[1.18] lg:leading-[1.12]">
+            <span className="block">Using <span className="text-main">Engineering</span> &</span>
+            <span className="block">creativity to <span className="text-main">transform</span></span>
+            <span className="block">your <span className="text-main">product</span>.</span>
           </h1>
-          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10 mt-8">
-            We are dedicated to helping your business
-            grow using modern technologies. Our goal
-            is to create scalable software that truly
-            delivers value to your business.
+          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl max-w-3xl mb-10 mt-8 leading-relaxed">
+            We are dedicated to helping your business grow using modern technologies.
+            Our goal is to create scalable software that truly delivers value to your business.
           </p>
           <Button
             text={"Let's discuss your project"}
