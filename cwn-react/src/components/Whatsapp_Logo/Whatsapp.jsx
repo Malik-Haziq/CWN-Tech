@@ -36,20 +36,6 @@ export default function Whatsapp() {
         />
       </button>
 
-      {/* Phone Floating Button */}
-      <a
-        href="tel://+923078875229"
-        aria-label="Call us"
-        className="fixed bottom-6 left-6 z-50 rounded-full w-12 h-12 bg-main text-white flex items-center justify-center shadow-3xl hover:scale-105 active:scale-95 transition-transform focus:outline-none focus:ring-4 focus:ring-white/40"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          className="w-6 h-6 fill-current"
-        >
-          <path d="M6.62 10.79a15.07 15.07 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.11.37 2.3.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.86 22 2 13.14 2 2.99a1 1 0 011-1H6.5a1 1 0 011 1c0 1.28.2 2.47.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"/>
-        </svg>
-      </a>
 
       {/* Chatbox Modal */}
       {isChatOpen && (

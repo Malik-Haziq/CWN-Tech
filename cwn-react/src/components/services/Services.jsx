@@ -5,7 +5,7 @@ import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 export default function Services() {
   return (
     <section className="section mb-32">
-      <h2 className="h2">What we offer</h2>
+      <h2 className="h2">Our Expertise</h2>
       <ServicesSection />
       <Whatsapp />
     </section>
@@ -26,7 +26,7 @@ function ServicesSection() {
   const services = [
     {
       heading: "Web Development",
-      desc: "Our web development services embody innovation and reliability. We engineer dynamic and responsive websites that captivate audiences across devices. Our expertise encompasses the entire web development spectrum, from front-end design to back-end functionality.",
+      desc: "Our web development services are about creativity and trust. We build dynamic  and  responsive  websites that engage audiences on various devices. Our skills include all aspects of web development, such as front- end design and back-end functionality.",
       list: [
         "Web Development Consulting",
         "Frontend Development",
@@ -39,7 +39,7 @@ function ServicesSection() {
     },
     {
       heading: "Software Development",
-      desc: "As a forward-thinking software development company, we craft reliable, scalable, and secure solutions for any platform, browser, or device. Our blend of industry insight and cutting-edge technologies ensures every product we build aligns seamlessly with user needs and expectations.",
+      desc: "As a progressive software development company, we create reliable, scalable, and secure solutions for any platform, browser, or device. Our mix of industry knowledge and modern technologies ensures that every product we build meets user needs and expectations.",
       list: [
         "Software consulting",
         "Software development",
@@ -51,7 +51,7 @@ function ServicesSection() {
     },
     {
       heading: "UI & UX Design",
-      desc: "Our UI & UX design services redefine user experiences. We fuse creativity with functionality, delivering visually stunning and intuitively designed interfaces. Our approach combines user-centric design principles with the latest trends, ensuring optimal engagement and satisfaction.",
+      desc: "Our UI and UX design services change user experiences. We merge creativity with functionality to create visually appealing and easy-to-use interfaces. Our method mixes user- focused design principles with current trends, ensuring high engagement and satisfaction.",
       list: [
         "UI/UX Consulting",
         "Wireframing and Prototyping",
@@ -64,7 +64,7 @@ function ServicesSection() {
     },
     {
       heading: "SEO",
-      desc: "Our commitment to excellence has driven our SEO services. We optimize digital landscapes, ensuring visibility and relevance across search engines. With a strategic approach, we elevate online presence and drive organic traffic, enabling businesses to thrive in the digital sphere.",
+      desc: "Our focus on quality has shaped our SEO services. We improve digital spaces to ensure visibility and relevance in search engines. With a thoughtful approach, we boost online presence and increase organic traffic, helping businesses succeed in the digital world.",
       list: [
         "SEO Consulting",
         "On-page and Off-page SEO",
@@ -77,7 +77,7 @@ function ServicesSection() {
     },
     {
       heading: "Marketing Services",
-      desc: "Our marketing services are synonymous with success. We leverage comprehensive strategies, innovative campaigns, and data-driven insights to elevate brand presence. From traditional to digital channels, we craft compelling narratives that resonate with target audiences, fostering lasting connections.",
+      desc: "Our marketing services bring success. We use clear strategies, creative campaigns, and data-based insights to improve brand presence. From traditional to digital channels, we create engaging stories that connect with target audiences and build lasting relationships.",
       list: [
         "Marketing Strategy",
         "Digital Marketing",
@@ -90,7 +90,7 @@ function ServicesSection() {
     },
     {
       heading: "App Development",
-      desc: "Our app development services epitomize excellence. Crafting reliable, scalable, and secure applications compatible with any OS, browser, or device is at the core of our expertise. We seamlessly blend industry knowledge with cutting-edge IT advancements to provide tailored solutions and products that align precisely with user needs and behaviors.",
+      desc: "Our app development services showcase our commitment to quality. We create reliable, scalable, and secure applications that work with any operating system, browser, or device. We combine our industry knowledge with the latest IT improvements to deliver customized solutions and products that meet user needs and behaviors.",
       list: [
         "App Development Consulting",
         "App Development",

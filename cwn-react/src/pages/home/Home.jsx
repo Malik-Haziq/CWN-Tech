@@ -80,13 +80,15 @@ export function Home() {
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
           <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight mb-2 xl:w-10/12">
-            Your <span className="text-main">Product.</span>{" "}
-            Your <span className="text-main">Idea.</span>{" "}
-            Our <span className="text-main">Innovation</span> and Engineering.
+            Using <span className="text-main"> Engineering</span> &{" "}
+            creativity to  <span className="text-main">transform</span>{" "}
+            your <span className="text-main">product</span>
           </h1>
           <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10 mt-8">
-            We are committed to grow your business with modern technologies,
-            build software, scale software that delivers business value.
+            We are dedicated to helping your business
+            grow using modern technologies. Our goal
+            is to create scalable software that truly
+            delivers value to your business.
           </p>
           <Button
             text={"Let's discuss your project"}
@@ -96,6 +98,7 @@ export function Home() {
         </div>
       </AnimatedSection>
 
+    
       {/* /////////////////////////////////////////  Featured section */}
       <AnimatedSection className="section mb-32 mt-8">
         <h2 className="h2 mb-8">Featured Brands</h2>
@@ -378,6 +381,38 @@ export function Home() {
           </div>
         </div>
       </AnimatedSection>
+
+        {/* ////////////////////////  FAQ */}
+      <AnimatedSection id="faq" className="section mb-32">
+        <h2 className="h2">Frequently Asked Questions</h2>
+        <div className="divide-y divide-light-gray rounded-2xl border border-light-gray bg-white shadow-card">
+          {[{
+            q: "How long does it take to build a website?",
+            a: "Most projects take 4–6 weeks, depending on scope.",
+          },
+          {
+            q: "Do you provide ongoing support?",
+            a: "Yes, we offer maintenance packages tailored to your needs.",
+          },
+          {
+            q: "What technologies do you use?",
+            a: "React, Angular, Ruby on Rails, php and other modern stacks.",
+          },
+          {
+            q: "Do you work with startups?",
+            a: "Absolutely, we love growing with startups and SMEs.",
+          }].map((f, i) => (
+            <details key={i} className="group p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between font-semibold text-sub-heading">
+                {f.q}
+                <span className="ml-4 text-sub group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="mt-3 text-sub-para">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </AnimatedSection>
+
 
       {/* ///////////////////////  Contact  */}
       <Contact />

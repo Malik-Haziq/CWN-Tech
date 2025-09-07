@@ -44,22 +44,22 @@ export default function Learning() {
     <AnimatedSection className="section mb-32">
       <div className="mb-8">
         <span className="text-sm font-medium text-sub-para">Courses</span>
-        <h2 className="h2 mt-1">Master Coding with Our Core Offerings</h2>
+        <h2 className="h2 mt-1 text-4xl lg:text-5xl">Master Coding with Our Core Offerings</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((item) => (
           <AnimatedSection
             key={item.title}
-            className="rounded-2xl bg-white border border-light-gray shadow-card p-6 hover:shadow-3xl transition-shadow"
+            className="rounded-2xl bg-white border border-light-gray shadow-card p-7 hover:shadow-3xl transition-shadow flex min-h-[180px]"
           >
-            <div className="flex items-start gap-4">
-              <div className="h-12 w-12 rounded-full bg-main-mint text-xl flex items-center justify-center">
+            <div className="flex items-start gap-5">
+              <div className="h-14 w-14 rounded-full bg-main-mint text-2xl flex items-center justify-center">
                 <span aria-hidden>{item.icon}</span>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-sub-heading">{item.title}</h3>
-                <p className="text-sub-para mt-2">{item.description}</p>
+                <h3 className="text-xl lg:text-2xl font-semibold text-sub-heading">{item.title}</h3>
+                <p className="text-sub-para mt-2 text-base lg:text-lg">{item.description}</p>
               </div>
             </div>
           </AnimatedSection>
