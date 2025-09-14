@@ -213,7 +213,7 @@ export function Home() {
       </AnimatedSection>
 
       {/* /////////////////////////  Book a call */}
-      <BookCall />
+      {/* <BookCall /> */}
 
       {/* /////////////////////// Who we are */}
       <WhoWeAre />
