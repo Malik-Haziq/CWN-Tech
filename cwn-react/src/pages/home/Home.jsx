@@ -39,6 +39,7 @@ import challengeImg3 from "../../assets/images/challenge/img-3.svg";
 import Seo from "@components/seo/Seo";
 import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 import Learning from "@components/learning/Learning";
+import YouTubePlaylist from "@components/playlist/YouTubePlaylist";
 
 export function Home() {
   const brandLogos = [
@@ -233,6 +234,13 @@ export function Home() {
           </div>
         </div>
       </AnimatedSection>
+
+      {/* YouTube playlist should appear before Courses */}
+      <YouTubePlaylist
+        title="Master Coding – YouTube Playlist"
+        subtitle="Follow along the complete series on our channel."
+        listId="PL9WbyKqkuCAYT-IPvo5PxR_hijMuR1RCB"
+      />
 
       <Learning />
 

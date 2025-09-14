@@ -48,10 +48,11 @@ export default function Learning() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map((item) => (
+        {features.map((item, idx) => (
           <AnimatedSection
             key={item.title}
-            className="rounded-2xl bg-white border border-light-gray shadow-card p-7 hover:shadow-3xl transition-shadow flex min-h-[180px]"
+            delay={idx * 120}
+            className="rounded-2xl bg-white border border-light-gray shadow-card p-7 hover:shadow-3xl transition-all duration-300 hover:-translate-y-1 flex min-h-[180px]"
           >
             <div className="flex items-start gap-5">
               <div className="h-14 w-14 rounded-full bg-main-mint text-2xl flex items-center justify-center">
@@ -83,9 +84,10 @@ export default function Learning() {
               name: "Ali Haider",
               role: "Web Developer",
             },
-          ].map((t) => (
+          ].map((t, idx) => (
             <AnimatedSection
               key={t.name}
+              delay={idx * 150}
               className="rounded-2xl bg-white border border-light-gray p-6 shadow-card"
             >
               <div className="text-4xl text-sub mb-2">“</div>
@@ -101,4 +103,3 @@ export default function Learning() {
     </AnimatedSection>
   );
 }
-

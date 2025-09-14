@@ -5,6 +5,8 @@ export default function AnimatedSection({
   className = "",
   animation = "animate-fade-up",
   as = "section",
+  delay = 0,
+  style = {},
   ...props
 }) {
   const ref = useRef(null);
@@ -35,6 +37,7 @@ export default function AnimatedSection({
     <Tag
       ref={ref}
       className={`${className} opacity-0 translate-y-10`}
+      style={{ ...style, animationDelay: `${delay}ms` }}
       {...props}
     >
       {children}
