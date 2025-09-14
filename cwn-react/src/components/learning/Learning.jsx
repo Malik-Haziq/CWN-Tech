@@ -3,40 +3,40 @@ import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 export default function Learning() {
   const features = [
     {
-      icon: "🧭",
+      icon: "🎓",
       title: "Beginner-Friendly",
       description:
-        "Step-by-step courses designed for absolute beginners to kickstart their coding journey.",
+        "Step-by-step courses designed for absolute beginners to start their coding journey.",
     },
     {
-      icon: "🧠",
+      icon: "🚀",
       title: "Advanced Concepts",
       description:
-        "Deep dive into advanced topics and frameworks to level up your skills.",
+        "Explore advanced topics and frameworks to improve your skills.",
     },
     {
-      icon: "🧪",
+      icon: "🛠️",
       title: "Real-World Projects",
       description:
-        "Learn by building real projects and gain hands‑on experience.",
+        "Learn by creating real projects and gain hands-on experience.",
     },
     {
-      icon: "💲",
+      icon: "💸",
       title: "Affordable Pricing",
       description:
-        "Access premium courses at prices tailored for students and professionals.",
+        "Get premium courses at prices designed for students and professionals.",
     },
     {
       icon: "📚",
       title: "Comprehensive Resources",
       description:
-        "Get templates, documentation, and code snippets to enhance your learning.",
+        "Access templates, documentation, and code snippets to support your learning.",
     },
     {
-      icon: "📈",
+      icon: "💡",
       title: "Industry Insights",
       description:
-        "Stay updated with the latest trends from the tech industry to keep skills relevant.",
+        "Stay updated on the latest trends in tech to keep your skills relevant.",
     },
   ];
 
@@ -73,13 +73,13 @@ export default function Learning() {
           {[
             {
               quote:
-                "I don't have words to thank this man. If you're a mere beginner, then you can trust this guy and put your time into his content.",
+                "I can't express how grateful I am. If you're a beginner, you can trust him and invest your time in his content.",
               name: "Malik Haziq",
               role: "Web Developer",
             },
             {
               quote:
-                "For everyone who wants to level up their coding and dev skills — both basic and advanced stacks are covered and most of the content is free.",
+                "For anyone who wants to advance their coding and development skills, both basic and advanced topics are covered, and most of the content is free.",
               name: "Ali Haider",
               role: "Web Developer",
             },
@@ -101,3 +101,4 @@ export default function Learning() {
     </AnimatedSection>
   );
 }
+

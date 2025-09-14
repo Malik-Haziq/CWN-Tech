@@ -8,8 +8,9 @@ export default function BookCall() {
           Ready to Kickstart Your Project?
         </h2>
         <p className="text-center text-light leading-8 mb-4 text-lg max-w-[900px]">
-          Share your goals and constraints—our team will outline a clear, actionable
-          roadmap to a high‑quality digital product. Book a free 30‑minute consultation.
+          Share your goals and constraints, and our team will create a clear,
+          actionable plan for a high-quality digital product. Book a free
+          30-minute consultation.
         </p>
         <Button
           text="Book Free Consultation"

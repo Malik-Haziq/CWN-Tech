@@ -28,7 +28,7 @@ import maintenance from "@icons/process/maintenance.webp";
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
-import WhoAeAre from "@components/who-we-are/WhoWeAre";
+import WhoWeAre from "@components/who-we-are/WhoWeAre";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
 // import Certificates from "../../components/Certificates/certificates";
@@ -134,8 +134,7 @@ export function Home() {
               Every part of your IT Ecosystem.<br/> Taken care of.
             </h2>
             <p className="text-sub-para text-lg sm:text-xl mb-6">
-              Comprehensive care of your cloud or on-premises infrastructure and
-              applications:
+              Complete care of your cloud or on-premisesinfrastructure and applications:
             </p>
             <ul className="text-para text-base lg:text-xl list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4">
               <li className="li relative">Consulting</li>
@@ -163,8 +162,7 @@ export function Home() {
               Regulatory Compliance
             </h3>
             <p className="mb-6">
-              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
-              from the start.
+            We ensure your software complies with HIPAA, HL7/FHIR, andGDPR standards from the beginning.
             </p>
             <img loading="lazy"
               src={challengeImg1}
@@ -177,8 +175,7 @@ export function Home() {
               High Cost of In-House Team
             </h4>
             <p className="mb-6">
-              Our outsourcing offers top-tier development expertise at 2-3 times
-              the cost efficiency of an in-house team.
+            Our outsourcing provides top-level development expertiseat 2-3times the cost efficiency of hiring in-house.
             </p>
             <img loading="lazy"
               src={challengeImg2}
@@ -191,8 +188,7 @@ export function Home() {
               Looking for a Reliable Partner
             </h4>
             <p className="mb-6">
-              We minimize workflow risks, ensuring clear communication,
-              structured progress, and staying within your budget and timeline.
+              We mitigate workflow risks by ensuring clear communication, structured progress, and adherence to your budget and timeline.
             </p>
             <img loading="lazy"
               src={challengeImg3}
@@ -214,8 +210,7 @@ export function Home() {
               Quick & Inexpensive
             </h3>
             <p className="text-sub-para">
-              Save up to 40% in costs compared to in-house development and
-              reduce time to market up to 30%.
+             Save up to 40% on costs compared to in-house development, andreduce your time to market by up to 30%.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
@@ -224,8 +219,7 @@ export function Home() {
               CUSTOM SERVICE
             </h3>
             <p className="text-sub-para ">
-              You are in the driver’s seat of your future product. If you want
-              to execute a certain feature, we will make it happen for you.
+              You have control over your future product. If you want aspecificfeature, we will make it happen for you.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
@@ -234,8 +228,7 @@ export function Home() {
               INNOVATIVE SOLUTIONS
             </h3>
             <p className="text-sub-para ">
-              Benefit from our team&apos;s creative and forward-thinking
-              approach to problem-solving
+              Please take advantage of our team’s creative and forwardthinking approach to solving problems.
             </p>
           </div>
         </div>
@@ -282,15 +275,15 @@ export function Home() {
             <ul className="text-sub-para list-inside list-disc text-lg sm:text-xl lg:text-2xl">
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                <p>Your project is not moving in the right direction?</p>
+                <p>Is your project not moving in the right direction?</p>
               </li>
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                You&apos;re struggling to build a team of in-house developers?
+                Are you struggling to build a team of in-house developers?
               </li>
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                The cost of building a team of developers is skyrocketing?
+                Is the cost of building a developer team skyrocketing?
               </li>
             </ul>
           </div>
@@ -301,7 +294,7 @@ export function Home() {
       <BookCall />
 
       {/* /////////////////////// Who we are */}
-      <WhoAeAre />
+      <WhoWeAre />
 
       {/* ///////////////////////  process */}
       <AnimatedSection className="section mb-32">
@@ -313,8 +306,7 @@ export function Home() {
               1. Requirement Gathering
             </h3>
             <p className="text-sub-para text-center">
-              We follow the first and foremost priority of gathering
-              requirements, resources, and information to begin our project.
+              Our priority is to gather the requirements, resources, andinformation needed to start the project.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
@@ -323,8 +315,7 @@ export function Home() {
               2. UI/UX Design
             </h3>
             <p className="text-sub-para text-center">
-              We create catchy and charming designs with the latest tools of
-              designing to make it a best user-friendly experience.
+              We create attractive designs using the latest tools to ensureauserfriendly experience.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
@@ -333,8 +324,7 @@ export function Home() {
               3. Prototype
             </h3>
             <p className="text-sub-para text-center">
-              After designing, you will get your prototype, which will be sent
-              ahead for the development process for the product.
+              After designing, you will receive your prototype, whichwill moveforward to the development phase.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
@@ -343,8 +333,7 @@ export function Home() {
               4. Development
             </h3>
             <p className="text-sub-para text-center">
-              Development of mobile application/web/blockchain started using
-              latest tools and technologies with transparency.
+              We develop mobile applications, web platforms, and blockchainsolutions using the latest tools and technologies with complete transparency.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
@@ -353,8 +342,7 @@ export function Home() {
               5. Quality Assurance
             </h3>
             <p className="text-sub-para text-center">
-              Hyperlink values quality and provides 100% bug free application
-              with no compromisation in it.
+              We prioritize quality and deliver a 100% bug-free applicationwithout compromise.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
@@ -363,8 +351,7 @@ export function Home() {
               6. Deployment
             </h3>
             <p className="text-sub-para text-center">
-              After trial and following all processes, your app is ready to
-              launch on the App store or Play Store.
+              After testing and following all processes, your app is ready to launch on server.
             </p>
           </div>
           <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
@@ -373,8 +360,7 @@ export function Home() {
               7. Support & Maintenance
             </h3>
             <p className="text-sub-para text-center">
-              Our company offers you all support and the team is always ready to
-              answer every query after deployment.
+              Our company provides ongoing support, and our teamis always available to address any questions after deployment.
             </p>
           </div>
         </div>
