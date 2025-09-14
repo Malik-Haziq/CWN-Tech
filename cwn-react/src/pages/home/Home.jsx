@@ -14,16 +14,8 @@ import speechagain from "@images/featured/speechagain.webp";
 // import angular from "@icons/stack/angular.webp";
 // import bootstrap from "@icons/stack/bootstrap.webp";
 // import tailwind from "@icons/stack/tailwind.webp";
-import service from "@icons/benefits/service.webp";
-import cost from "@icons/benefits/cost.webp";
-import solution from "@icons/benefits/solution.webp";
-import requirement from "@icons/process/requirement.webp";
-import ui from "@icons/process/ux-design.webp";
-import prototype from "@icons/process/prototype.webp";
-import development from "@icons/process/development.webp";
-import qa from "@icons/process/testing.webp";
-import deployment from "@icons/process/deployment.webp";
-import maintenance from "@icons/process/maintenance.webp";
+// Benefits icons handled inside component
+// Process steps now handled inside Process component
 
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
@@ -33,13 +25,14 @@ import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
 // import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
-import challengeImg1 from "../../assets/images/challenge/img.svg";
-import challengeImg2 from "../../assets/images/challenge/img-2.svg";
-import challengeImg3 from "../../assets/images/challenge/img-3.svg";
+// Challenges images handled inside component
 import Seo from "@components/seo/Seo";
 import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
 import LearningShowcase from "@components/learning/LearningShowcase";
 import TestimonialsSlider from "@components/testimonials/TestimonialsSlider";
+import Process from "@components/process/Process";
+import Benefits from "@components/benefits/Benefits";
+import Challenges from "@components/challenges/Challenges";
 
 export function Home() {
   const brandLogos = [
@@ -154,86 +147,10 @@ export function Home() {
         </div>
       </AnimatedSection>
       {/* ////////////////////////  Challenges you face   */}
-
-      <AnimatedSection className="section mb-32">
-        <h2 className="h2">Are you facing these challenges?</h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
-            <h3 className="text-sub-heading text-lg font-semibold mb-3">
-              Regulatory Compliance
-            </h3>
-            <p className="mb-6">
-            We ensure your software complies with HIPAA, HL7/FHIR, andGDPR standards from the beginning.
-            </p>
-            <img loading="lazy"
-              src={challengeImg1}
-              alt="Regulatory compliance image"
-              className="mx-auto"
-            />
-          </div>
-          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
-            <h4 className="text-sub-heading text-lg font-semibold mb-3">
-              High Cost of In-House Team
-            </h4>
-            <p className="mb-6">
-            Our outsourcing provides top-level development expertiseat 2-3times the cost efficiency of hiring in-house.
-            </p>
-            <img loading="lazy"
-              src={challengeImg2}
-              alt="High cost graph"
-              className="mx-auto"
-            />
-          </div>
-          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
-            <h4 className="text-sub-heading text-lg font-semibold mb-3">
-              Looking for a Reliable Partner
-            </h4>
-            <p className="mb-6">
-              We mitigate workflow risks by ensuring clear communication, structured progress, and adherence to your budget and timeline.
-            </p>
-            <img loading="lazy"
-              src={challengeImg3}
-              alt="Reliable partner image"
-              className="mx-auto"
-            />
-          </div>
-        </div>
-      </AnimatedSection>
+      <Challenges />
 
       {/* ////////////////////////  Benefits you get */}
-
-      <AnimatedSection className="section mb-32">
-        <h2 className="h2">Benefits you get</h2>
-        <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img loading="lazy" src={cost} alt="cost icon" className="w-16 mb-7" />
-            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
-              Quick & Inexpensive
-            </h3>
-            <p className="text-sub-para">
-             Save up to 40% on costs compared to in-house development, andreduce your time to market by up to 30%.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img loading="lazy" src={service} alt="service icon" className="w-16 mb-7" />
-            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
-              CUSTOM SERVICE
-            </h3>
-            <p className="text-sub-para ">
-              You have control over your future product. If you want aspecificfeature, we will make it happen for you.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img loading="lazy" src={solution} alt="solution icon" className="w-16 mb-7" />
-            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
-              INNOVATIVE SOLUTIONS
-            </h3>
-            <p className="text-sub-para ">
-              Please take advantage of our team’s creative and forwardthinking approach to solving problems.
-            </p>
-          </div>
-        </div>
-      </AnimatedSection>
+      <Benefits />
 
       {/* Combined Courses + Playlist section */}
       <LearningShowcase />
@@ -301,75 +218,8 @@ export function Home() {
       {/* /////////////////////// Who we are */}
       <WhoWeAre />
 
-      {/* ///////////////////////  process */}
-      <AnimatedSection className="section mb-32">
-        <h2 className="h2">Process we follow</h2>
-        <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={requirement} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              1. Requirement Gathering
-            </h3>
-            <p className="text-sub-para text-center">
-              Our priority is to gather the requirements, resources, andinformation needed to start the project.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={ui} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              2. UI/UX Design
-            </h3>
-            <p className="text-sub-para text-center">
-              We create attractive designs using the latest tools to ensureauserfriendly experience.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={prototype} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              3. Prototype
-            </h3>
-            <p className="text-sub-para text-center">
-              After designing, you will receive your prototype, whichwill moveforward to the development phase.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={development} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              4. Development
-            </h3>
-            <p className="text-sub-para text-center">
-              We develop mobile applications, web platforms, and blockchainsolutions using the latest tools and technologies with complete transparency.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={qa} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              5. Quality Assurance
-            </h3>
-            <p className="text-sub-para text-center">
-              We prioritize quality and deliver a 100% bug-free applicationwithout compromise.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={deployment} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              6. Deployment
-            </h3>
-            <p className="text-sub-para text-center">
-              After testing and following all processes, your app is ready to launch on server.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
-            <img loading="lazy" src={maintenance} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              7. Support & Maintenance
-            </h3>
-            <p className="text-sub-para text-center">
-              Our company provides ongoing support, and our teamis always available to address any questions after deployment.
-            </p>
-          </div>
-        </div>
-      </AnimatedSection>
+      {/* Modern Process section */}
+      <Process />
 
         {/* ////////////////////////  FAQ */}
       <AnimatedSection id="faq" className="section mb-32">

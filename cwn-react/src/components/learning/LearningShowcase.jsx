@@ -80,7 +80,8 @@ export default function LearningShowcase() {
             <div className="rounded-2xl bg-white border border-light-gray shadow-card overflow-hidden">
               <div className="p-5 pb-0">
                 <span className="text-sm font-medium text-sub-para">YouTube</span>
-                <h3 className="text-2xl lg:text-3xl font-bold text-heading mt-1">Master Coding – Playlist</h3>
+                <h3 className="text-2xl lg:text-3xl font-bold text-heading mt-1">Master Coding (Ruby on Rails)
+                 Playlist</h3>
                 <p className="text-sub-para mt-1 text-sm">Follow along the complete series on our channel.</p>
               </div>
               <div className="relative w-full pt-[56.25%] mt-4">
