@@ -39,16 +39,13 @@ export default function TestimonialsSlider() {
   );
 
   const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [paused, setPaused] = useState(true);
   const timer = useRef(null);
 
   useEffect(() => {
-    if (paused) return;
-    timer.current = setInterval(() => {
-      setIndex((i) => (i + 1) % testimonials.length);
-    }, 4500);
+    // Auto-slide disabled
     return () => clearInterval(timer.current);
-  }, [paused, testimonials.length]);
+  }, [testimonials.length]);
 
   const goTo = (i) => setIndex(((i % testimonials.length) + testimonials.length) % testimonials.length);
 
@@ -60,12 +57,10 @@ export default function TestimonialsSlider() {
       <h2 className="h2 text-center center-orange-line mb-8">Testimonials</h2>
       <div
         className="relative overflow-hidden rounded-2xl border border-light-gray bg-white shadow-card"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
       >
         <div
-          className="flex transition-transform duration-500 ease-out"
-          style={{ transform: `translateX(-${(index * 100) / testimonials.length}%)`, width: `${testimonials.length * 100}%` }}
+          className="flex"
+          style={{ transform: `translateX(-${(index * 100) / testimonials.length}%)`, width: `${testimonials.length * 100}%`, willChange: "transform" }}
         >
           {testimonials.map((t, i) => (
             <div key={i} className="w-full flex-shrink-0 px-6 py-8 md:px-10 md:py-10" style={{ width: `${100 / testimonials.length}%` }}>

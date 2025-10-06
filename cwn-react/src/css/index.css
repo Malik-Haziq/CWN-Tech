@@ -36,15 +36,16 @@ body {
 
   @keyframes slide {
     from {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translateX(-50%);
+      transform: translate3d(-50%, 0, 0);
     }
   }
 
   .animate-slide {
-    animation: slide 20s linear infinite;
+    /* Animations disabled site-wide */
+    animation: none;
     width: max-content;
   }
 
@@ -69,11 +70,11 @@ body {
   }
 
   .animate-fade {
-    animation: fade-in 0.3s ease-out;
+    animation: none;
   }
 
   .animate-pop {
-    animation: pop 0.3s ease-out;
+    animation: none;
   }
 
   @keyframes fade-up {
@@ -88,7 +89,7 @@ body {
   }
 
   .animate-fade-up {
-    animation: fade-up 0.6s ease-out forwards;
+    animation: none;
   }
 
   .error-text {
@@ -123,6 +124,18 @@ body {
 
 .section {
   padding: 0 264px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide,
+  .animate-fade,
+  .animate-pop,
+  .animate-fade-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 @media (max-width: 1660px) {

@@ -95,22 +95,28 @@ export function Home() {
       <AnimatedSection className="section mb-32 mt-8">
         <h2 className="h2 mb-8">Featured Brands</h2>
         <div className="overflow-x-hidden py-4">
-          <div className="flex animate-slide">
+          <div className="flex">
             {brandLogos.map((imgSrc, index) => (
-              <img loading="lazy"
+              <img
+                loading="lazy"
+                decoding="async"
+                draggable="false"
                 key={index}
                 src={imgSrc}
                 alt="brand"
-                className="mx-8 h-16 grayscale hover:grayscale-0 duration-200 flex-shrink-0"
+                className="mx-8 h-16 w-40 object-contain grayscale hover:grayscale-0 duration-200 flex-shrink-0"
               />
             ))}
             {/* Duplicate the images for seamless loop */}
             {brandLogos.map((imgSrc, index) => (
-              <img loading="lazy"
+              <img
+                loading="lazy"
+                decoding="async"
+                draggable="false"
                 key={index + "copy"}
                 src={imgSrc}
                 alt="brand"
-                className="mx-8 h-16 grayscale hover:grayscale-0 duration-200 flex-shrink-0"
+                className="mx-8 h-16 w-40 object-contain grayscale hover:grayscale-0 duration-200 flex-shrink-0"
               />
             ))}
           </div>
