@@ -81,11 +81,30 @@ export function Home() {
             We are dedicated to helping your business grow using modern technologies.
             Our goal is to create scalable software that truly delivers value to your business.
           </p>
-          <Button
-            text={"Let's discuss your project"}
-            styles="px-4 sm:px-6 lg:px-10 py-4"
-            href="#contact"
-          />
+          <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+            <Button
+              text={"Let's discuss your project"}
+              styles="px-4 sm:px-6 lg:px-10 py-4"
+              href="#contact"
+            />
+            <Button
+              href="https://www.youtube.com/@codewithnaqvi"
+              target="_blank"
+              rel="noopener noreferrer"
+              styles="inline-flex items-center gap-2 px-4 sm:px-6 lg:px-10 py-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path d="M23.5 6.2s-.2-1.6-.9-2.2c-.9-.9-1.9-.9-2.4-1C16.8 2.7 12 2.7 12 2.7h0s-4.8 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.2-.9 2.2S0 8.1 0 9.9v1.7c0 1.8.2 3.7.2 3.7s.2 1.6.9 2.2c.9.9 2.2.9 2.8 1 2 .1 8.1.3 8.1.3s4.8 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.2.9-2.2s.2-1.8.2-3.7V9.9c0-1.8-.2-3.7-.2-3.7ZM9.6 13.8V8.4l6.4 2.7-6.4 2.7Z" />
+              </svg>
+              <span>View Courses</span>
+            </Button>
+          </div>
         </div>
       </AnimatedSection>
 
