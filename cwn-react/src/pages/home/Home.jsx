@@ -23,7 +23,6 @@ import Footer from "@components/footer/Footer";
 import WhoWeAre from "@components/who-we-are/WhoWeAre";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
-// import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
 // Challenges images handled inside component
 import Seo from "@components/seo/Seo";
@@ -163,8 +162,6 @@ export function Home() {
 
       {/* Auto-sliding testimonials */}
       <TestimonialsSlider />
-
-      {/* <Certificates /> */}
       <Whatsapp />
 
       {/* //////////////////////  Technology */}
