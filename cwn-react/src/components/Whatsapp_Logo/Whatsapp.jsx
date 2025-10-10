@@ -1,16 +1,5 @@
 import { useState } from "react";
-import WhatsappImg from "../../assets/images/Whatapp/whatsapp.jpeg";
-import PhoneImg from "../../assets/images/Whatapp/phone.jpg";
-import { Helmet } from 'react-helmet';
-
-<Helmet>
-  <title>Code With Naqvi - Learn Web Development</title>
-  <meta name="description" content="Code With Naqvi offers React, Rails, and web dev tutorials." />
-  <meta name="keywords" content="React, Rails, Web Development, Code With Naqvi" />
-  <meta property="og:title" content="Code With Naqvi" />
-  <meta property="og:description" content="React and Rails tutorials for developers." />
-  <meta property="og:image" content="/cover-image.jpg" />
-</Helmet>
+import WhatsappImg from "@images/Whatapp/whatsapp.jpeg";
 
 
 export default function Whatsapp() {
@@ -34,41 +23,33 @@ export default function Whatsapp() {
 
   return (
     <>
-      {/* WhatsApp Button */}
-      <div className="fixed bottom-4 right-4 z-50">
-        {" "}
-        {/* Added z-index here */}
-        <img loading="lazy"
+      {/* WhatsApp Floating Button (original logo image) */}
+      <button
+        aria-label="Chat on WhatsApp"
+        onClick={toggleChatbox}
+        className="fixed bottom-6 right-6 z-50 rounded-full w-14 h-14 bg-white shadow-3xl active:scale-95 transition-all focus:outline-none focus:ring-4 focus:ring-white/40"
+      >
+        <img
           src={WhatsappImg}
           alt="WhatsApp"
-          className="w-16 shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-          onClick={toggleChatbox}
+          className="w-full h-full object-contain p-2 rounded-full"
         />
-      </div>
+      </button>
 
-      <div className="fixed bottom-4 left-4 z-50">
-        <a href="tel://+923078875229">
-          <img loading="lazy"
-            src={PhoneImg}
-            alt="WhatsApp"
-            className="w-12 shadow-lg cursor-pointer transition-transform transform hover:scale-105"
-          />
-        </a>
-      </div>
 
       {/* Chatbox Modal */}
       {isChatOpen && (
-        <div className="fixed bottom-24 right-4 w-80 bg-light-gray rounded-xl shadow-2xl animate-fadeIn z-50">
+        <div className="fixed bottom-24 right-6 w-80 bg-white border border-light-gray rounded-2xl shadow-3xl animate-fade z-50">
           {" "}
           {/* Added z-index here */}
           {/* Chatbox Header */}
-          <div className="items-center justify-between mb-3 p-5 py-4 bg-main-dark rounded-t-xl">
+          <div className="items-center justify-between mb-3 p-5 py-4 bg-main-dark rounded-t-2xl">
             <div className="flex justify-between">
               <div className="flex items-center gap-4">
-                <img loading="lazy"
+                <img
                   src={WhatsappImg}
                   alt="WhatsApp logo"
-                  className="w-10 h-22"
+                  className="w-10 h-10 rounded-full object-cover"
                 />
                 <div>
                   <p className="font-semibold text-md text-white mb-1">
@@ -107,7 +88,7 @@ export default function Whatsapp() {
               />
               <button
                 onClick={handleSendMessage}
-                className="bg-main-dark text-white p-1.5 px-4 rounded duration-200 hover:bg-main"
+                className="bg-main text-white p-2 px-5 rounded-lg duration-200 hover:bg-main-shade"
               >
                 Send
               </button>

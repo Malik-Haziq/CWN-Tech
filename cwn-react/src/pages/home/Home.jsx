@@ -14,32 +14,24 @@ import speechagain from "@images/featured/speechagain.webp";
 // import angular from "@icons/stack/angular.webp";
 // import bootstrap from "@icons/stack/bootstrap.webp";
 // import tailwind from "@icons/stack/tailwind.webp";
-import service from "@icons/benefits/service.webp";
-import cost from "@icons/benefits/cost.webp";
-import solution from "@icons/benefits/solution.webp";
-import requirement from "@icons/process/requirement.webp";
-import ui from "@icons/process/ux-design.webp";
-import prototype from "@icons/process/prototype.webp";
-import development from "@icons/process/development.webp";
-import qa from "@icons/process/testing.webp";
-import deployment from "@icons/process/deployment.webp";
-import maintenance from "@icons/process/maintenance.webp";
+// Benefits icons handled inside component
+// Process steps now handled inside Process component
 
 import Button from "@components/button/button";
 import Contact from "@components/contact/contact";
 import Footer from "@components/footer/Footer";
-import WhoAeAre from "@components/who-we-are/WhoWeAre";
+import WhoWeAre from "@components/who-we-are/WhoWeAre";
 import BookCall from "@components/book-call/BookCall";
 import Services from "@components/services/Services";
-import WhyChooseUS from "../../components/why-choose-us/WhyChooseUs";
-import Awards from "../../components/Awards/Awards";
-// import Certificates from "../../components/Certificates/certificates";
 import Whatsapp from "../../components/Whatsapp_Logo/Whatsapp";
-import challengeImg1 from "../../assets/images/challenge/img.svg";
-import challengeImg2 from "../../assets/images/challenge/img-2.svg";
-import challengeImg3 from "../../assets/images/challenge/img-3.svg";
+// Challenges images handled inside component
 import Seo from "@components/seo/Seo";
 import AnimatedSection from "@components/AnimatedSection/AnimatedSection";
+import LearningShowcase from "@components/learning/LearningShowcase";
+import TestimonialsSlider from "@components/testimonials/TestimonialsSlider";
+import Process from "@components/process/Process";
+import Benefits from "@components/benefits/Benefits";
+import Challenges from "@components/challenges/Challenges";
 
 export function Home() {
   const brandLogos = [
@@ -66,7 +58,7 @@ export function Home() {
         <img
           src={homeBg}
           alt=""
-          fetchpriority="high"
+          fetchPriority="high"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         />
         <div
@@ -76,47 +68,73 @@ export function Home() {
               "linear-gradient(10deg, rgba(59, 130, 246, 0.00) 12.42%, rgba(62, 183, 187, 0.10) 63.32%)",
           }}
         />
-        <div className="py-24 lg:py-36">
+        <div className="py-20 lg:py-28">
           <span className="bg-main text-xs sm:text-sm lg:text-base rounded-lg py-1 px-3 text-white mb-2 inline-block">
             SOFTWARE PRODUCT DEVELOPMENT COMPANY
           </span>
-          <h1 className="font-bold text-4xl lg:text-8xl md:text-7xl sm:text-5xl mb-2 xl:w-10/12">
-            Your <span className="text-main">Product.</span>{" "}
-            Your <span className="text-main">Idea.</span>{" "}
-            Our <span className="text-main">Innovation</span> and Engineering.
+          <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-normal mb-3 max-w-3xl md:max-w-4xl leading-[1.2] sm:leading-[1.18] lg:leading-[1.12]">
+            <span className="block">Using <span className="text-main">Engineering</span> &</span>
+            <span className="block">creativity to <span className="text-main">transform</span></span>
+            <span className="block">your <span className="text-main">product</span>.</span>
           </h1>
-          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl sm:w-10/12 lg:w-1/2 mb-10 mt-8">
-            We are committed to grow your business with modern technologies,
-            build software, scale software that delivers business value.
+          <p className="text-sub-para text-lg sm:text-xl lg:text-2xl max-w-3xl mb-10 mt-8 leading-relaxed">
+            We are dedicated to helping your business grow using modern technologies.
+            Our goal is to create scalable software that truly delivers value to your business.
           </p>
-          <Button
-            text={"Let's discuss your project"}
-            styles="px-4 sm:px-6 lg:px-10 py-4"
-            href="#contact"
-          />
+          <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
+            <Button
+              text={"Let's discuss your project"}
+              styles="px-4 sm:px-6 lg:px-10 py-4"
+              href="#contact"
+            />
+            <Button
+              href="https://www.youtube.com/@codewithnaqvi"
+              target="_blank"
+              rel="noopener noreferrer"
+              styles="inline-flex items-center gap-2 px-4 sm:px-6 lg:px-10 py-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path d="M23.5 6.2s-.2-1.6-.9-2.2c-.9-.9-1.9-.9-2.4-1C16.8 2.7 12 2.7 12 2.7h0s-4.8 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.2-.9 2.2S0 8.1 0 9.9v1.7c0 1.8.2 3.7.2 3.7s.2 1.6.9 2.2c.9.9 2.2.9 2.8 1 2 .1 8.1.3 8.1.3s4.8 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.2.9-2.2s.2-1.8.2-3.7V9.9c0-1.8-.2-3.7-.2-3.7ZM9.6 13.8V8.4l6.4 2.7-6.4 2.7Z" />
+              </svg>
+              <span>View Courses</span>
+            </Button>
+          </div>
         </div>
       </AnimatedSection>
 
+    
       {/* /////////////////////////////////////////  Featured section */}
       <AnimatedSection className="section mb-32 mt-8">
         <h2 className="h2 mb-8">Featured Brands</h2>
         <div className="overflow-x-hidden py-4">
-          <div className="flex animate-slide">
+          <div className="flex">
             {brandLogos.map((imgSrc, index) => (
-              <img loading="lazy"
+              <img
+                loading="lazy"
+                decoding="async"
+                draggable="false"
                 key={index}
                 src={imgSrc}
                 alt="brand"
-                className="mx-8 h-16 grayscale hover:grayscale-0 duration-200 flex-shrink-0"
+                className="mx-8 h-16 w-40 object-contain grayscale hover:grayscale-0 duration-200 flex-shrink-0"
               />
             ))}
             {/* Duplicate the images for seamless loop */}
             {brandLogos.map((imgSrc, index) => (
-              <img loading="lazy"
+              <img
+                loading="lazy"
+                decoding="async"
+                draggable="false"
                 key={index + "copy"}
                 src={imgSrc}
                 alt="brand"
-                className="mx-8 h-16 grayscale hover:grayscale-0 duration-200 flex-shrink-0"
+                className="mx-8 h-16 w-40 object-contain grayscale hover:grayscale-0 duration-200 flex-shrink-0"
               />
             ))}
           </div>
@@ -134,8 +152,7 @@ export function Home() {
               Every part of your IT Ecosystem.<br/> Taken care of.
             </h2>
             <p className="text-sub-para text-lg sm:text-xl mb-6">
-              Comprehensive care of your cloud or on-premises infrastructure and
-              applications:
+              Complete care of your cloud or on-premisesinfrastructure and applications:
             </p>
             <ul className="text-para text-base lg:text-xl list-inside list-disc grid grid-cols-1 sm:grid-cols-2 gap-4">
               <li className="li relative">Consulting</li>
@@ -154,96 +171,16 @@ export function Home() {
         </div>
       </AnimatedSection>
       {/* ////////////////////////  Challenges you face   */}
-
-      <AnimatedSection className="section mb-32">
-        <h2 className="h2">Are you facing these challenges?</h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
-            <h3 className="text-sub-heading text-lg font-semibold mb-3">
-              Regulatory Compliance
-            </h3>
-            <p className="mb-6">
-              We ensure your software meets HIPAA, HL7/FHIR, and GDPR standards
-              from the start.
-            </p>
-            <img loading="lazy"
-              src={challengeImg1}
-              alt="Regulatory compliance image"
-              className="mx-auto"
-            />
-          </div>
-          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
-            <h4 className="text-sub-heading text-lg font-semibold mb-3">
-              High Cost of In-House Team
-            </h4>
-            <p className="mb-6">
-              Our outsourcing offers top-tier development expertise at 2-3 times
-              the cost efficiency of an in-house team.
-            </p>
-            <img loading="lazy"
-              src={challengeImg2}
-              alt="High cost graph"
-              className="mx-auto"
-            />
-          </div>
-          <div className="shadow-lg p-8 border border-sub rounded-3xl ">
-            <h4 className="text-sub-heading text-lg font-semibold mb-3">
-              Looking for a Reliable Partner
-            </h4>
-            <p className="mb-6">
-              We minimize workflow risks, ensuring clear communication,
-              structured progress, and staying within your budget and timeline.
-            </p>
-            <img loading="lazy"
-              src={challengeImg3}
-              alt="Reliable partner image"
-              className="mx-auto"
-            />
-          </div>
-        </div>
-      </AnimatedSection>
+      <Challenges />
 
       {/* ////////////////////////  Benefits you get */}
+      <Benefits />
 
-      <AnimatedSection className="section mb-32">
-        <h2 className="h2">Benefits you get</h2>
-        <div className="flex flex-col sm:flex-row justify-between gap-8 flex-wrap text-lg md:text-xl">
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img loading="lazy" src={cost} alt="cost icon" className="w-16 mb-7" />
-            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
-              Quick & Inexpensive
-            </h3>
-            <p className="text-sub-para">
-              Save up to 40% in costs compared to in-house development and
-              reduce time to market up to 30%.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img loading="lazy" src={service} alt="service icon" className="w-16 mb-7" />
-            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
-              CUSTOM SERVICE
-            </h3>
-            <p className="text-sub-para ">
-              You are in the driver’s seat of your future product. If you want
-              to execute a certain feature, we will make it happen for you.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1">
-            <img loading="lazy" src={solution} alt="solution icon" className="w-16 mb-7" />
-            <h3 className="text-2xl text-sub-heading mb-3 font-semibold">
-              INNOVATIVE SOLUTIONS
-            </h3>
-            <p className="text-sub-para ">
-              Benefit from our team&apos;s creative and forward-thinking
-              approach to problem-solving
-            </p>
-          </div>
-        </div>
-      </AnimatedSection>
+      {/* Combined Courses + Playlist section */}
+      <LearningShowcase />
 
-  
-     
-      {/* <Certificates /> */}
+      {/* Auto-sliding testimonials */}
+      <TestimonialsSlider />
       <Whatsapp />
 
       {/* //////////////////////  Technology */}
@@ -282,15 +219,15 @@ export function Home() {
             <ul className="text-sub-para list-inside list-disc text-lg sm:text-xl lg:text-2xl">
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                <p>Your project is not moving in the right direction?</p>
+                <p>Is your project not moving in the right direction?</p>
               </li>
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                You&apos;re struggling to build a team of in-house developers?
+                Are you struggling to build a team of in-house developers?
               </li>
               <li className="mb-7 flex items-center">
                 <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-sm bg-main mr-3 sm:mr-5 flex-shrink-0"></div>
-                The cost of building a team of developers is skyrocketing?
+                Is the cost of building a developer team skyrocketing?
               </li>
             </ul>
           </div>
@@ -298,87 +235,45 @@ export function Home() {
       </AnimatedSection>
 
       {/* /////////////////////////  Book a call */}
-      <BookCall />
+      {/* <BookCall /> */}
 
       {/* /////////////////////// Who we are */}
-      <WhoAeAre />
+      <WhoWeAre />
 
-      {/* ///////////////////////  process */}
-      <AnimatedSection className="section mb-32">
-        <h2 className="h2">Process we follow</h2>
-        <div className="text-lg md:text-xl grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={requirement} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              1. Requirement Gathering
-            </h3>
-            <p className="text-sub-para text-center">
-              We follow the first and foremost priority of gathering
-              requirements, resources, and information to begin our project.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={ui} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              2. UI/UX Design
-            </h3>
-            <p className="text-sub-para text-center">
-              We create catchy and charming designs with the latest tools of
-              designing to make it a best user-friendly experience.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={prototype} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              3. Prototype
-            </h3>
-            <p className="text-sub-para text-center">
-              After designing, you will get your prototype, which will be sent
-              ahead for the development process for the product.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={development} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              4. Development
-            </h3>
-            <p className="text-sub-para text-center">
-              Development of mobile application/web/blockchain started using
-              latest tools and technologies with transparency.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={qa} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              5. Quality Assurance
-            </h3>
-            <p className="text-sub-para text-center">
-              Hyperlink values quality and provides 100% bug free application
-              with no compromisation in it.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 min-w-[300px] flex-1 flex items-center justify-center flex-col">
-            <img loading="lazy" src={deployment} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              6. Deployment
-            </h3>
-            <p className="text-sub-para text-center">
-              After trial and following all processes, your app is ready to
-              launch on the App store or Play Store.
-            </p>
-          </div>
-          <div className="shadow-card rounded-3xl p-6 flex items-center justify-center flex-col">
-            <img loading="lazy" src={maintenance} alt="budget icon" className="w-16 mb-3" />
-            <h3 className="mb-2 text-lg lg:text-xl font-medium">
-              7. Support & Maintenance
-            </h3>
-            <p className="text-sub-para text-center">
-              Our company offers you all support and the team is always ready to
-              answer every query after deployment.
-            </p>
-          </div>
+      {/* Modern Process section */}
+      <Process />
+
+        {/* ////////////////////////  FAQ */}
+      <AnimatedSection id="faq" className="section mb-32">
+        <h2 className="h2">Frequently Asked Questions</h2>
+        <div className="divide-y divide-light-gray rounded-2xl border border-light-gray bg-white shadow-card">
+          {[{
+            q: "How long does it take to build a website?",
+            a: "Most projects take 4–6 weeks, depending on scope.",
+          },
+          {
+            q: "Do you provide ongoing support?",
+            a: "Yes, we offer maintenance packages tailored to your needs.",
+          },
+          {
+            q: "What technologies do you use?",
+            a: "React, Angular, Ruby on Rails, php and other modern stacks.",
+          },
+          {
+            q: "Do you work with startups?",
+            a: "Absolutely, we love growing with startups and SMEs.",
+          }].map((f, i) => (
+            <details key={i} className="group p-5">
+              <summary className="cursor-pointer list-none flex items-center justify-between font-semibold text-sub-heading">
+                {f.q}
+                <span className="ml-4 text-sub group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="mt-3 text-sub-para">{f.a}</p>
+            </details>
+          ))}
         </div>
       </AnimatedSection>
+
 
       {/* ///////////////////////  Contact  */}
       <Contact />

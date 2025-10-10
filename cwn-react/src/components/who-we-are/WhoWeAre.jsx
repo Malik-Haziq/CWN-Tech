@@ -6,13 +6,13 @@ export default function WhoWeAre() {
       <div className="basis-1/2 text-lg md:text-xl">
         <h2 className="h2 mb-8 sm:mb-16">Who we are</h2>
         <p className="text-sub-para mb-4 leading-8">
-          CWN Technologies is software development company. We covers specific
-          client business needs with the help of the best possible technology
-          solutions.
+          CWN Technologies is a software development company. We address
+          specific client business needs with the best technology solutions
+          available.
         </p>
         <p className="text-sub-para leading-8">
-          Since 2018, we have been inventing digital solutions, helping startups
-          and SMBs come out on top in their markets.
+          Since 2018, we have been creating digital solutions to help startups
+          and SMBs excel in their markets.
         </p>
       </div>
       <img loading="lazy"

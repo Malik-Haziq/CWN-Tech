@@ -39,6 +39,8 @@ export default {
       'light': "#FAFAFA"
     },
     fontFamily: {
+      // Default sans for the whole site
+      sans: ['"Poppins"', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif'],
       sumana: ['"Sumana"', 'serif'],
       poppins: ['"Poppins"', 'sans-serif'],
     },
