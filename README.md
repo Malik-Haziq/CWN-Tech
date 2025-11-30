@@ -1,10 +1,10 @@
-<img width="1905" height="862" alt="Screenshot from 2025-11-30 06-47-57" src="https://github.com/user-attachments/assets/fc216886-1d85-4bb8-9fdc-038926b7ba85" />
+![Screenshot from 2025-11-30 06-47-57](https://github.com/user-attachments/assets/e47214e8-82fb-41ad-8319-13c71affd09d)
 
-# CWN‑Tech 🚀
+# CWN‑Tech
 
 A full‑stack software development company platform built with modern technologies.
 
-## 🧭 Table of Contents
+## Table of Contents
 - [About](#about)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
